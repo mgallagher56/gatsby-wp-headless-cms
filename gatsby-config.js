@@ -20,8 +20,7 @@ module.exports = {
         {
             resolve: `gatsby-source-wordpress-experimental`,
             options: {
-                url:
-                `https://localhost/portfolio/graphql`,
+                url: process.env.WPGRAPHQL_URL || `https://localhost/portfolio/graphql`,
                 verbose: true,
                 develop: {
                     hardCacheMediaFiles: true,
@@ -41,23 +40,13 @@ module.exports = {
                                 5000,
                     },
                 },
-            },
-        },
-        module.exports = {
-            plugins: [
-                {
-                    resolve: `gatsby-source-wordpress-experimental`,
-                    options: {
-                        //Your other config...
-                        auth: {
-                            htaccess: {
-                                username: process.env.WP_USERNAME,
-                                password: process.env.WP_PASSWORD,
-                            }
-                        }
+                auth: {
+                    htaccess: {
+                      username: process.env.WP_USERNAME,
+                      password: process.env.WP_PASSWORD,
                     }
-                }
-            ]
+                },
+            },
         },
         `gatsby-plugin-chakra-ui`,
         `gatsby-transformer-sharp`,
