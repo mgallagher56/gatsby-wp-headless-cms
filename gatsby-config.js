@@ -8,7 +8,17 @@ require("dotenv").config({
 })
 
 module.exports = {
+    siteMetadata: {
+        title: "MGR - Porfolio",
+        titleTemplate: "%s · Dev MVP",
+        description:
+          "Dev Things",
+        url: "https://www.mgr-dev.com", // No trailing slash allowed!
+        image: "/images/kiki.jpg", // Path to your image you placed in the 'static' folder
+        twitterUsername: "@mgallagher56",
+      },
     plugins: [
+        'gatsby-plugin-react-helmet',
         `gatsby-plugin-sharp`,
         {
             resolve: `gatsby-source-filesystem`,
@@ -20,7 +30,7 @@ module.exports = {
         {
             resolve: `gatsby-source-wordpress-experimental`,
             options: {
-                url: process.env.WPGRAPHQL_URL || `https://mgr-dev.com/graphql`,
+                url: process.env.WPGRAPHQL_URL || `http://localhost/portfolio/graphql`,
                 verbose: true,
                 develop: {
                     hardCacheMediaFiles: true,
