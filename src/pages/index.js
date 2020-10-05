@@ -9,21 +9,22 @@ export default function Home({ data }) {
         <StaticQuery
             query={graphql`
             query {
-                allWpPost(sort: {order: DESC, fields: title}) {
-                nodes {
-                    title
-                    excerpt
-                    slug
+                allWpPage(sort: {order: DESC, fields: title}) {
+                    nodes {
+                      title
+                      slug
+                      id
+                      content
+                    }
+                  }
                 }
-                }
-            }      
           `}
             render={data => (
                 <header>
-                    {data.allWpPost.nodes.map((node) => (
+                    {data.allWpPage.nodes.map((node) => (
                         <div>
                             <p>{node.title}</p>
-                            <div dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+                            <div dangerouslySetInnerHTML={{ __html: node.content }} />
                         </div>
                     ))}
                 </header>

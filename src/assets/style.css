@@ -22,3 +22,9 @@
 .pagination .previous {
   justify-self: start;
 }
+
+.btn { 
+    padding: 10px;
+    background: red;
+    color: white;
+}
