@@ -14,7 +14,7 @@ module.exports = {
         description:
           "Dev Things",
         url: "https://mgr-dev-content.000webhostapp.com/graphql", // No trailing slash allowed!
-        image: "/images/kiki.jpg", // Path to your image you placed in the 'static' folder
+        image: "/images/kiki.jpg", // Path to your image you placed in the 'static' folder,
       },
     plugins: [
         'gatsby-plugin-react-helmet',
