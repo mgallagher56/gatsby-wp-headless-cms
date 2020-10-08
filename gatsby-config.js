@@ -15,7 +15,6 @@ module.exports = {
           "Dev Things",
         url: "https://www.mgr-dev.com", // No trailing slash allowed!
         image: "/images/kiki.jpg", // Path to your image you placed in the 'static' folder
-        twitterUsername: "@mgallagher56",
       },
     plugins: [
         'gatsby-plugin-react-helmet',
@@ -30,7 +29,7 @@ module.exports = {
         {
             resolve: `gatsby-source-wordpress-experimental`,
             options: {
-                url: process.env.WPGRAPHQL_URL || `https://wp.mgr-dev.com/graphql`,
+                url: process.env.WPGRAPHQL_URL || `https://mgr-dev-content.000webhostapp.com/graphql`,
                 verbose: true,
                 develop: {
                     hardCacheMediaFiles: true,
