@@ -13,7 +13,7 @@ module.exports = {
         titleTemplate: "%s · Dev MVP",
         description:
           "Dev Things",
-        url: "https://www.mgr-dev.com", // No trailing slash allowed!
+        url: "https://mgr-dev-content.000webhostapp.com/graphql", // No trailing slash allowed!
         image: "/images/kiki.jpg", // Path to your image you placed in the 'static' folder
       },
     plugins: [
