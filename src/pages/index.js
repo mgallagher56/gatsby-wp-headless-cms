@@ -24,6 +24,7 @@ export default function Home({ data }) {
                 <header>
                     <Helmet>
                         <meta charSet="utf-8" />
+                        <meta name='MGR Dev Homepage'></meta>
                         <title>MGR Dev</title>
                         <link rel="canonical" href="https://mgr-dev.com" />
                     </Helmet>
