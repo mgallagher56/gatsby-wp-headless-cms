@@ -13,7 +13,7 @@ module.exports = {
         titleTemplate: "%s · Dev MVP",
         description:
           "Dev Things",
-        url: "https://mgr-dev-content.000webhostapp.com/graphql", // No trailing slash allowed!
+        url: "https://mgr-dev.com", // No trailing slash allowed!
         image: "/images/kiki.jpg", // Path to your image you placed in the 'static' folder,
       },
     plugins: [
@@ -29,7 +29,7 @@ module.exports = {
         {
             resolve: `gatsby-source-wordpress-experimental`,
             options: {
-                url: process.env.WPGRAPHQL_URL || `https://mgr-dev-content.000webhostapp.com/graphql`,
+                url: process.env.WPGRAPHQL_URL || `https://mgr-dev.online/graphql`,
                 verbose: true,
                 develop: {
                     hardCacheMediaFiles: true,
