@@ -21,6 +21,11 @@ export default function Home({ data }) {
           `}
             render={data => (
                 <header>
+                    <Helmet>
+                        <meta charSet="utf-8" />
+                        <title>MGR Dev</title>
+                        <link rel="canonical" href="https://mgr-dev.com" />
+                    </Helmet>
                     {data.allWpPage.nodes.map((node) => (
                         <div>
                             <p>{node.title}</p>
