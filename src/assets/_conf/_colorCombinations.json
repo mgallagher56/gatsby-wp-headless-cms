@@ -1,0 +1,26 @@
+{
+    "Primary-1" : {
+        "set" : "Color Set 1",
+        "background" : "grey-portfolio",
+        "button-set" : "1",
+        "overlay" : "light"
+    },
+    "Primary-2" : {
+        "set" : "Color Set 1",
+        "background" : "grey-portfolio-dark",
+        "button-set" : "1",
+        "overlay" : "light"
+    },
+    "Primary-3" : {
+        "set" : "Color Set 1",
+        "background" : "grey-portfolio-light",
+        "button-set" : "1",
+        "overlay" : "light"
+    },
+    "Primary-4" : {
+        "set" : "Color Set 1",
+        "background" : "black",
+        "button-set" : "1",
+        "overlay" : "light"
+    }
+}

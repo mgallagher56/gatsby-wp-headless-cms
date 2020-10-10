@@ -1,7 +1,7 @@
 import React from "react"
 import { Heading, Box, Grid } from "@chakra-ui/core"
 import { Link } from "gatsby"
-import GatsbyLogo from "../assets/svg/gatsby.inline.svg"
+import GatsbyLogo from "../assets/images/gatsby-icon.webp"
 
 export default () => (
   <Heading as="h1">

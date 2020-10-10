@@ -1,0 +1,24 @@
+.navbar-nav {
+    appearance: none;
+}
+
+@include media-breakpoint-up(md) {
+    .navbar-nav {
+        background: map-get( $colors, pink-portfolio-dark );
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        img {
+            width: 100px;
+        }
+
+        li {
+            padding: 20px 0;
+        }
+
+        a {
+            color: white;
+        }
+    }
+}

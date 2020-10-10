@@ -1,0 +1,15 @@
+@import 'bootstrap/bootstrap';
+@import '_variables/variables';
+@import '_modules/_nav/nav';
+@import '_components/_linksAndButtons/linksButtons';
+@import '_components/_forms/forms';
+@import '_components/_typography/typography';
+@import 'baseplate';
+
+
+body {
+    background: map-get($colors, navy-portfolio);
+    color: map-get($colors, white-portfolio);
+}
+
+

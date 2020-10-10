@@ -1,0 +1,86 @@
+{
+    "black" : {
+        "name" : "Black",
+        "type" : "tertiary"
+    },
+    "blue-portfolio" : {
+        "name" : "Portfolio Blue",
+        "type" : "primary"
+    },
+    "blue-portfolio-dark" : {
+        "name" : "Portfolio Blue Dark",
+        "type" : "secondary"
+    },
+    "blue-portfolio-light" : {
+        "name" : "Portfolio Blue Light",
+        "type" : "secondary"
+    },
+    "grey-portfolio" : {
+        "name" : "Portfolio Grey",
+        "type" : "primary"
+    },
+    "grey-portfolio-dark" : {
+        "name" : "Portfolio Dark Grey",
+        "type" : "secondary"
+    },
+    "grey-portfolio-light" : {
+        "name" : "Portfolio Light Grey",
+        "type" : "secondary"
+    },
+    "mint-portfolio" : {
+        "name" : "Portfolio Mint",
+        "type" : "primary"
+    },
+    "mint-portfolio-dark" : {
+        "name" : "Portfolio Mint Dark",
+        "type" : "secondary"
+    },
+    "mint-portfolio-light" : {
+        "name" : "Portfolio Mint Light",
+        "type" : "secondary"
+    },
+    "orange-portfolio" : {
+        "name" : "Portfolio orange",
+        "type" : "primary"
+    },
+    "orange-portfolio-dark" : {
+        "name" : "Portfolio orange Dark",
+        "type" : "secondary"
+    },
+    "orange-portfolio-light" : {
+        "name" : "Portfolio orange Light",
+        "type" : "secondary"
+    },
+    "pink-portfolio" : {
+        "name" : "Portfolio pink",
+        "type" : "primary"
+    },
+    "pink-portfolio-dark" : {
+        "name" : "Portfolio pink Dark",
+        "type" : "secondary"
+    },
+    "pink-portfolio-light" : {
+        "name" : "Portfolio pink Light",
+        "type" : "secondary"
+    },
+    "white" : {
+        "name" : "White",
+        "type" : "tertiary"
+    },
+    "white-portfolio" : {
+        "name" : "White",
+        "type" : "primary"
+    },
+    "yellow-portfolio" : {
+        "name" : "Portfolio yellow",
+        "type" : "primary"
+    },
+    "yellow-portfolio-dark" : {
+        "name" : "Portfolio yellow Dark",
+        "type" : "secondary"
+    },
+    "yellow-portfolio-light" : {
+        "name" : "Portfolio yellow Light",
+        "type" : "secondary"
+    }
+}
