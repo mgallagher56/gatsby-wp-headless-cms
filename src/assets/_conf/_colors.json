@@ -1,0 +1,25 @@
+{
+    "black" : "#000",
+    "blue-portfolio" : "#1648FF",
+    "blue-portfolio-dark" : "#0035F5",
+    "blue-portfolio-light" : "#335FFF",
+    "grey-portfolio" : "#31393C",
+    "grey-portfolio-dark" : "#252B2D",
+    "grey-portfolio-light" : "#536065",
+    "mint-portfolio" : "#39F999",
+    "mint-portfolio-dark" : "#12F885",
+    "mint-portfolio-light" : "#61FAAD",
+    "navy-portfolio" : "#1A202C",
+    "orange-portfolio" : "#FD7E35",
+    "orange-portfolio-dark" : "#FD7121",
+    "orange-portfolio-light" : "#FD985D",
+    "pink-portfolio": "#FF6978",
+    "pink-portfolio-dark" : "#FF475A",
+    "pink-portfolio-light" : "#FF8591",
+    "white" : "#fff",
+    "white-portfolio" : "#F1FAEE",
+    "yellow-portfolio" : "#FDCA40",
+    "yellow-portfolio-dark" : "#FDC221",
+    "yellow-portfolio-light" : "#FED35D"
+}
+

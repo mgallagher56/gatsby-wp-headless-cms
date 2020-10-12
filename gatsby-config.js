@@ -18,7 +18,9 @@ module.exports = {
       },
     plugins: [
         'gatsby-plugin-react-helmet',
-        `gatsby-plugin-sharp`,
+        `gatsby-plugin-sass`,
+        `gatsby-plugin-transition-link`,
+        `gatsby-plugin-netlify-cache`,
         {
             resolve: `gatsby-source-filesystem`,
             options: {
@@ -26,6 +28,8 @@ module.exports = {
                 path: `${__dirname}/src/assets/images`,
             },
         },
+        `gatsby-transformer-sharp`,
+        `gatsby-plugin-sharp`,
         {
             resolve: `gatsby-source-wordpress-experimental`,
             options: {
@@ -57,8 +61,6 @@ module.exports = {
                 },
             },
         },
-        `gatsby-plugin-chakra-ui`,
-        `gatsby-transformer-sharp`,
         {
             resolve: "gatsby-plugin-react-svg",
             options: {
@@ -67,6 +69,5 @@ module.exports = {
                 },
             },
         },
-        `gatsby-plugin-netlify-cache`,
     ],
 }

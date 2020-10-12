@@ -1,0 +1,25 @@
+.socialLogin {
+    background-repeat: no-repeat;
+    display: block;
+    height: 40px;
+    left: 0;
+    top: 0;
+    background-size: contain;
+    width: 350px;
+
+    &.googleLoginDark {
+        background-image: url("/img/btn_google_signin_dark_focus_web.webp");
+    }
+
+    &.googleLoginLight {
+        background-image: url("/img/btn_google_signin_light_normal_web.webp");
+    }
+
+    &.twitterLoginLight {
+        background-image: url("/img/twitter_signin.webp");
+    }
+
+    &.facebookLoginLight {
+        background-image: url("/img/facebook_login.webp");
+    }
+}
