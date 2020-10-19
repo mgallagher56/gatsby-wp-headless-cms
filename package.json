@@ -48,7 +48,9 @@
     "react-helmet": "^6.1.0",
     "react-paginate": "^6.5.0",
     "react-scripts": "^3.4.3",
+    "react-typed": "^1.2.0",
     "scrollmagic": "^2.0.7",
+    "typed": "^0.3.3",
     "yarn": "^1.22.10"
   },
   "eslintConfig": {

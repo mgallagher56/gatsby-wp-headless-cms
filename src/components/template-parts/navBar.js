@@ -218,9 +218,9 @@ export default class NavBar extends Component {
                         <div className={ 'row w-100 h-25 m-0' }>
                             <li className={ 'menu-item col-6' }>
                                 <AniLink paintDrip duration={ 1 }
-                                    color='mediumspringgreen' to='/placeholder1'
+                                    color='mediumspringgreen' to='/old_site'
                                     className='nav-link'>
-                                    <p> placeholder1 </p>
+                                    <p> OLd Site </p>
                                 </AniLink></li>
                             <li className={ 'menu-item col-6' }>
                                 <AniLink paintDrip duration={ 1 }
@@ -247,8 +247,8 @@ export default class NavBar extends Component {
                                      className='nav-link'> My CV </AniLink></li>
                         <li><AniLink paintDrip duration={ 1 } color='mediumspringgreen' to='/baseplate'
                                      className='nav-link'> Baseplate </AniLink></li>
-                        <li><AniLink paintDrip duration={ 1 } color='mediumspringgreen' to='/placeholder1'
-                                     className='nav-link'> placeholder1 </AniLink></li>
+                        <li><AniLink paintDrip duration={ 1 } color='mediumspringgreen' to='/old_site'
+                                     className='nav-link'> Old Site </AniLink></li>
                         <li><AniLink paintDrip duration={ 1 } color='mediumspringgreen' to='/placeholder2'
                                      className='nav-link'> placeholder2 </AniLink></li>
                     </ul>

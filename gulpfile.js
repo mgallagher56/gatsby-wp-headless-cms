@@ -30,7 +30,7 @@ let jsonToScss = () => {
 
 let watch = () => {
     gulp.watch( 'src/assets/_conf/**/*.json', jsonToScss );
-    gulp.watch( 'src/assets/_raw_images/**/*.*', compressImages );
+    gulp.watch( 'src/assets/_raw_images/**/**.*', compressImages );
     gulp.watch( 'src/assets/_scss/**/*.scss', styles );
 };
 
