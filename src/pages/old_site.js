@@ -6,7 +6,7 @@ import video from '../assets/images/video.mp4'
 import githubImg from '../assets/images/GitHub.webp';
 import linkedInImg from  '../assets/images/linkedin.webp';
 
-class oldSite extends Component {
+export default class oldSite extends Component {
 
     render() {
         return (
@@ -224,27 +224,19 @@ class oldSite extends Component {
                             </a>
                         </div>
                     </div>
-
                 </div>
 
-
-                <section class='aboutMe'> 
-                    <div class='py-5 aboutMeBg'>
+                <section class='aboutMe'>
                     <a name='about'></a>  
-
                     <h1>About Me</h1>
-                    <div class='profileImg'>
-                    </div>
+                    <div class='profileImg'></div>
                     <p>Hello World. I'm a recent graduate from Mayden Academy in Bath, after taking part in a 16 week course
                     (August-December 2019) to become a Full Stack Developer. I'm passionate about Agile software development, and
-                    I'm proficient in HTML, CSS,
-        PHP and JavaScript, including MVC design pattern with the Slim framework, NodeJS with Express, and React.</p>
+                    I'm proficient in HTML, CSS, PHP and JavaScript, including MVC design pattern with the Slim framework, NodeJS with Express, and React.</p>
                     <br />
                     <p>I also have a keen interest in how technology is developed, emerging technologies and PC hardware. Building my
                     first PC around 5 years ago opened the door to my interest in the technology industry as a whole, which, over
-                    the years, has led
-        me to this point of developing a career in the software industry. </p>
-                    </div>
+                    the years, has led me to this point of developing a career in the software industry. </p>
                 </section>
 
                 <section class="contact">
@@ -274,5 +266,3 @@ class oldSite extends Component {
         );
     }
 }
-
-export default oldSite;
