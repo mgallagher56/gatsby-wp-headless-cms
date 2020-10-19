@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../assets/oldSite.css';
-import '../assets/Normalize.css';
 import Typed from 'react-typed';
 import video from '../assets/images/video.mp4'
 import githubImg from '../assets/images/GitHub.webp';
