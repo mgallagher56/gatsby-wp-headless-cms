@@ -7240,20 +7240,37 @@ a.text-dark:hover, a.text-dark:focus {
     appearance: none; } }
 
 .navbar-nav {
-  appearance: none; }
+  appearance: none;
+  display: none; }
+  .navbar-nav img {
+    display: none; }
 
 @media (min-width: 768px) {
   .navbar-nav {
     background: #FF475A;
-    flex-direction: row;
-    justify-content: space-around;
+    height: 100px;
     align-items: center; }
+    .navbar-nav .navbar-desktop {
+      display: none;
+      appearance: none; }
+    .navbar-nav .false-nav {
+      align-items: center;
+      padding: 36px 0 0 50px; }
     .navbar-nav img {
       width: 100px; }
     .navbar-nav li {
       padding: 20px 0; }
     .navbar-nav a {
-      color: white; } }
+      color: white; }
+    .navbar-nav:hover .false-nav, .navbar-nav:focus .false-nav {
+      display: none;
+      appearance: none; }
+    .navbar-nav:hover .navbar-desktop, .navbar-nav:focus .navbar-desktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+    .navbar-nav:hover img, .navbar-nav:focus img {
+      display: block; } }
 
 button,
 .btn {

@@ -1,13 +1,27 @@
 .navbar-nav {
     appearance: none;
+    display: none;
+
+    img {
+        display: none;
+    }
 }
 
 @include media-breakpoint-up(md) {
     .navbar-nav {
-        background: map-get( $colors, pink-portfolio-dark );
-        flex-direction: row;
-        justify-content: space-around;
+        background: map-get($colors, pink-portfolio-dark);
+        height: 100px;
         align-items: center;
+
+        .navbar-desktop {
+            display: none;
+            appearance: none;
+        }
+
+        .false-nav {
+            align-items: center;
+            padding: 36px 0 0 50px;
+        }
 
         img {
             width: 100px;
@@ -20,5 +34,24 @@
         a {
             color: white;
         }
+
+        &:hover,
+        &:focus {
+            .false-nav {
+                display: none;
+                appearance: none;
+            }
+
+            .navbar-desktop {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            img {
+                display: block;
+            }
+        }
+
     }
 }
