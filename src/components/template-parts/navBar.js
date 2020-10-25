@@ -232,8 +232,9 @@ export default class NavBar extends Component {
                         </div>
                     </ul>
                 </nav>
-                <nav>
-                    <ul className='navbar-nav mr-auto navbar-desktop d-none d-md-flex'>
+                <nav className={'navbar-nav d-block'}>
+                    <div className={'false-nav'}>Expecting a nav bar? Hover here and I'll give you a fuckin' nav bar, ya prick!</div>
+                    <ul className=' mr-auto navbar-desktop'>
                     <img src={logo} alt='Logo'></img>
                         <li><AniLink paintDrip duration={ 1 } color='mediumspringgreen' to='/'
                                      className='nav-link'> Home </AniLink></li>
