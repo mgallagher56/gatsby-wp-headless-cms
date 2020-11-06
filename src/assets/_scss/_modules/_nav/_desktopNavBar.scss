@@ -25,6 +25,7 @@
 
         img {
             width: 100px;
+            display: block;
         }
 
         li {
@@ -34,24 +35,5 @@
         a {
             color: white;
         }
-
-        &:hover,
-        &:focus {
-            .false-nav {
-                display: none;
-                appearance: none;
-            }
-
-            .navbar-desktop {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-            }
-
-            img {
-                display: block;
-            }
-        }
-
     }
 }

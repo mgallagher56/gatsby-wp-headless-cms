@@ -7257,20 +7257,12 @@ a.text-dark:hover, a.text-dark:focus {
       align-items: center;
       padding: 36px 0 0 50px; }
     .navbar-nav img {
-      width: 100px; }
+      width: 100px;
+      display: block; }
     .navbar-nav li {
       padding: 20px 0; }
     .navbar-nav a {
-      color: white; }
-    .navbar-nav:hover .false-nav, .navbar-nav:focus .false-nav {
-      display: none;
-      appearance: none; }
-    .navbar-nav:hover .navbar-desktop, .navbar-nav:focus .navbar-desktop {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around; }
-    .navbar-nav:hover img, .navbar-nav:focus img {
-      display: block; } }
+      color: white; } }
 
 button,
 .btn {
