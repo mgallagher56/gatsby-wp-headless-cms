@@ -148,7 +148,7 @@ export default class NavBar extends Component {
     render () {
 
         let mobileNavStyle = {
-            height: `calc(100vh - ${this.state.navHeight})`,
+            height: `calc(100vh - 78px)`,
         };
 
         return (
