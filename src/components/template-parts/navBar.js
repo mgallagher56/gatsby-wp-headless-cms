@@ -223,7 +223,7 @@ export default class NavBar extends Component {
                                 <AniLink paintDrip duration={1}
                                     color='mediumspringgreen' to='/old_site'
                                     className='nav-link'>
-                                    <p> OLd Site </p>
+                                    <p> Old Site </p>
                                 </AniLink></li>
                             <li className={'menu-item col-6'}>
                                 <AniLink paintDrip duration={1}
