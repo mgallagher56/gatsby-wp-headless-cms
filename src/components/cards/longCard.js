@@ -7,7 +7,7 @@ export default class LongCard extends Component {
     }
 
     render() {
-        return <div class={'card long-card row col-12 p-0'}>
+        return <div class={'card long-card row col-12 p-0 mx-auto'}>
             <div class={'card-media col-6 col-md-7 h-100 p-0'}>
                 <img src={card_eg} alt={'card image'} />
             </div> 
