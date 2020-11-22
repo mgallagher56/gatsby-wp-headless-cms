@@ -7268,8 +7268,20 @@ a.text-dark:hover, a.text-dark:focus {
 .hero-module .hero-content {
   flex: 1; }
 
+.hero-module .hero-media img {
+  width: 100%; }
+
 .long-card {
-  max-height: 200px; }
+  max-height: 200px;
+  color: #1648FF;
+  margin-bottom: 24px; }
+  .long-card .card-media {
+    left: 0; }
+  .long-card img {
+    max-height: 199px; }
+
+.hero-card {
+  color: #1648FF; }
 
 button,
 .btn {

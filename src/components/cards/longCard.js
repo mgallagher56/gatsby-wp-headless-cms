@@ -7,13 +7,13 @@ export default class LongCard extends Component {
     }
 
     render() {
-        return <div class={'card long-card row col-12 col-md-10 mx-auto'}>
-            <div class={'card-media col-6 col-md-8'}>
-                <img class={'h-25'} src={card_eg} alt={'card image'} />
-            </div>
-            <div class={'card-content col-6 col-md-4'}>
-                <h3>Title</h3>
-                <h4>Subtitle</h4>
+        return <div class={'card long-card row col-12 col-md-10 mx-auto p-0'}>
+            <div class={'card-media col-6 col-md-7 h-100 p-0'}>
+                <img src={card_eg} alt={'card image'} />
+            </div> 
+            <div class={'card-content col-6 col-md-5 p-2'}>
+                <h4>Title</h4>
+                <h5>Subtitle</h5>
                 <p>Body Text</p>
             </div>
         </div>
