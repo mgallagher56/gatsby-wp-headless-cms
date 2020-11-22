@@ -7271,6 +7271,13 @@ a.text-dark:hover, a.text-dark:focus {
 .hero-module .hero-media img {
   width: 100%; }
 
+.cta-module {
+  color: #1648FF; }
+
+.wysiwygMedia .wysiwyg-content,
+.wysiwygMedia .wysiwyg-media {
+  flex: 1; }
+
 .long-card {
   max-height: 200px;
   color: #1648FF;
@@ -7534,4 +7541,5 @@ li {
 
 body {
   background: #1A202C;
-  color: #F1FAEE; }
+  color: #F1FAEE;
+  padding-bottom: 96px; }

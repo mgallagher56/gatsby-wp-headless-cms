@@ -7,7 +7,7 @@ export default class Hero extends Component {
     }
 
     render() {
-        return <section class={'hero-module'}> 
+        return <section class={'hero-module mb-5'}> 
             <div class={'row d-flex flex-column flex-md-row'}>
                 <div class={'hero-media d-flex col-12 col-md-8 overflow-hidden'}>
                     <img class={'hero_image'} src={hero_image} alt='Web devices and programming languages' />

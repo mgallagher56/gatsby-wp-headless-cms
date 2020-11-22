@@ -5,7 +5,7 @@ export default class Wysiwyg1Col extends Component {
         super( props );
 
         this.state = {
-            margin: 'my-3',
+            margin: 'my-5',
         };
     }
 

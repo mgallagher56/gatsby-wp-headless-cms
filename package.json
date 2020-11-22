@@ -20,6 +20,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.35",
     "@emotion/styled": "^10.0.27",
+    "@popperjs/core": "^2.5.4",
     "add": "^2.0.6",
     "all.js": "^1.0.27",
     "bootstrap": "^4.5.0",
@@ -41,6 +42,7 @@
     "gsap": "file:gsap-bonus.tgz",
     "gulp-run": "^1.7.1",
     "linebyline": "^1.3.0",
+    "popper.js": "^1.14.3",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",

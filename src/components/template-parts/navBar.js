@@ -71,8 +71,6 @@ export default class NavBar extends Component {
 
         this.navBackground = getSiblings(this.navBackground);
         
-
-
         this.navAnimation = this.tl.fromTo([this.navBackground, this.listItems],
             { filter: '' },
             {

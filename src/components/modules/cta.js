@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Button from './../Button';
 
 export default class CTA extends Component {
     constructor( props ) {
@@ -6,14 +7,14 @@ export default class CTA extends Component {
     }
 
     render() {
-        return <div class={'cta-module row col-12 p-0'}>
-            <div class={' col-6 col-md-7 h-100 p-0'}>
-                <img src={card_eg} alt={'card image'} />
-            </div> 
-            <div class={'button-container col-6 col-md-5 p-2'}>
-                <h4>Title</h4>
-                <h5>Subtitle</h5>
-                <p>Body Text</p>
+        return <div class={'cta-module card row mx-auto my-5 text-center col-12 p-0 flex-md-row text-md-left'}>
+            <div class={'cta-content p-2 col-12 col-md-6 offset-md-1'}>
+                <h2>Title</h2>
+                <p>Subtitle</p>
+            </div>
+            <div class={'button-container d-flex p-3 mx-auto justify-content-around col-12 col-md-5 flex-md-row my-md-auto'}>
+                <Button />
+                <Button />
             </div>
         </div>
     }
