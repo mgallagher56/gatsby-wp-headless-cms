@@ -8,14 +8,9 @@ export default class CardContainer extends Component {
     }
 
     render() {
-        return <section class={'container card-container-module overflow-hidden my-5'}>
+        return <section class={'card-container-module overflow-hidden my-5'}>
             <div class={'col-12 d-flex flex-wrap justify-content-between'}>
-                {/* <LongCard />  */}
-                <HeroCard />
-                <HeroCard />
-                <HeroCard />
-                <HeroCard />
-                <HeroCard />
+                <LongCard />
                 <HeroCard />
                 <HeroCard />
                 <HeroCard />

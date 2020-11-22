@@ -60,8 +60,19 @@ export default class NavBar extends Component {
         }
 
         // this.burgerAnimation = this.tl.fromTo(this.burgerTop, {}, {}).play()
+        this.navBackground = this.navBar.current;
 
-        this.navBackground = this.navBar.current.nextSibling
+        //get all elements behind mobile nav
+        let getSiblings = function (elem) {
+            return Array.prototype.filter.call(elem.parentNode.children, function (sibling) {
+                return sibling !== elem;
+            });
+        };
+
+        this.navBackground = getSiblings(this.navBackground);
+        
+
+
         this.navAnimation = this.tl.fromTo([this.navBackground, this.listItems],
             { filter: '' },
             {

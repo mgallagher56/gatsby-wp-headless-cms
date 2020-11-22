@@ -7,7 +7,7 @@ export default class HeroCard extends Component {
     }
 
     render() {
-        return <div class={' row col-12 col-md-4 my-3'}>
+        return <div class={'row my-3 col-12 col-md-6 col-lg-4 '}>
             <div class={' card hero-card'}>
                 <div class={'card-media col-12'}>
                     <img class={'w-100'} src={card_eg} alt={'card image'} />
