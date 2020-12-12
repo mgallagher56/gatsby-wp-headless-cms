@@ -1,13 +1,13 @@
 h1,
 h1.baseplateHeading {
     font-size: 50px;
-    margin-bottom: map-get($spacers, 5);
+    margin-bottom: map-get($spacers, 4);
 }
 
 h2,
 h2.baseplateHeading {
     font-size: 40px;
-    margin-bottom: map-get($spacers, 4);
+    margin-bottom: map-get($spacers, 3);
 }
 
 h3,
@@ -46,31 +46,25 @@ h1, h2, h3, h4, h5, h6 {
 @include media-breakpoint-up(lg) {
     h1 {
         font-size: 60px;
-        margin-bottom: map-get($spacers, 7);
     }
 
     h2 {
         font-size: 50px;
-        margin-bottom: map-get($spacers, 6);
     }
 
     h3 {
         font-size: 40px;
-        margin-bottom: map-get($spacers, 5);
     }
 
     h4 {
         font-size: 30px;
-        margin-bottom: map-get($spacers, 4);
     }
 
     h5 {
         font-size: 22px;
-        margin-bottom: map-get($spacers, 3);
     }
 
     h6 {
         font-size: 16px;
-        margin-bottom: map-get($spacers, 2);
     }
 }
