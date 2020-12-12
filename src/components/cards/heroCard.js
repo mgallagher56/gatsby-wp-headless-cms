@@ -6,16 +6,22 @@ export default class HeroCard extends Component {
         super( props );
     }
 
+    static defaultProps = {
+        title: 'Title',
+        subtitle: 'Subtitle',
+        body: 'Body ',
+    }
+
     render() {
-        return <div class={'row my-3 col-12 col-md-6 col-lg-4 '}>
-            <div class={' card hero-card'}>
+        return <div class={'row my-3 mx-auto col-12 col-md-6 col-lg-4 '}>
+            <div class={'card hero-card'}>
                 <div class={'card-media col-12'}>
                     <img class={'w-100'} src={card_eg} alt={'card image'} />
                 </div> 
                 <div class={'card-content col-12 p-2'}>
-                    <h3>Title</h3>
-                    <h4>Subtitle</h4>
-                    <p>Here is an example of some longer body text</p>
+                    <h3>{this.props.title}</h3>
+                    <h4>{this.props.subtitle}</h4>
+                    <p>{this.props.body}</p>
                 </div>
             </div>
         </div>
