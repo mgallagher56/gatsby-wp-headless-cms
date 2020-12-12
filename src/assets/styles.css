@@ -7418,10 +7418,6 @@ input:focus + .slider {
   .slider.round:before {
     border-radius: 50%; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lora', serif;
-  font-weight: 600; }
-
 h1,
 h1.baseplateHeading {
   font-size: 50px;
@@ -7451,6 +7447,12 @@ h6,
 h6.baseplateHeading {
   font-size: 12px;
   margin-bottom: 8px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lora', serif;
+  font-weight: 600; }
+  h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child {
+    margin-bottom: 0; }
 
 @media (min-width: 992px) {
   h1 {
