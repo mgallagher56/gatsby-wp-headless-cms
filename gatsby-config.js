@@ -29,15 +29,7 @@ module.exports = {
             },
         },
         `gatsby-transformer-sharp`,
-        {
-            resolve: `gatsby-plugin-sharp`,
-            options: {
-              // Available options and their defaults:
-              toFormat: 'webp',
-              stripMetadata: false,
-              failOnError: true,
-            },
-          },        
+        `gatsby-plugin-sharp`,     
           {
             resolve: `gatsby-source-wordpress-experimental`,
             options: {
