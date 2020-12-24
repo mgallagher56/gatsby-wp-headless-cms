@@ -33,7 +33,7 @@ module.exports = {
             resolve: `gatsby-plugin-sharp`,
             options: {
               // Available options and their defaults:
-              useMozJpeg: process.env.GATSBY_JPEG_ENCODER === `MOZJPEG`,
+              toFormat: 'WEBP',
               stripMetadata: false,
               failOnError: true,
             },
