@@ -33,7 +33,7 @@ module.exports = {
             resolve: `gatsby-plugin-sharp`,
             options: {
               // Available options and their defaults:
-              toFormat: 'WEBP',
+              toFormat: 'webp',
               stripMetadata: false,
               failOnError: true,
             },
