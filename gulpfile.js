@@ -2,6 +2,7 @@ const gulp = require( 'gulp' );
 const sass = require( 'gulp-sass' );
 const compress_images = require( 'compress-images' );
 const run = require( 'gulp-run' );
+const { series } = require('gulp');
 
 let styles = () => {
     return gulp.src( 'src/assets/_scss/**/*.scss' )
@@ -9,8 +10,8 @@ let styles = () => {
         .pipe( gulp.dest( 'src/assets/' ) );
 };
 
-let compressImages = () => {
-    compress_images( 'src/assets/_raw_images/**/*.{jpg,JPG,jpeg,JPEG,png,svg,gif}', 'src/assets/images/', {
+let compressImages = async () => {
+   await compress_images( 'src/assets/_raw_images/**/*.{jpg,JPG,jpeg,JPEG,png,svg,gif}', 'src/assets/images/', {
             compress_force: false,
             statistic: true,
             autoupdate: true,
@@ -25,7 +26,6 @@ let compressImages = () => {
 
 let jsonToScss = () => {
   return run( 'json-to-scss \'./src/assets/_conf/**/*.json\' ./src/assets/_scss/_variables/', true ).exec()
-    .pipe( gulp.dest( 'output' ) );
 };
 
 let watch = () => {
@@ -34,14 +34,8 @@ let watch = () => {
     gulp.watch( 'src/assets/_scss/**/*.scss', styles );
 };
 
-let build = () => {
-    styles();
-    compressImages();
-    jsonToScss();
-}
-
 exports.jsonToScss = jsonToScss;
 exports.styles = styles;
 exports.compreessImages = compressImages;
 exports.watch = watch;
-exports.build = build;
+exports.build = series(styles, compressImages, jsonToScss);
