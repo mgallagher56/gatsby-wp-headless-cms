@@ -29,8 +29,16 @@ module.exports = {
             },
         },
         `gatsby-transformer-sharp`,
-        `gatsby-plugin-sharp`,
         {
+            resolve: `gatsby-plugin-sharp`,
+            options: {
+              // Available options and their defaults:
+              useMozJpeg: process.env.GATSBY_JPEG_ENCODER === `MOZJPEG`,
+              stripMetadata: false,
+              failOnError: true,
+            },
+          },        
+          {
             resolve: `gatsby-source-wordpress-experimental`,
             options: {
                 url: process.env.WPGRAPHQL_URL || `https://mgr-dev.online/graphql`,
