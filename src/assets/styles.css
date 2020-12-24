@@ -7279,8 +7279,9 @@ a.text-dark:hover, a.text-dark:focus {
   flex: 1; }
 
 .long-card {
-  max-height: 250px;
-  color: #1648FF; }
+  max-height: 200px;
+  color: #1648FF;
+  margin-bottom: 24px; }
   .long-card .card-media {
     left: 0; }
   .long-card img {
@@ -7420,12 +7421,12 @@ input:focus + .slider {
 h1,
 h1.baseplateHeading {
   font-size: 50px;
-  margin-bottom: 32px; }
+  margin-bottom: 40px; }
 
 h2,
 h2.baseplateHeading {
   font-size: 40px;
-  margin-bottom: 24px; }
+  margin-bottom: 32px; }
 
 h3,
 h3.baseplateHeading {
@@ -7455,17 +7456,23 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 992px) {
   h1 {
-    font-size: 60px; }
+    font-size: 60px;
+    margin-bottom: 56px; }
   h2 {
-    font-size: 50px; }
+    font-size: 50px;
+    margin-bottom: 48px; }
   h3 {
-    font-size: 40px; }
+    font-size: 40px;
+    margin-bottom: 40px; }
   h4 {
-    font-size: 30px; }
+    font-size: 30px;
+    margin-bottom: 32px; }
   h5 {
-    font-size: 22px; }
+    font-size: 22px;
+    margin-bottom: 24px; }
   h6 {
-    font-size: 16px; } }
+    font-size: 16px;
+    margin-bottom: 16px; } }
 
 body,
 p {

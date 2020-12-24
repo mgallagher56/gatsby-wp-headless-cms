@@ -1,6 +1,7 @@
 .long-card {
-    max-height: 250px;
+    max-height: 200px;
     color: map-get( $colors, blue-portfolio );
+    margin-bottom: map-get( $spacers, 3 );
 
     .card-media {
         left: 0;
@@ -8,5 +9,6 @@
 
     img {
         max-height: 199px;
+
     }
 }
