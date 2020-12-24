@@ -24,6 +24,7 @@
     "add": "^2.0.6",
     "all.js": "^1.0.27",
     "bootstrap": "^4.5.3",
+    "cache-manager-fs-hash": "0.0.9",
     "emotion-theming": "^10.0.27",
     "fs": "0.0.1-security",
     "gatsby": "^2.29.2",
