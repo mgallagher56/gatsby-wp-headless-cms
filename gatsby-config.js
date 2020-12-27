@@ -16,10 +16,11 @@ module.exports = {
         url: "https://mgr-dev.com", // No trailing slash allowed!
         image: "/images/kiki.jpg", // Path to your image you placed in the 'static' folder,
       },
-    plugins: [
+      plugins: [
         'gatsby-plugin-react-helmet',
         `gatsby-plugin-sass`,
         `gatsby-plugin-transition-link`,
+        `gatsby-plugin-sharp`,     
         `gatsby-plugin-netlify-cache`,
         {
             resolve: `gatsby-source-filesystem`,
@@ -28,8 +29,13 @@ module.exports = {
                 path: `${__dirname}/src/assets/images`,
             },
         },
-        `gatsby-transformer-sharp`,
-        `gatsby-plugin-sharp`,     
+        {
+            resolve: `gatsby-transformer-sharp`,
+            options: {
+              // The option defaults to true
+              checkSupportedExtensions: false,
+            },
+          },       
           {
             resolve: `gatsby-source-wordpress-experimental`,
             options: {
