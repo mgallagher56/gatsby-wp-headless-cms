@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import card_eg from '../../assets/images/gatsby-astronaut.webp'
+import card_eg from '../../assets/images/gatsby-astronaut.png'
 
 
 export default class LogoParade extends Component {
