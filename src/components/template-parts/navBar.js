@@ -3,7 +3,7 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import Bubbles from '../Bubbles';
 import { TimelineMax, Linear } from 'gsap';
 import line from '../../assets/images/horziontalLine.svg';
-import logo from '../../assets/images/gatsby-astronaut.png';
+import logo from '../../assets/images/gatsby-icon.png';
 
 export default class NavBar extends Component {
     constructor(props) {
