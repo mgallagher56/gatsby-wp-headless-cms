@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import '../assets/oldSite.css';
 import Typed from 'react-typed';
 import video from '../assets/images/video.mp4'
-import githubImg from '../assets/images/GitHub.webp';
-import linkedInImg from  '../assets/images/linkedin.webp';
+import githubImg from '../assets/images/GitHub.png';
+import linkedInImg from  '../assets/images/linkedin.png';
 
 export default class oldSite extends Component {
 

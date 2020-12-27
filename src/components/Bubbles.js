@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import bubbleImg from '../assets/images/bubble.webp';
-import bubbleBlue from '../assets/images/bubble-blue.webp';
-import bubbleMint from '../assets/images/bubble-mint.webp'
-import bubbleOrange from '../assets/images/bubble-orange.webp'
-import bubblePink from '../assets/images/bubble-pink.webp'
-import bubbleYellow from '../assets/images/bubble-yellow.webp'
+import bubbleImg from '../assets/images/bubble.png';
+import bubbleBlue from '../assets/images/bubble-blue.png';
+import bubbleMint from '../assets/images/bubble-mint.png'
+import bubbleOrange from '../assets/images/bubble-orange.png'
+import bubblePink from '../assets/images/bubble-pink.png'
+import bubbleYellow from '../assets/images/bubble-yellow.png'
 
 export default class Bubbles extends Component {
     constructor( props ) {

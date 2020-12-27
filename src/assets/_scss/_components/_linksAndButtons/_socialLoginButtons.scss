@@ -8,18 +8,18 @@
     width: 350px;
 
     &.googleLoginDark {
-        background-image: url("/img/btn_google_signin_dark_focus_web.webp");
+        background-image: url("/img/btn_google_signin_dark_focus_web.png");
     }
 
     &.googleLoginLight {
-        background-image: url("/img/btn_google_signin_light_normal_web.webp");
+        background-image: url("/img/btn_google_signin_light_normal_web.png");
     }
 
     &.twitterLoginLight {
-        background-image: url("/img/twitter_signin.webp");
+        background-image: url("/img/twitter_signin.png");
     }
 
     &.facebookLoginLight {
-        background-image: url("/img/facebook_login.webp");
+        background-image: url("/img/facebook_login.png");
     }
 }

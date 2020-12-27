@@ -221,7 +221,7 @@
     /*width: 30%;*/
   }
   #oldSite .project2 {
-    background-image: url("./images/collectionApp.webp");
+    background-image: url("./images/collectionApp.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 14%;
@@ -241,26 +241,26 @@
     /*width: 35%;*/
   }
   #oldSite .project5 {
-    background-image: url("./images/githubFetch.webp");
+    background-image: url("./images/githubFetch.png");
     background-size: cover;
     background-repeat: no-repeat;
     /*width:25%;*/
   }
   #oldSite .project6 {
-    background-image: url("./images/finance.webp");
+    background-image: url("./images/finance.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
     /*width:40%;*/
   }
   #oldSite .project7 {
-    background-image: url("./images/GRUB.webp");
+    background-image: url("./images/GRUB.png");
     background-size: cover;
     background-repeat: no-repeat;
     /*width: 30%;*/
   }
   #oldSite .project8 {
-    background-image: url("./images/ski.webp");
+    background-image: url("./images/ski.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -308,7 +308,7 @@
     text-align: center;
   }
   #oldSite .contact {
-    /*background-image: url("img/code.320.webp");*/
+    /*background-image: url("img/code.320.png");*/
     background-repeat: repeat-x;
     background-position: center;
     height: auto;
