@@ -14,7 +14,7 @@ module.exports = {
         description:
           "Dev Things",
         url: "https://mgr-dev.com", // No trailing slash allowed!
-        image: "/images/kiki.jpg", // Path to your image you placed in the 'static' folder,
+        author: "Marc Gallagher-Reid",
       },
       plugins: [
         'gatsby-plugin-react-helmet',
@@ -37,9 +37,12 @@ module.exports = {
             },
           },       
           {
-            resolve: `gatsby-source-wordpress-experimental`,
+            resolve: `gatsby-source-wordpress`,
             options: {
-                url: process.env.WPGRAPHQL_URL || `https://mgr-dev.online/graphql`,
+                baseUrl: `https://mgr-dev.online`,
+                protocol: `https`,
+                hostingWPCOM: false,
+                useACF: true,
                 verbose: true,
                 develop: {
                     hardCacheMediaFiles: true,
@@ -60,12 +63,23 @@ module.exports = {
                     },
                 },
                 auth: {
-                    htaccess: {
-                      username: process.env.WP_USERNAME,
-                      password: process.env.WP_PASSWORD,
-                    }
+                    wpcom_user: process.env.WP_USERNAME,
+                    wpcom_pass: process.env.WP_PASSWORD,
+                    htaccess_user: process.env.HT_USERNAME,
+                    htaccess_pass: process.env.HT_PASSWORD,
+                    htaccess_sendImmediately: false,
                 },
             },
+        },
+        {
+            resolve: `gatsby-wordpress-inline-images`,
+            options:
+            {
+              baseUrl: `https://mgr-dev.online`,
+              protocol: `https`,
+              useACF: true,
+              withWebp: true,
+            }
         },
         {
             resolve: "gatsby-plugin-react-svg",
