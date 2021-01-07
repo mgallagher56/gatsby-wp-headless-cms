@@ -12,22 +12,19 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   return graphql(`
     {
-      allWordpressPost(sort: {fields: [date]}) {
+      allWpPost(sort: {fields: [date]}) {
         edges {
           node {
             title
             excerpt
             slug
             date(formatString: "MM-DD-YYYY")
-            author {
-              name
-            }
           }
         }
       }
     }
   `).then(result => {
-    result.data.allWordpressPost.edges.forEach(({ node }) => {
+    result.data.allWpPost.edges.forEach(({ node }) => {
       createPage({
         // Decide URL structure
         path: node.slug,

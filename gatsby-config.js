@@ -37,12 +37,9 @@ module.exports = {
             },
           },       
           {
-            resolve: `gatsby-source-wordpress`,
+            resolve: `gatsby-source-wordpress-experimental`,
             options: {
-                baseUrl: `https://mgr-dev.online`,
-                protocol: `https`,
-                hostingWPCOM: false,
-                useACF: true,
+                url: process.env.WPGRAPHQL_URL || `https://mgr-dev.online/graphql`,
                 verbose: true,
                 develop: {
                     hardCacheMediaFiles: true,
@@ -63,11 +60,10 @@ module.exports = {
                     },
                 },
                 auth: {
-                    wpcom_user: process.env.WP_USERNAME,
-                    wpcom_pass: process.env.WP_PASSWORD,
-                    htaccess_user: process.env.HT_USERNAME,
-                    htaccess_pass: process.env.HT_PASSWORD,
-                    htaccess_sendImmediately: false,
+                    htaccess: {
+                        username: process.env.HTTPBASICAUTH_USERNAME,
+                        password: process.env.HTTPBASICAUTH_PASSWORD,
+                    },
                 },
             },
         },
