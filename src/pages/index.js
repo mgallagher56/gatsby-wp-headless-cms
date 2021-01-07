@@ -9,7 +9,7 @@ export default ({ data }) => {
       <SEO title="home" />
       <h1>My WordPress Blog</h1>
       <h4>Posts</h4>
-      {data.allWordpressPost.edges.map(({ node }) => (
+      {data.allWpPost.edges.map(({ node }) => (
         <div>
           <Link to={node.slug}>
             <p>{node.title}</p>
@@ -23,7 +23,7 @@ export default ({ data }) => {
 
 export const pageQuery = graphql`
   query {
-    allWordpressPost(sort: { fields: [date] }) {
+    allWpPost(sort: { fields: [date] }) {
       edges {
         node {
           title
