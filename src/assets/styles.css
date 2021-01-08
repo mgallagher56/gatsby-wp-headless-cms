@@ -7174,6 +7174,7 @@ a.text-dark:hover, a.text-dark:focus {
     height: 30px; }
     .nav-mobile .collapsable-nav span img {
       height: 10px;
+      margin-bottom: 0;
       width: 30px; }
 
 .nav-mobile .bubble {
@@ -7536,5 +7537,4 @@ li {
 
 body {
   background: #1A202C;
-  color: #F1FAEE;
-  padding-bottom: 96px; }
+  color: #F1FAEE; }

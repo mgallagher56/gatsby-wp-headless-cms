@@ -60,17 +60,7 @@ export default class NavBar extends Component {
         }
 
         // this.burgerAnimation = this.tl.fromTo(this.burgerTop, {}, {}).play()
-        this.navBackground = this.navBar.current;
-
-        //get all elements behind mobile nav
-        let getSiblings = function (elem) {
-            return Array.prototype.filter.call(elem.parentNode.children, function (sibling) {
-                return sibling !== elem;
-            });
-        };
-
-        this.navBackground = getSiblings(this.navBackground);
-        
+        this.navBackground = this.navBar.current.parentElement.nextSibling.children;
         this.navAnimation = this.tl.fromTo([this.navBackground, this.listItems],
             { filter: '' },
             {
@@ -99,7 +89,8 @@ export default class NavBar extends Component {
                     stagger: 0.10,
                     delay: .5,
                     filter: '',
-                }, 'blur');
+                }, 'blur'
+            );
 
         let rand = (max, min) => {
             return Math.floor(Math.random() * max) + min
