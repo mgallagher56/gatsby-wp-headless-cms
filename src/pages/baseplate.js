@@ -9,7 +9,6 @@ export default class Baseplate extends Component {
     render() {
         return (
             <div className='baseplate'>
-                <NavBar />
                 <div className='baseplate-main container-lg justify-content-center'>
                 <header className='App-header'>
                     <h1 className={ 'baseplateTitle' }>Hello Baseplate!</h1>

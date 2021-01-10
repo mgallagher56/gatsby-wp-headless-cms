@@ -1,7 +1,6 @@
 
 import React from "react"
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
-import "./layout.css"
 import logo from '../assets/images/gatsby-icon.png';
 import { useStaticQuery, graphql } from "gatsby"
 import { render } from "react-dom";
