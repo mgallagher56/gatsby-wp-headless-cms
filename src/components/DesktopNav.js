@@ -9,23 +9,24 @@ import { render } from "react-dom";
 const DesktopNav = () => {
     const navData = useStaticQuery(graphql`
     query GET_NAV {
-        allWpPage {
+        allWpMenuItem {
+          totalCount
           edges {
             node {
-              title
-              slug
-              uri
+              label
+              url
             }
           }
         }
       }
+      
     `)
 
     let navOutput = ( data ) => {
         return <>
-        { data.allWpPage.edges.reverse().map( ( node ) => {
-            return <li><AniLink paintDrip duration={1} color='mediumspringgreen' to={node.node.uri}
-            className='nav-link'> {node.node.title} </AniLink></li>
+        { data.allWpMenuItem.edges.map( ( node ) => {
+            return <li><AniLink paintDrip duration={1} color='mediumspringgreen' to={node.node.url}
+            className='nav-link'> {node.node.label} </AniLink></li>
         })}
         </>
     }

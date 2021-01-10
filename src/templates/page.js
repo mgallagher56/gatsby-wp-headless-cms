@@ -3,16 +3,16 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql } from "gatsby"
 
-const Page = ({ data, pageContext }) => {
-  const page = pageContext.page;
-  const pageData = data.allWpPage.edges;
+const Page = ({ data }) => {
+  const pageData = data.allWpPage.edges[0].node;
+  console.log(pageData);
 
   return (
     <Layout>
-      <SEO title={page.title} />
+      <SEO title={pageData.title} />
 
-      <h1>{page.title}</h1>
-      <div dangerouslySetInnerHTML={{__html: page.content}} />
+      <h1>{pageData.title}</h1>
+      <div dangerouslySetInnerHTML={{__html: pageData.content}} />
 
     </Layout>
   )
@@ -21,8 +21,8 @@ const Page = ({ data, pageContext }) => {
 export default Page
 
 export const pageQuery = graphql`
-query GET_LAYOUTS {
-    allWpPage {
+query($slug: String!) {
+    allWpPage(filter: { slug: { eq: $slug } }) {
       edges {
         node {
           title
