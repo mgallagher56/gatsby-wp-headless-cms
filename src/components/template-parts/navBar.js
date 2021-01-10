@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import Bubbles from '../Bubbles';
+import DesktopNav from '../DesktopNav';
 import { TimelineMax, Linear } from 'gsap';
 import line from '../../assets/images/horziontalLine.svg';
-import logo from '../../assets/images/gatsby-icon.png';
 
 export default class NavBar extends Component {
     constructor(props) {
@@ -21,7 +21,6 @@ export default class NavBar extends Component {
         // this.burgerBottom = React.createRef()
         this.tl = new TimelineMax({ paused: true });
         this.handleClick = this.handleClick.bind(this);
-
 
     }
 
@@ -144,9 +143,8 @@ export default class NavBar extends Component {
             }, 1000)
         }
     }
-
+    
     render () {
-
         let mobileNavStyle = {
             height: `calc(100vh - 78px)`,
         };
@@ -235,27 +233,7 @@ export default class NavBar extends Component {
                         </div>
                     </ul>
                 </nav>
-                <nav>
-                    <ul className='navbar-nav mr-auto navbar-desktop d-none d-md-flex flex-row justify-content-around'>
-                        <img src={logo} alt='Logo'></img>
-                        <li><AniLink paintDrip duration={1} color='mediumspringgreen' to='/'
-                            className='nav-link'> Home </AniLink></li>
-                        <li><AniLink paintDrip duration={1} color='mediumspringgreen' to='/#projects'
-                            className='nav-link'> Projects </AniLink></li>
-                        <li><AniLink paintDrip duration={1} color='mediumspringgreen' to='/#technologies'
-                            className='nav-link'> Technologies </AniLink></li>
-                        <li><AniLink paintDrip duration={1} color='mediumspringgreen' to='/#about'
-                            className='nav-link'> About </AniLink></li>
-                        <li><AniLink paintDrip duration={1} color='mediumspringgreen' to='/cv'
-                            className='nav-link'> My CV </AniLink></li>
-                        <li><AniLink paintDrip duration={1} color='mediumspringgreen' to='/baseplate'
-                            className='nav-link'> Baseplate </AniLink></li>
-                        <li><AniLink paintDrip duration={1} color='mediumspringgreen' to='/old_site'
-                            className='nav-link'> Old Site </AniLink></li>
-                        <li><AniLink paintDrip duration={1} color='mediumspringgreen' to='/placeholder2'
-                            className='nav-link'> placeholder2 </AniLink></li>
-                    </ul>
-                </nav>
+                <DesktopNav />
             </div>
         );
     }

@@ -39,3 +39,50 @@ exports.createPages = ({ graphql, actions }) => {
     })
   })
 }
+
+exports.createPages = ({ graphql, actions }) => {
+    const { createPage } = actions
+    return graphql(`
+      {
+        allWpPage {
+          edges {
+            node {
+              title
+              slug
+              uri
+              pageBuilder {
+                layouts {
+                  ... on WpPage_Pagebuilder_Layouts_Hero {
+                    wysiwyg
+                    image {
+                      id
+                      uri
+                    }
+                  }
+                  ... on WpPage_Pagebuilder_Layouts_Wysiwyg1Col {
+                    fieldGroupName
+                    wysiwyg1Col
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      
+    `).then(result => {
+      result.data.allWpPage.edges.forEach(({ node }) => {
+        createPage({
+          // Decide URL structure
+          path: node.slug,
+          // path to template
+          component: path.resolve(`./src/templates/page.js`),
+          context: {
+            // This is the $slug variable
+            // passed to blog-post.js
+            slug: node.slug,
+          },
+        })
+      })
+    })
+  }

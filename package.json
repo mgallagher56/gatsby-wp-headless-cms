@@ -21,6 +21,7 @@
     "@emotion/core": "^10.0.35",
     "@emotion/styled": "^10.0.27",
     "@popperjs/core": "^2.5.4",
+    "@wordpress/block-library": "^2.27.1",
     "add": "^2.0.6",
     "all.js": "^1.0.27",
     "bootstrap": "^4.5.0",
