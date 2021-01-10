@@ -10,7 +10,6 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Nav from "./template-parts/navBar";
 import Footer from "./Footer"
-import "@wordpress/block-library/build-style/style.css"
 import "./layout.css"
 
 const Layout = ({ children }) => {
