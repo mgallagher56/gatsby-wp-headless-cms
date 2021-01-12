@@ -3,7 +3,6 @@ import React from "react"
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import logo from '../assets/images/gatsby-icon.png';
 import { useStaticQuery, graphql } from "gatsby"
-import { render } from "react-dom";
 
 const DesktopNav = () => {
     const navData = useStaticQuery(graphql`
@@ -23,10 +22,13 @@ const DesktopNav = () => {
 
     let navOutput = ( data ) => {
         return <>
-        { data.allWpMenuItem.edges.map( ( node ) => {
-            return <li><AniLink paintDrip duration={1} color='mediumspringgreen' to={node.node.url}
-            className='nav-link'> {node.node.label} </AniLink></li>
-        })}
+            { data.allWpMenuItem.edges.map( ( node ) => {
+                if(node.node.url==='/home/') {
+                    node.node.url = '/'
+                }
+                return <li><AniLink paintDrip duration={1} color='mediumspringgreen' to={node.node.url}
+                className='nav-link'> {node.node.label} </AniLink></li>
+            })}
         </>
     }
 

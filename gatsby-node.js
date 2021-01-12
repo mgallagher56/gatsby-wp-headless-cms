@@ -72,6 +72,10 @@ exports.createPages = ({ graphql, actions }) => {
       
     `).then(result => {
       result.data.allWpPage.edges.forEach(({ node }) => {
+        if(node.uri==='/home/') {
+            node.uri = '/'
+        }
+        console.log(node.uri);
         createPage({
           // Decide URL structure
           path: node.slug,
