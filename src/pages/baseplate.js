@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './../assets/styles.css';
+import SEO from "../components/seo"
 import BaseplateColors from '../components/template-parts/colors';
 import ButtonVariationsOutput from '../components/template-parts/ButtonVariationsOutput';
 import ColorCombinations from '../components/template-parts/ColorCombinations';
