@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './../assets/styles.css';
-import SEO from "../components/seo"
 import BaseplateColors from '../components/template-parts/colors';
 import ButtonVariationsOutput from '../components/template-parts/ButtonVariationsOutput';
 import ColorCombinations from '../components/template-parts/ColorCombinations';
@@ -10,8 +9,6 @@ export default class Baseplate extends Component {
     render() {
         return (
             <Layout>
-            <SEO title={pageData.title} />
-
                 <div className='baseplate'>
                     <div className='baseplate-main container-lg justify-content-center'>
                     <header className='App-header'>
