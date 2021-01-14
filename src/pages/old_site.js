@@ -4,6 +4,8 @@ import Typed from 'react-typed';
 import video from '../assets/images/video.mp4'
 import githubImg from '../assets/images/GitHub.png';
 import linkedInImg from  '../assets/images/linkedin.png';
+import Layout from "../components/layout"
+
 
 export default class oldSite extends Component {
 
