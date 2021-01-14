@@ -10,8 +10,6 @@ export default class oldSite extends Component {
     render() {
         return (
             <Layout>
-            <SEO title={pageData.title} />
-
                 <div id='oldSite'>
                     {/* <NavBar /> */} 
                     <div id='oldNav'>
