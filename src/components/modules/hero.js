@@ -10,12 +10,14 @@ export default class Hero extends Component {
         return <section class={'hero-module mb-5'}> 
             <div class={'row d-flex flex-column flex-md-row'}>
                 <div class={'hero-media d-flex col-12 col-md-7 overflow-hidden'}>
-                    <img class={'hero_image'} src={hero_image} alt='Web devices and programming languages' />
+                    <img 
+                        class={'hero_image'}  
+                        src={this.props.module.image.localFile.publicURL} 
+                        alt={this.props.module.image.altText}
+                     />
                 </div>
-                <div class={'hero-content d-flex flex-column col-12 col-md-5 text-center my-auto'}>
-                        <h1>Marc Gallagher-Reid</h1>
-                        <h2>Web Developer</h2>
-                </div>
+                <div className={'hero-content d-flex flex-column col-12 col-md-5'} 
+                dangerouslySetInnerHTML={{__html: this.props.module.wysiwyg}} />
             </div>
         </section>
     }

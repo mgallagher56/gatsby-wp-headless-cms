@@ -23,11 +23,24 @@ const DesktopNav = () => {
     let navOutput = ( data ) => {
         return <>
             { data.allWpMenuItem.edges.map( ( node ) => {
-                if(node.node.url==='/home/') {
-                    node.node.url = '/'
+                if (node.node.url ==='/home/') {
+                    let url = '/';
+                    return <>
+                        <li>
+                            <AniLink 
+                                paintDrip 
+                                duration={1} 
+                                color='mediumspringgreen' 
+                                to={url}
+                                className='nav-link'>
+                                <img src={logo} alt='Logo'></img>
+                                </AniLink>
+                        </li>
+                    </>
+                } else  {
+                    return <li><AniLink paintDrip duration={1} color='mediumspringgreen' to={node.node.url}
+                    className='nav-link'> {node.node.label} </AniLink></li>
                 }
-                return <li><AniLink paintDrip duration={1} color='mediumspringgreen' to={node.node.url}
-                className='nav-link'> {node.node.label} </AniLink></li>
             })}
         </>
     }
@@ -36,7 +49,6 @@ const DesktopNav = () => {
     return (
         <nav>
             <ul className='navbar-nav mr-auto navbar-desktop d-none d-md-flex flex-row justify-content-around'>
-                <img src={logo} alt='Logo'></img>
                 { navOutput( navData )}
             </ul>
         </nav>

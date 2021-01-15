@@ -9,6 +9,7 @@ export default class CardContainer extends Component {
 
     render() {
         return <section class={'card-container-module overflow-hidden my-5'}>
+            <h2>{this.props.module.title}</h2>
             <div class={'col-12 d-flex flex-wrap justify-content-between'}>
                 <LongCard title={'Project 1'} />
                 <HeroCard title={'Project 2'} />
