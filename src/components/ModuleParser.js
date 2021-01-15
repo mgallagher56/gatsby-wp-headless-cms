@@ -6,7 +6,7 @@ class ModuleParser extends Component {
         super(props);
 
         this.props = {
-            moduleData: [],
+            moduleData: ['test', 'test'],
         }
     }
 
