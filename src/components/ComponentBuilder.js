@@ -18,17 +18,24 @@ const Components = {
 };
 
 export default ( module ) => {
-    let moduleName = module.__typename.substr( 'WpPage_Pagebuilder_Layouts_'.length).toLowerCase()
-    console.log(module);
-    // component does exist
-    if (typeof Components[moduleName] !== "undefined") {
-        return React.createElement(Components[moduleName], {
-            module: module
-        });
+    if ( typeof module.__typename !== "undefined" ) {
+        let moduleName = module.__typename.substr( 'WpPage_Pagebuilder_Layouts_'.length).toLowerCase()
+        console.log(module);
+        // component does exist
+        if (typeof Components[moduleName] !== "undefined") {
+            return React.createElement(Components[moduleName], {
+                module: module
+            });
+        }
+        // component doesn't exist yet
+        return React.createElement(
+            () => <div>The component {moduleName} has not been created yet.</div>,
+            { key: module._uid }
+        );
+    } else {
+         // component doesn't exist yet
+         return React.createElement(
+            () => <div>Add modules in Wordpress to view them here</div>
+        );
     }
-    // component doesn't exist yet
-    return React.createElement(
-        () => <div>The component {moduleName} has not been created yet.</div>,
-        { key: module._uid }
-    );
 }

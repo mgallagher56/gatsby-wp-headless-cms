@@ -6,7 +6,10 @@ import { graphql } from "gatsby"
 
 const Page = ({ data }) => {
   const pageData = data.allWpPage.edges[0].node;
-  const modules = pageData.pageBuilder.layouts;
+  let modules = pageData.pageBuilder.layouts;
+  if (null === modules ) {
+      modules = ['test']
+  }
 
   return (
     <Layout>
