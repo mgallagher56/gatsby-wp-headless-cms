@@ -13,7 +13,7 @@ export default class HeroCard extends Component {
     }
 
     render() {
-        return <div class={'row my-3 mx-auto col-12 col-md-6 col-lg-4 '}>
+        return <div class={'my-3 mx-3 '}>
             <div class={'card hero-card'}>
                 <div class={'card-media col-12'}>
                     <img class={'w-100'} src={card_eg} alt={'card image'} />
