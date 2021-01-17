@@ -4,6 +4,7 @@ import Bubbles from '../Bubbles';
 import DesktopNav from '../DesktopNav';
 import { TimelineMax, Linear } from 'gsap';
 import line from '../../assets/images/horziontalLine.svg';
+import MobileNav from '../MobileNav';
 
 export default class NavBar extends Component {
     constructor(props) {
@@ -145,10 +146,6 @@ export default class NavBar extends Component {
     }
     
     render () {
-        let mobileNavStyle = {
-            height: `calc(100vh - 78px)`,
-        };
-
         return (
             <div ref={this.navBar}>
                 <nav className={'nav-mobile d-md-none position-relative w-100'}>
@@ -162,76 +159,7 @@ export default class NavBar extends Component {
                                 ref={this.burgerBottom} />
                         </span>
                     </div>
-                    <ul style={mobileNavStyle} ref={this.nav}
-                        className={`navbar-mobile flex-row flex-wrap w-100 position-fixed ${this.state.menuToggle ? 'open' : ''}`}>
-
-                        <Bubbles />
-
-                        <div className={'row w-100 h-25 m-0'}>
-                            <li className={'menu-item col-6 home'}>
-                                <AniLink fade duration={1}
-                                    color='mediumspringgreen' to='/'
-                                    className='nav-link'>
-                                    <p> Home </p>
-                                </AniLink>
-                            </li>
-                            <li className={'menu-item col-6 projects'}>
-                                <AniLink paintDrip duration={1}
-                                    color='mediumspringgreen'
-                                    to='/#projects' className='nav-link'>
-                                    <p> Projects </p>
-                                </AniLink>
-                            </li>
-                        </div>
-                        <div className={'row w-100 h-25 m-0'}>
-                            <li className={'menu-item col-6 technologies'}>
-                                <AniLink paintDrip duration={1}
-                                    color='mediumspringgreen'
-                                    to='/#technologies'
-                                    className='nav-link'>
-                                    <p> Technologies</p>
-                                </AniLink>
-                            </li>
-                            <li className={'menu-item col-6 about'}>
-                                <AniLink paintDrip duration={1}
-                                    color='mediumspringgreen' to='/#about'
-                                    className='nav-link'>
-                                    <p> About </p>
-                                </AniLink>
-                            </li>
-                        </div>
-                        <div className={'row w-100 h-25 m-0'}>
-                            <li className={'menu-item col-6 cv'}>
-                                <AniLink paintDrip duration={1}
-                                    color='mediumspringgreen' to='/cv'
-                                    className='nav-link'>
-                                    <p> My CV </p>
-                                </AniLink>
-                            </li>
-                            <li className={'menu-item col-6 baseplate'}>
-                                <AniLink paintDrip duration={1}
-                                    color='mediumspringgreen'
-                                    to='/baseplate' className='nav-link'>
-                                    <p> Baseplate </p>
-                                </AniLink>
-                            </li>
-                        </div>
-                        <div className={'row w-100 h-25 m-0'}>
-                            <li className={'menu-item col-6'}>
-                                <AniLink paintDrip duration={1}
-                                    color='mediumspringgreen' to='/old_site'
-                                    className='nav-link'>
-                                    <p> Old Site </p>
-                                </AniLink></li>
-                            <li className={'menu-item col-6'}>
-                                <AniLink paintDrip duration={1}
-                                    color='mediumspringgreen' to='/placeholder2'
-                                    className='nav-link'>
-                                    <p> placeholder2 </p>
-                                </AniLink>
-                            </li>
-                        </div>
-                    </ul>
+                    <MobileNav />
                 </nav>
                 <DesktopNav />
             </div>

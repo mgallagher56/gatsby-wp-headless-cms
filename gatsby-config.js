@@ -39,7 +39,7 @@ module.exports = {
           {
             resolve: `gatsby-source-wordpress-experimental`,
             options: {
-                url: process.env.WPGRAPHQL_URL,
+                url: 'https://mgr-dev.online/graphql',
                 verbose: true,
                 develop: {
                     hardCacheMediaFiles: true,
@@ -59,12 +59,16 @@ module.exports = {
                                 5000,
                     },
                 },
-                auth: {
-                    htaccess: {
-                        username: process.env.HTTPBASICAUTH_USERNAME,
-                        password: process.env.HTTPBASICAUTH_PASSWORD,
-                    },
-                },
+                schema: {
+                    requestConcurrency: 15, 
+                    previewRequestConcurrency: 5,
+                  }
+                // auth: {
+                //     htaccess: {
+                //         username: process.env.HTTPBASICAUTH_USERNAME,
+                //         password: process.env.HTTPBASICAUTH_PASSWORD,
+                //     },
+                // },
             },
         },
         {
