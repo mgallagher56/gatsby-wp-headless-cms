@@ -59,12 +59,12 @@ module.exports = {
                                 5000,
                     },
                 },
-                auth: {
-                    htaccess: {
-                        username: process.env.HTTPBASICAUTH_USERNAME,
-                        password: process.env.HTTPBASICAUTH_PASSWORD,
-                    },
-                },
+                // auth: {
+                //     htaccess: {
+                //         username: process.env.HTTPBASICAUTH_USERNAME,
+                //         password: process.env.HTTPBASICAUTH_PASSWORD,
+                //     },
+                // },
             },
         },
         {

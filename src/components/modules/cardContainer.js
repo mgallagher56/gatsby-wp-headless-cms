@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import GliderComponent from 'react-glider-carousel';
-import './../../assets/glider.css';
 import HeroCard from '../cards/heroCard';
 import LongCard from '../cards/longCard';
 
@@ -15,10 +14,10 @@ export default class CardContainer extends Component {
             hasArrows={true}
             hasDots={true}
             draggable={true}
-            arrows={{
-                prev: 'glider-prev',
-                next: 'glider-next'
-              }}
+            // arrows={{
+            //     prev: 'glider-prev',
+            //     next: 'glider-next'
+            //   }}
             settings={{
                 slidesToShow: '2.5',
                 slidesToScroll: 1,
@@ -33,8 +32,7 @@ export default class CardContainer extends Component {
                 <div><HeroCard title={'Project 4'} /></div>
                 <div><HeroCard title={'Project 5'} /></div>
                 <div><HeroCard title={'Project 6'} /></div>
-                <button aria-label="Previous" class="glider-prev">«</button>
-                <button aria-label="Next" class="glider-next">»</button> 
+
 
             </GliderComponent>
         )
