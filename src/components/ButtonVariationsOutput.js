@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Button from '../../components/Button';
+import Button from './Button';
 
 class ButtonVariationsOutput extends Component {
     static defaultProps = {

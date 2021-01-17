@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
-import Bubbles from '../Bubbles';
-import DesktopNav from '../DesktopNav';
+import Bubbles from './Bubbles';
+import DesktopNav from './DesktopNav';
 import { TimelineMax, Linear } from 'gsap';
 import line from '../../assets/images/horziontalLine.svg';
 

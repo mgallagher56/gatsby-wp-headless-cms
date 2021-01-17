@@ -32,9 +32,8 @@ export default class CardContainer extends Component {
                 <div><HeroCard title={'Project 4'} /></div>
                 <div><HeroCard title={'Project 5'} /></div>
                 <div><HeroCard title={'Project 6'} /></div>
-
-
             </GliderComponent>
+
         )
         // return <section class={'card-container-module overflow-hidden my-5'}>
         //     <h2>{this.props.module.title}</h2>

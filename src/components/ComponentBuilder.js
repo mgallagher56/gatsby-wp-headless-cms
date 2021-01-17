@@ -20,7 +20,6 @@ const Components = {
 export default ( module ) => {
     if ( typeof module.__typename !== "undefined" ) {
         let moduleName = module.__typename.substr( 'WpPage_Pagebuilder_Layouts_'.length).toLowerCase()
-        console.log(module);
         // component does exist
         if (typeof Components[moduleName] !== "undefined") {
             return React.createElement(Components[moduleName], {
