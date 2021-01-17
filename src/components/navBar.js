@@ -3,7 +3,7 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import Bubbles from './Bubbles';
 import DesktopNav from './DesktopNav';
 import { TimelineMax, Linear } from 'gsap';
-import line from '../../assets/images/horziontalLine.svg';
+import line from '../assets/images/horziontalLine.svg';
 
 export default class NavBar extends Component {
     constructor(props) {

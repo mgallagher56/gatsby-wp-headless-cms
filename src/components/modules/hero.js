@@ -8,10 +8,10 @@ export default class Hero extends Component {
 
     render() {
         return <section class={'hero-module mb-5'}> 
-            <div class={'row d-flex flex-column flex-md-row'}>
-                <div class={'hero-media d-flex col-12 col-md-7 overflow-hidden'}>
+            <div className={'row d-flex flex-column flex-md-row'}>
+                <div className={'hero-media d-flex col-12 col-md-7 overflow-hidden'}>
                     <img 
-                        class={'hero_image'}  
+                        className={'hero_image'}  
                         src={this.props.module.image.localFile.publicURL} 
                         alt={this.props.module.image.altText}
                      />
