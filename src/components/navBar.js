@@ -31,12 +31,13 @@ export default class NavBar extends Component {
         }));
         if (!this.state.menuToggle) {
             this.navAnimation.play();
-            document.body.style.position = 'fixed';
+            document.body.style.overflowY = 'hidden';
+            document.getElementById( 'navbar-mobile' ).style.top = window.scrollY + 'px';
             this.bubbleAnimation('play')
-
+ 
         } else {
             this.navAnimation.reverse();
-            document.body.style.position = '';
+            document.body.style.overflowY = 'visible';
             this.bubbleAnimation('pause')
         }
     }
@@ -145,92 +146,75 @@ export default class NavBar extends Component {
     }
     
     render () {
-        let mobileNavStyle = {
-            height: `calc(100vh - 78px)`,
-        };
-
         return (
             <div ref={this.navBar}>
-                <nav className={'nav-mobile d-md-none position-relative w-100'}>
-                    <div id={'nav-toggle'} className={'collapsable-nav d-md-none'}>
-                        <span onClick={this.handleClick}>
-                            <img src={line} className={'burger burgerTop'} alt={'burger-menu-top'}
-                                ref={this.burgerTop} />
-                            <img src={line} className={'burger burgerMiddle'} alt={'burger-menu-middle'}
-                                ref={this.burgerMiddle} />
-                            <img src={line} className={'burger burgerBottom'} alt={'burger-menu-bottom'}
-                                ref={this.burgerBottom} />
-                        </span>
-                    </div>
-                    <ul style={mobileNavStyle} ref={this.nav}
-                        className={`navbar-mobile flex-row flex-wrap w-100 position-fixed ${this.state.menuToggle ? 'open' : ''}`}>
-
-                        <Bubbles />
-
-                        <div className={'row w-100 h-25 m-0'}>
-                            <li className={'menu-item col-6 home'}>
-                                <AniLink fade duration={1}
-                                    color='mediumspringgreen' to='/'
-                                    className='nav-link'>
-                                    <p> Home </p>
-                                </AniLink>
-                            </li>
-                            <li className={'menu-item col-6 projects'}>
-                                <AniLink paintDrip duration={1}
-                                    color='mediumspringgreen'
-                                    to='/#projects' className='nav-link'>
-                                    <p> Projects </p>
-                                </AniLink>
-                            </li>
-                        </div>
-                        <div className={'row w-100 h-25 m-0'}>
-                            <li className={'menu-item col-6 technologies'}>
-                                <AniLink paintDrip duration={1}
-                                    color='mediumspringgreen'
-                                    to='/#technologies'
-                                    className='nav-link'>
-                                    <p> Technologies</p>
-                                </AniLink>
-                            </li>
-                            <li className={'menu-item col-6 about'}>
-                                <AniLink paintDrip duration={1}
-                                    color='mediumspringgreen' to='/#about'
-                                    className='nav-link'>
-                                    <p> About </p>
-                                </AniLink>
-                            </li>
-                        </div>
-                        <div className={'row w-100 h-25 m-0'}>
-                            <li className={'menu-item col-6 cv'}>
-                                <AniLink paintDrip duration={1}
-                                    color='mediumspringgreen' to='/cv'
-                                    className='nav-link'>
-                                    <p> My CV </p>
-                                </AniLink>
-                            </li>
-                            <li className={'menu-item col-6 baseplate'}>
-                                <AniLink paintDrip duration={1}
-                                    color='mediumspringgreen'
-                                    to='/baseplate' className='nav-link'>
-                                    <p> Baseplate </p>
-                                </AniLink>
-                            </li>
-                        </div>
-                        <div className={'row w-100 h-25 m-0'}>
-                            <li className={'menu-item col-6'}>
-                                <AniLink paintDrip duration={1}
-                                    color='mediumspringgreen' to='/old_site'
-                                    className='nav-link'>
-                                    <p> Old Site </p>
-                                </AniLink></li>
-                            <li className={'menu-item col-6'}>
-                                <AniLink paintDrip duration={1}
-                                    color='mediumspringgreen' to='/placeholder2'
-                                    className='nav-link'>
-                                    <p> placeholder2 </p>
-                                </AniLink>
-                            </li>
-                        </div>
+                <nav className={`nav-mobile d-flex d-md-none position-absolute justify-content-center w-100 ${this.state.menuToggle ? 'open' : ''}`}>
+                    <a id={'nav-toggle'} className={'collapsible-nav d-md-none d-flex flex-column justify-content-center'} onClick={this.handleClick}>
+                        <img src={line} className={'burger burgerTop'} alt={'burger-menu-top'}
+                            ref={this.burgerTop} />
+                        <img src={line} className={'burger burgerMiddle'} alt={'burger-menu-middle'}
+                            ref={this.burgerMiddle} />
+                        <img src={line} className={'burger burgerBottom'} alt={'burger-menu-bottom'}
+                            ref={this.burgerBottom} />
+                    </a>
+                    <ul id={ 'navbar-mobile' } ref={this.nav} className={'navbar-mobile flex-row flex-wrap w-100 h-100 position-absolute'}>
+                    <Bubbles />
+                        <li className={'menu-item home'}>
+                            <AniLink fade duration={1}
+                                color='mediumspringgreen' to='/'
+                                className='nav-link'>
+                                <p> Home </p>
+                            </AniLink>
+                        </li>
+                        <li className={'menu-item projects'}>
+                            <AniLink paintDrip duration={1}
+                                color='mediumspringgreen'
+                                to='/#projects' className='nav-link'>
+                                <p> Projects </p>
+                            </AniLink>
+                        </li>
+                        <li className={'menu-item technologies'}>
+                            <AniLink paintDrip duration={1}
+                                color='mediumspringgreen'
+                                to='/#technologies'
+                                className='nav-link'>
+                                <p> Technologies</p>
+                            </AniLink>
+                        </li>
+                        <li className={'menu-item about'}>
+                            <AniLink paintDrip duration={1}
+                                color='mediumspringgreen' to='/#about'
+                                className='nav-link'>
+                                <p> About </p>
+                            </AniLink>
+                        </li>
+                        <li className={'menu-item cv'}>
+                            <AniLink paintDrip duration={1}
+                                color='mediumspringgreen' to='/cv'
+                                className='nav-link'>
+                                <p> My CV </p>
+                            </AniLink>
+                        </li>
+                        <li className={'menu-item baseplate'}>
+                            <AniLink paintDrip duration={1}
+                                color='mediumspringgreen'
+                                to='/baseplate' className='nav-link'>
+                                <p> Baseplate </p>
+                            </AniLink>
+                        </li>
+                        <li className={'menu-item '}>
+                            <AniLink paintDrip duration={1}
+                                color='mediumspringgreen' to='/old_site'
+                                className='nav-link'>
+                                <p> Old Site </p>
+                            </AniLink></li>
+                        <li className={'menu-item'}>
+                            <AniLink paintDrip duration={1}
+                                color='mediumspringgreen' to='/placeholder2'
+                                className='nav-link'>
+                                <p> placeholder2 </p>
+                            </AniLink>
+                        </li>
                     </ul>
                 </nav>
                 <DesktopNav />

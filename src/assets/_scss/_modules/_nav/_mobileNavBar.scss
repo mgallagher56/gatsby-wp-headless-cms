@@ -1,24 +1,23 @@
-
 .nav-mobile {
-    .collapsable-nav {
-        background: map-get($colors, grey-portfolio);
-        padding: map-get($spacers, 3);
+    height: 100vh;
+
+    .collapsible-nav {
+        background: map-get($colors, pink-portfolio-dark);
+        padding: map-get($spacers, 1);
         position: fixed;
-        bottom: 0;
-        width: 100%;
+        border: 3px solid map-get($colors, white);
+        bottom: 2vh;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
         z-index: 100;
 
-        span {
-            cursor: pointer;
-            display: flex;
-            flex-direction: column;
-            height: 30px;
-            
-            img {
-                height: 10px;
-                margin-bottom: 0;
-                width: 30px;
-            }
+
+        .burger {
+            height: 25%;
+            margin-bottom: 0;
+            width: 75%;
+            margin: auto;
         }
     }
 
@@ -26,89 +25,106 @@
         display: none;
         height: 50px;
         width: 50px;
-        z-index: 90;
     }
 
-    .row {
-        margin: 0;
+    .navbar-mobile {
+        display: none;
+        transition: all 1s ease-in-out;
+        z-index: 95;
+        opacity: 0;
+        position: fixed;
+
+        &:before {
+            content: '';
+            height: 100%;
+            width: 100%;
+            background: map-get( $colors, black );
+            opacity: 0;
+            position: absolute;
+            transition: all 1s ease-in-out;
+        }
 
         li {
-            align-items: center;
-            background: transparent;
+            width: 50%;
             display: flex;
-            justify-content: center;
-            margin: 0;
-            z-index: 98;
 
             a {
-                display: flex;
-                height: 100%;
-                justify-content: center;
-                width: inherit;
+                color: map-get($colors, white-portfolio);
+                position: relative;
+                margin: auto;
 
-                p {
-                    bottom: 20%;
-                    color: map-get($colors, white-portfolio);
-                    position: absolute;
+                &:before {
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    content: '';
+                    display: block;
+                    height: 50px;
+                    position: relative;
+                    width: 50px;
+                    margin: auto;
+                    top: -15px;
                 }
             }
 
-            &:before {
-                background-repeat: no-repeat;
-                background-size: 100%;
-                content: '';
-                display: block;
-                height: 50px;
-                position: absolute;
-                width: 50px;
-            }
-
             &.home {
-                &:before {
-                    background-image: url("./images/001-property.svg");
+                a {
+                    &:before {
+                        background-image: url("./images/001-property.svg");
+                    }
                 }
             }
 
             &.projects {
-                &:before { 
-                    background-image: url("./images/003-folder.svg");
+                a {
+
+                    &:before {
+                        background-image: url("./images/003-folder.svg");
+                    }
                 }
             }
 
             &.technologies {
-                &:before {
-                    background-image: url("./images/002-electronics.svg");
+                a {
+                    &:before {
+                        background-image: url("./images/002-electronics.svg");
+                    }
                 }
             }
 
             &.about {
-                &:before {
-                    background-image: url("./images/005-information.svg");
+                a {
+                    &:before {
+                        background-image: url("./images/005-information.svg");
+                    }
                 }
             }
 
             &.cv {
-                &:before {
-                    background-image: url("./images/004-inbox.svg");
+                a {
+                    &:before {
+                        background-image: url("./images/004-inbox.svg");
+                    }
                 }
             }
 
             &.baseplate {
-                &:before {
-                    background-image: url("./images/007-equalizer.svg");
+                a {
+                    &:before {
+                        background-image: url("./images/007-equalizer.svg");
+                    }
                 }
             }
         }
     }
 
-
-    .navbar-mobile {
-        display: block;
-        transition: all 1s ease-in-out;
-
-        &.open {
+    &.open {
+        .navbar-mobile {
             display: flex;
-            z-index: 90;
+            opacity: 1;
+            
+            &:before {
+                opacity: .4;
+            }
 
             .bubble {
                 display: block;
@@ -121,6 +137,7 @@
 }
 
 @include media-breakpoint-up(md) {
+
     .nav-mobile,
     .navbar-mobile {
         display: none;
