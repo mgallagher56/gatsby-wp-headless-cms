@@ -20,7 +20,23 @@ module.exports = {
         'gatsby-plugin-react-helmet',
         `gatsby-plugin-sass`,
         `gatsby-plugin-transition-link`,
-        `gatsby-plugin-sharp`,     
+        `gatsby-plugin-sharp`,
+        {
+            resolve: 'gatsby-plugin-manifest',
+            options: {
+               icon: 'icon.svg',
+               cache_busting_mode: 'none'
+            }
+        },
+        {
+            resolve: 'gatsby-plugin-offline',
+            options: {
+               workboxConfig: {
+                  globPatterns: ['**/icon-path*']
+               }
+            }
+        },
+        `gatsby-plugin-netlify`,
         `gatsby-plugin-netlify-cache`,
         {
             resolve: `gatsby-source-filesystem`,
