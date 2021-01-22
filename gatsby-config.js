@@ -24,7 +24,7 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-manifest',
             options: {
-            //    icon: 'icon.svg',
+               icon: 'icon.svg',
                cache_busting_mode: 'none'
             }
         },
@@ -32,7 +32,7 @@ module.exports = {
             resolve: 'gatsby-plugin-offline',
             options: {
                workboxConfig: {
-                //   globPatterns: ['**/icon-path*']
+                  globPatterns: ['**/icon-path*']
                }
             }
         },

@@ -52,6 +52,7 @@
                 color: map-get($colors, white-portfolio);
                 position: relative;
                 margin: auto;
+                padding: 100px;
 
                 &:before {
                     background-repeat: no-repeat;
@@ -118,6 +119,10 @@
     }
 
     &.open {
+        .collapsible-nav {
+            margin-right: 15px;
+        }
+        
         .navbar-mobile {
             display: flex;
             opacity: 1;
@@ -125,6 +130,7 @@
             &:before {
                 opacity: .4;
             }
+
 
             .bubble {
                 display: block;
