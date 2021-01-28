@@ -21,13 +21,13 @@ module.exports = {
         `gatsby-plugin-sass`,
         `gatsby-plugin-transition-link`,
         `gatsby-plugin-sharp`,
-        {
-            resolve: 'gatsby-plugin-manifest',
-            options: {
-               icon: 'icon.svg',
-               cache_busting_mode: 'none'
-            }
-        },
+        // {
+        //     resolve: 'gatsby-plugin-manifest',
+        //     options: {
+        //        icon: 'icon.svg',
+        //        cache_busting_mode: 'none'
+        //     }
+        // },
         {
             resolve: 'gatsby-plugin-offline',
             options: {

@@ -150,26 +150,25 @@ export default class NavBar extends Component {
             <div ref={this.navBar}>
                 <nav className={`nav-mobile d-flex d-md-none position-absolute justify-content-center w-100 ${this.state.menuToggle ? 'open' : ''}`}>
                     <a id={'nav-toggle'} className={'collapsible-nav d-md-none d-flex flex-column justify-content-center'} onClick={this.handleClick}>
-                        <img src={line} className={'burger burgerTop'} alt={'burger-menu-top'}
-                            ref={this.burgerTop} />
-                        <img src={line} className={'burger burgerMiddle'} alt={'burger-menu-middle'}
-                            ref={this.burgerMiddle} />
-                        <img src={line} className={'burger burgerBottom'} alt={'burger-menu-bottom'}
-                            ref={this.burgerBottom} />
+                    <svg width="55" height="50" viewBox="0 0 100 100">
+                        <path class="menu-icon line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="menu-icon line2" d="M 20,50 H 80" />
+                        <path class="menu-icon line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
                     </a>
                     <ul id={ 'navbar-mobile' } ref={this.nav} className={'navbar-mobile flex-row flex-wrap w-100 h-100 position-absolute'}>
                     <Bubbles />
                         <li className={'menu-item home'}>
                             <AniLink fade duration={1}
                                 color='mediumspringgreen' to='/'
-                                className='nav-link'>
+                                className='nav-link w-100 h-100'>
                                 <p> Home </p>
                             </AniLink>
                         </li>
                         <li className={'menu-item projects'}>
                             <AniLink paintDrip duration={1}
                                 color='mediumspringgreen'
-                                to='/#projects' className='nav-link'>
+                                to='/#projects' className='nav-link w-100 h-100'>
                                 <p> Projects </p>
                             </AniLink>
                         </li>
@@ -177,42 +176,29 @@ export default class NavBar extends Component {
                             <AniLink paintDrip duration={1}
                                 color='mediumspringgreen'
                                 to='/#technologies'
-                                className='nav-link'>
+                                className='nav-link w-100 h-100'>
                                 <p> Technologies</p>
                             </AniLink>
                         </li>
                         <li className={'menu-item about'}>
                             <AniLink paintDrip duration={1}
-                                color='mediumspringgreen' to='/#about'
-                                className='nav-link'>
-                                <p> About </p>
-                            </AniLink>
-                        </li>
-                        <li className={'menu-item cv'}>
-                            <AniLink paintDrip duration={1}
-                                color='mediumspringgreen' to='/cv'
-                                className='nav-link'>
-                                <p> My CV </p>
+                                color='mediumspringgreen' to='/experience'
+                                className='nav-link w-100 h-100'>
+                                <p> Experience </p>
                             </AniLink>
                         </li>
                         <li className={'menu-item baseplate'}>
                             <AniLink paintDrip duration={1}
                                 color='mediumspringgreen'
-                                to='/baseplate' className='nav-link'>
+                                to='/baseplate' className='nav-link w-100 h-100'>
                                 <p> Baseplate </p>
                             </AniLink>
                         </li>
-                        <li className={'menu-item '}>
-                            <AniLink paintDrip duration={1}
-                                color='mediumspringgreen' to='/old_site'
-                                className='nav-link'>
-                                <p> Old Site </p>
-                            </AniLink></li>
                         <li className={'menu-item'}>
                             <AniLink paintDrip duration={1}
                                 color='mediumspringgreen' to='/placeholder2'
-                                className='nav-link'>
-                                <p> placeholder2 </p>
+                                className='nav-link w-100 h-100'>
+                                <p> Contact </p>
                             </AniLink>
                         </li>
                     </ul>
