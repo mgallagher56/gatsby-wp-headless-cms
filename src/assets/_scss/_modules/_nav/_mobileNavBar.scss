@@ -7,10 +7,16 @@
         border: 3px solid map-get( $colors, white );
         bottom: 2vh;
         height: 60px;
+        cursor: pointer;
         position: fixed;
-        transition: all 1s ease-in-out;
+        transition: transform .3s, box-shadow .3s ease-in-out;
         width: 60px;
         z-index: 100;
+
+        &:hover {
+            box-shadow: 4px -4px 8px rgba(#fff, .3 ), -4px 4px 8px rgba(#fff, .3 );
+            transform: scaleX( 1.1 ) scaleY( 1.1 ) translateY( -3px );
+        }
 
         &:before {
             background: map-get( $colors, blue-portfolio-light );
@@ -70,7 +76,7 @@
 
                 p {
                     position: relative;
-                    top: 75%;
+                    top: calc( 50% + 30px );
                     left: 50%;
                     transform: translateX( -50% );
                     width: max-content;
