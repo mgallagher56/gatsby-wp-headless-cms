@@ -3,7 +3,6 @@ import React from "react"
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import { useStaticQuery, graphql } from "gatsby"
 import Bubbles from "./Bubbles";
-import { toLowerCase } from "mozjpeg";
 
 const MobileNavItems = () => {
     const navData = useStaticQuery(graphql`

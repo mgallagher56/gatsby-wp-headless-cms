@@ -1,15 +1,12 @@
 import React  from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import ModuleParser from '../components/ModuleParser'
 import { graphql } from "gatsby"
+import ModuleParser from '../components/ModuleParser'
 
 const Page = ({ data }) => {
   const pageData = data.allWpPage.edges[0].node;
-  let modules = pageData.pageBuilder.layouts;
-  if (null === modules ) {
-      modules = ['test']
-  }
+  const modules = pageData.pageBuilder.layouts;
 
   return (
     <Layout>

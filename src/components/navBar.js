@@ -160,14 +160,16 @@ export default class NavBar extends Component {
                         <li className={'menu-item home'}>
                             <AniLink fade duration={1}
                                 color='mediumspringgreen' to='/'
-                                className='nav-link w-100 h-100'>
+                                className='nav-link w-100 h-100'
+                                onClick={this.handleClick}>
                                 <p> Home </p>
                             </AniLink>
                         </li>
                         <li className={'menu-item projects'}>
                             <AniLink paintDrip duration={1}
                                 color='mediumspringgreen'
-                                to='/#projects' className='nav-link w-100 h-100'>
+                                to='/projects' className='nav-link w-100 h-100'
+                                onClick={this.handleClick}>
                                 <p> Projects </p>
                             </AniLink>
                         </li>
@@ -175,28 +177,32 @@ export default class NavBar extends Component {
                             <AniLink paintDrip duration={1}
                                 color='mediumspringgreen'
                                 to='/#technologies'
-                                className='nav-link w-100 h-100'>
+                                className='nav-link w-100 h-100'
+                                onClick={this.handleClick}>
                                 <p> Technologies</p>
                             </AniLink>
                         </li>
                         <li className={'menu-item about'}>
                             <AniLink paintDrip duration={1}
                                 color='mediumspringgreen' to='/experience'
-                                className='nav-link w-100 h-100'>
+                                className='nav-link w-100 h-100'
+                                onClick={this.handleClick}>
                                 <p> Experience </p>
                             </AniLink>
                         </li>
                         <li className={'menu-item baseplate'}>
                             <AniLink paintDrip duration={1}
                                 color='mediumspringgreen'
-                                to='/baseplate' className='nav-link w-100 h-100'>
+                                to='/baseplate' className='nav-link w-100 h-100'
+                                onClick={this.handleClick}>
                                 <p> Baseplate </p>
                             </AniLink>
                         </li>
                         <li className={'menu-item'}>
                             <AniLink paintDrip duration={1}
                                 color='mediumspringgreen' to='/placeholder2'
-                                className='nav-link w-100 h-100'>
+                                className='nav-link w-100 h-100'
+                                onClick={this.handleClick}>
                                 <p> Contact </p>
                             </AniLink>
                         </li>

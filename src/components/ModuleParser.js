@@ -7,7 +7,7 @@ class ModuleParser extends Component {
     }
 
     static defaultProps = {
-        module: [],
+        moduleData: [],
         moduleName: ''
     }
 
@@ -17,7 +17,7 @@ class ModuleParser extends Component {
                 this.props.moduleData.map( ( module ) => {
                     let moduleName = typeof module.__typename === 'undefined' ?
                     this.props.moduleName : module.__typename.substr( 'WpPage_Pagebuilder_Layouts_'.length).toLowerCase();
-                    // console.log(moduleName);
+                    console.log(moduleName);
                     return ComponentBuilder( module, moduleName );
                 })
             }

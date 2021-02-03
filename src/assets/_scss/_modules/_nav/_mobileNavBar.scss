@@ -60,6 +60,7 @@
 
             a {
                 color: map-get($colors, white-portfolio);
+                z-index: 100;
 
                 &:before {
                     background-repeat: no-repeat;
