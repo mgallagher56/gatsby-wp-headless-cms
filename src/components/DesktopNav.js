@@ -47,7 +47,7 @@ const DesktopNav = () => {
 
 
     return (
-        <nav>
+        <nav className={'container'}>
             <ul className='navbar-nav mr-auto navbar-desktop d-none d-md-flex flex-row justify-content-around'>
                 { navOutput( navData )}
             </ul>

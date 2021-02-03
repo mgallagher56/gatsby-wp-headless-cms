@@ -146,7 +146,7 @@ export default class NavBar extends Component {
     
     render () {
         return (
-            <div className={'container'} ref={this.navBar}>
+            <div ref={this.navBar}>
                 <nav className={`nav-mobile d-flex d-md-none position-absolute justify-content-center w-100 ${this.state.menuToggle ? 'open' : ''}`}>
                     <a id={'nav-toggle'} className={'collapsible-nav d-md-none d-flex flex-column justify-content-center'} onClick={this.handleClick}>
                     <svg width="55" height="45" viewBox="0 0 100 100">
