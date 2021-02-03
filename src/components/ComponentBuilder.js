@@ -6,6 +6,8 @@ import Wysiwyg4Col from './modules/wysiwyg4-col';
 import WysiwygMedia from './modules/wysiwyg-media';
 import CardContainer from './modules/cardContainer';
 import Hero from './modules/hero';
+import HeroCard from "./cards/heroCard";
+import LongCard from "./cards/longCard";
 
 const Components = {
         wysiwyg1col    : Wysiwyg1Col ,
@@ -14,12 +16,13 @@ const Components = {
         wysiwyg4col    : Wysiwyg4Col,
         wysiwygmedia   : WysiwygMedia,
         cardcontainer  : CardContainer,
-        hero           : Hero
+        hero           : Hero,
+        herocard       : HeroCard,
+        longcard       : LongCard
 };
 
-export default ( module ) => {
-    if ( typeof module.__typename !== "undefined" ) {
-        let moduleName = module.__typename.substr( 'WpPage_Pagebuilder_Layouts_'.length).toLowerCase()
+export default ( module, moduleName ) => {
+    if ( moduleName !== '' ) {
         // component does exist
         if (typeof Components[moduleName] !== "undefined") {
             return React.createElement(Components[moduleName], {

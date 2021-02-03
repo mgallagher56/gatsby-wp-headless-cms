@@ -4,7 +4,6 @@ import { graphql } from "gatsby"
 
 export default ({ data }) => {
   const post = data.allWpPost.edges[0].node
-  console.log(post)
   return (
     <Layout>
       <div>
@@ -46,8 +45,22 @@ export const query = graphql`
                             }
                             ... on WpPost_Pagebuilder_Layouts_CardContainer {
                                 fieldGroupName
+                                cardType
                                 title
-                            }
+                                cards {
+                                  buttonText
+                                  content
+                                  fieldGroupName
+                                  subtitle
+                                  title
+                                  url
+                                  image {
+                                    localFile {
+                                      publicURL
+                                    }
+                                  }
+                                }
+                              }
                             ... on WpPost_Pagebuilder_Layouts_WysiwygMedia {
                                 fieldGroupName
                                 wysiwygContent

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import GliderComponent from 'react-glider-carousel';
-import HeroCard from '../cards/heroCard';
-import LongCard from '../cards/longCard';
+import ModuleParser from '../ModuleParser';
 
 export default class CardContainer extends Component {
     constructor( props ) {
@@ -9,6 +8,9 @@ export default class CardContainer extends Component {
     }
     
     render() {
+        let cards = this.props.module.cards;
+        let cardType = this.props.module.cardType;
+
         return(
             <GliderComponent
             hasArrows={true}
@@ -19,19 +21,14 @@ export default class CardContainer extends Component {
             //     next: 'glider-next'
             //   }}
             settings={{
-                slidesToShow: '2.5',
+                slidesToShow: '3.5',
                 slidesToScroll: 1,
                 scrollLock: false,
                 rewind: true,
                 draggable: true,
                 duration: 1
             }}>
-                <div><HeroCard title={'Project 1'} /></div>
-                <div><HeroCard title={'Project 2'} /></div>
-                <div><HeroCard title={'Project 3'} /></div>
-                <div><HeroCard title={'Project 4'} /></div>
-                <div><HeroCard title={'Project 5'} /></div>
-                <div><HeroCard title={'Project 6'} /></div>
+            <ModuleParser moduleData={ cards } moduleName={ cardType } />
             </GliderComponent>
 
         )

@@ -47,8 +47,22 @@ export const pageQuery = graphql`
                             }
                             ... on WpPage_Pagebuilder_Layouts_CardContainer {
                                 fieldGroupName
+                                cardType
                                 title
-                            }
+                                cards {
+                                  buttonText
+                                  content
+                                  fieldGroupName
+                                  subtitle
+                                  title
+                                  url
+                                  image {
+                                    localFile {
+                                      publicURL
+                                    }
+                                  }
+                                }
+                              }
                             ... on WpPage_Pagebuilder_Layouts_WysiwygMedia {
                                 fieldGroupName
                                 wysiwygContent

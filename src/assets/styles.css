@@ -7433,6 +7433,12 @@ a.text-dark:hover, a.text-dark:focus {
 
 .hero-card {
   color: #1648FF; }
+  .hero-card .card-media {
+    height: 100%;
+    width: 100%; }
+    .hero-card .card-media img {
+      height: inherit;
+      object-fit: cover; }
 
 button,
 .btn {

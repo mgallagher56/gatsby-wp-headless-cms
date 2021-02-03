@@ -135,9 +135,7 @@ export default class NavBar extends Component {
                         })
                         break;
                     case 'pause':
-                        console.log('should pause here')
                         timelineArray.map((timeline) => {
-                            console.log('and here');
                             timeline.kill();
                         })
                         break;

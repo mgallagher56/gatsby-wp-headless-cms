@@ -7,7 +7,6 @@ import ModuleParser from "../components/ModuleParser"
 const Page = ({ data }) => {
   const pageData = data.allWpPage.edges[0].node;
   const modules = pageData.pageBuilder.layouts;
-  console.log(modules);
 
   return (
     <Layout>
@@ -45,7 +44,21 @@ export const homepageQuery = graphql`
                             }
                             ... on WpPage_Pagebuilder_Layouts_CardContainer {
                                 fieldGroupName
+                                cardType
                                 title
+                                cards {
+                                    buttonText
+                                    content
+                                    fieldGroupName
+                                    subtitle
+                                    title
+                                    url
+                                    image {
+                                        localFile {
+                                            publicURL
+                                        }
+                                    }
+                                }
                             }
                             ... on WpPage_Pagebuilder_Layouts_WysiwygMedia {
                                 fieldGroupName

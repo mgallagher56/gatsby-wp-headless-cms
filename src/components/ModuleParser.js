@@ -4,17 +4,21 @@ import ComponentBuilder from './ComponentBuilder'
 class ModuleParser extends Component {
     constructor(props){
         super(props);
+    }
 
-        this.props = {
-            moduleData: [],
-        }
+    static defaultProps = {
+        module: [],
+        moduleName: ''
     }
 
     render() {
         return <>
-            { 
+            {
                 this.props.moduleData.map( ( module ) => {
-                    return ComponentBuilder( module )
+                    let moduleName = typeof module.__typename === 'undefined' ?
+                    this.props.moduleName : module.__typename.substr( 'WpPage_Pagebuilder_Layouts_'.length).toLowerCase();
+                    // console.log(moduleName);
+                    return ComponentBuilder( module, moduleName );
                 })
             }
         </>

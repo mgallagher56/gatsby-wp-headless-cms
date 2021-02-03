@@ -1,3 +1,13 @@
 .hero-card {
     color: map-get( $colors, blue-portfolio );
+
+    .card-media {
+        height: 100%;
+        width: 100%;
+
+        img {
+            height: inherit;
+            object-fit: cover;
+        }
+    }
 }
