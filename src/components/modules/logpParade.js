@@ -8,16 +8,18 @@ export default class LogoParade extends Component {
     }
 
     render() {
-        return <section class={'row'}>
-            <div class={'col-12 d-flex flex-wrap justify-content-center'}>
-                <img class={'col-2'} src={card_eg} alt={'card image'} />
-                <img class={'col-2'} src={card_eg} alt={'card image'} />
-                <img class={'col-2'} src={card_eg} alt={'card image'} />
-                <img class={'col-2'} src={card_eg} alt={'card image'} />
-                <img class={'col-2'} src={card_eg} alt={'card image'} />
-                <img class={'col-2'} src={card_eg} alt={'card image'} />
-                <img class={'col-2'} src={card_eg} alt={'card image'} />
-                <img class={'col-2'} src={card_eg} alt={'card image'} />
+        return <section class={'conatiner'}>
+            <div className={'row'}>
+                <div class={'col-12 d-flex flex-wrap justify-content-center'}>
+                    <img class={'col-2'} src={card_eg} alt={'card image'} />
+                    <img class={'col-2'} src={card_eg} alt={'card image'} />
+                    <img class={'col-2'} src={card_eg} alt={'card image'} />
+                    <img class={'col-2'} src={card_eg} alt={'card image'} />
+                    <img class={'col-2'} src={card_eg} alt={'card image'} />
+                    <img class={'col-2'} src={card_eg} alt={'card image'} />
+                    <img class={'col-2'} src={card_eg} alt={'card image'} />
+                    <img class={'col-2'} src={card_eg} alt={'card image'} />
+                </div>
             </div>
         </section>
     }

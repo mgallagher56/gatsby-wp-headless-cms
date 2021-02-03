@@ -7393,9 +7393,17 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media (min-width: 768px) {
   .navbar-nav {
-    background: #FF475A;
     height: 100px;
     align-items: center; }
+    .navbar-nav:before {
+      content: '';
+      background: #FF475A;
+      box-shadow: 0 4px 10px RGBA(256, 256, 256, 0.8);
+      height: 100px;
+      width: 200vw;
+      left: -50vw;
+      position: absolute;
+      z-index: -1; }
     .navbar-nav .navbar-desktop {
       display: none;
       appearance: none; }
@@ -7426,11 +7434,13 @@ a.text-dark:hover, a.text-dark:focus {
 
 .long-card {
   max-height: 250px;
-  color: #1648FF; }
+  color: #1648FF;
+  overflow: hidden; }
   .long-card .card-media {
     left: 0; }
   .long-card img {
-    max-height: 199px; }
+    width: inherit;
+    object-fit: cover; }
 
 .hero-card {
   color: #1648FF; }

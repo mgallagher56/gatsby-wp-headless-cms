@@ -1,12 +1,14 @@
 .long-card {
     max-height: 250px;
     color: map-get( $colors, blue-portfolio );
+    overflow: hidden;
 
     .card-media {
         left: 0;
     }
 
     img {
-        max-height: 199px;
+        width: inherit;
+        object-fit: cover;
     }
 }

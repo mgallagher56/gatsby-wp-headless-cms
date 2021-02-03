@@ -11,8 +11,10 @@ export default class Wysiwyg1Col extends Component {
 
     render() {
         return <section class={'wysiwyg1-col ' + this.state.margin}> 
-            <div class={'row'}>
-                <div className={'wysiwyg-content col-12'} dangerouslySetInnerHTML={{__html: this.props.module.wysiwyg }} />
+            <div class={'container'}>
+                <div class={'row'}>
+                    <div className={'wysiwyg-content col-12'} dangerouslySetInnerHTML={{__html: this.props.module.wysiwyg }} />
+                </div>
             </div>
         </section>
     }

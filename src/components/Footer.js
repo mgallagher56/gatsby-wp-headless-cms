@@ -1,7 +1,7 @@
 import React from "react"
 
 const Footer = () => (
-    <footer style={{
+    <footer className={'container'} style={{
         marginTop: `2rem`,
         }}>
         © {new Date().getFullYear()}, Built with

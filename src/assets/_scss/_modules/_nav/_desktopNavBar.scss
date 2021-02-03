@@ -9,9 +9,19 @@
 
 @include media-breakpoint-up(md) {
     .navbar-nav {
-        background: map-get($colors, pink-portfolio-dark);
         height: 100px;
         align-items: center;
+        
+        &:before {
+            content: '';
+            background: map-get($colors, pink-portfolio-dark);
+            box-shadow: 0 4px 10px RGBA( 256, 256, 256, 0.8);
+            height: 100px;
+            width: 200vw;
+            left: -50vw;
+            position: absolute;
+            z-index: -1;
+        }
 
         .navbar-desktop {
             display: none;
