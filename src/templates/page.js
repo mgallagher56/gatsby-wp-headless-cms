@@ -8,12 +8,21 @@ const Page = ({ data }) => {
   const pageData = data.allWpPage.edges[0].node;
   const modules = pageData.pageBuilder.layouts;
 
-  return (
-    <Layout>
-      <SEO title={pageData.title} />
-      <ModuleParser moduleData={modules} />
-    </Layout>
-  )
+  if ( null !== modules) {
+    return (
+        <Layout>
+        <SEO title={pageData.title} />
+        <ModuleParser moduleData={modules} />
+        </Layout>
+    )
+    } else {
+        return ( 
+            <Layout>
+            <SEO title={pageData.title} />
+            <h2>No modules found</h2>
+            </Layout>
+        )
+    }
 }
 
 export default Page
