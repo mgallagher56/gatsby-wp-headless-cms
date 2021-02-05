@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './../assets/styles.css';
-import BaseplateColors from '../components/colors';
-import ButtonVariationsOutput from '../components/ButtonVariationsOutput';
-import ColorCombinations from '../components/ColorCombinations';
+import BaseplateColors from '../components/template-parts/colors';
+import ButtonVariationsOutput from '../components/template-parts/ButtonVariationsOutput';
+import ColorCombinations from '../components/template-parts/ColorCombinations';
 import Layout from "../components/layout"
 
 export default class Baseplate extends Component {
