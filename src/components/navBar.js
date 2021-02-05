@@ -3,10 +3,6 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import Bubbles from './Bubbles';
 import DesktopNav from './DesktopNav';
 import { TimelineMax, Linear } from 'gsap';
-<<<<<<< HEAD
-=======
-import line from '../../assets/images/horziontalLine.svg';
->>>>>>> parent of 4bf9243... fixed import paths after moving components out of template-parts folder
 
 export default class NavBar extends Component {
     constructor(props) {
