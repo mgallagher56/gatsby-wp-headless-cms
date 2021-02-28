@@ -42,7 +42,11 @@ export const pageQuery = graphql`
                                 wysiwyg
                                 image {
                                     localFile {
-                                        publicURL
+                                        childImageSharp {
+                                            fluid {
+                                              srcWebp
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -56,19 +60,24 @@ export const pageQuery = graphql`
                                 cardType
                                 title
                                 cards {
-                                  buttonText
-                                  content
-                                  fieldGroupName
-                                  subtitle
-                                  title
-                                  url
-                                  image {
-                                    localFile {
-                                      publicURL
-                                    }
-                                  }
+                                    buttonText
+                                    content
+                                    fieldGroupName
+                                    subtitle
+                                    title
+                                    url
+                                    image {
+                                        localFile {
+                                            publicURL
+                                            childImageSharp {
+                                                fluid {
+                                                    srcWebp
+                                                }
+                                            }                                    
+                                        }
+                                    }   
                                 }
-                              }
+                            }
                             ... on WpPage_Pagebuilder_Layouts_WysiwygMedia {
                                 fieldGroupName
                                 wysiwygContent
@@ -77,7 +86,11 @@ export const pageQuery = graphql`
                                     sourceUrl
                                     localFile {
                                         id
-                                        publicURL
+                                        childImageSharp {
+                                            fluid {
+                                              srcWebp
+                                            }
+                                        }
                                     }
                                 }
                             }

@@ -33,7 +33,11 @@ export const homepageQuery = graphql`
                                 wysiwyg
                                 image {
                                     localFile {
-                                        publicURL
+                                        childImageSharp {
+                                            fluid {
+                                              srcWebp
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -56,6 +60,11 @@ export const homepageQuery = graphql`
                                     image {
                                         localFile {
                                             publicURL
+                                            childImageSharp {
+                                                fluid {
+                                                  srcWebp
+                                                }
+                                            }                                        
                                         }
                                     }
                                 }
@@ -67,8 +76,13 @@ export const homepageQuery = graphql`
                                     altText
                                     sourceUrl
                                     localFile {
-                                        id
                                         publicURL
+                                        id
+                                        childImageSharp {
+                                            fluid {
+                                              srcWebp
+                                            }
+                                        }                                    
                                     }
                                 }
                             }

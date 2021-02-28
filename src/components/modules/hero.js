@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
-import hero_image from '../../assets/images/stock_languages.jpeg'
 
 export default class Hero extends Component {
-    constructor( props ) {
-        super( props );
-    }
 
     render() {
         return <section class={'hero-module mb-5 mt-md-5'}> 
@@ -13,7 +9,7 @@ export default class Hero extends Component {
                     <div className={'hero-media d-flex col-12 col-md-7 overflow-hidden'}>
                         <img 
                             className={'hero_image'}  
-                            src={this.props.module.image.localFile.publicURL} 
+                            src={this.props.module.image.localFile.childImageSharp.fluid.srcWebp} 
                             alt={this.props.module.image.altText}
                         />
                     </div>
