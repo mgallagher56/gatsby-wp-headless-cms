@@ -10,9 +10,12 @@ export default class LongCard extends Component {
     }
 
     render() {
+        let imageSrc = null !== this.props.module.image.localFile.childImageSharp ?
+        this.props.module.image.localFile.childImageSharp.fluid.srcWebp : this.props.module.image.localFile.publicURL;
+        
         return <div class={'card long-card row col-12 p-0 mb-3 mx-auto'}>
             <div class={'card-media col-6 col-md-7 h-100 p-0'}>
-                <img class={'img-fluid'} src={this.props.module.image.localFile.childImageSharp.fluid.srcWebp} alt={''} />
+                <img class={'img-fluid'} src={imageSrc} alt={''} />
             </div>
             <div class={'card-content col-6 col-md-5 p-2'}>
                 <h3>{this.props.module.title}</h3>

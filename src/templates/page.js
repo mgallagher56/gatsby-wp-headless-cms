@@ -42,6 +42,7 @@ export const pageQuery = graphql`
                                 wysiwyg
                                 image {
                                     localFile {
+                                        publicURL
                                         childImageSharp {
                                             fluid {
                                               srcWebp
@@ -86,6 +87,7 @@ export const pageQuery = graphql`
                                     sourceUrl
                                     localFile {
                                         id
+                                        publicURL
                                         childImageSharp {
                                             fluid {
                                               srcWebp

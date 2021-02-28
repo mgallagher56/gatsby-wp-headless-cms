@@ -10,8 +10,8 @@ export default class HeroCard extends Component {
     }
 
     render() {
-        let imageSrc = null !== this.props.module.image.localFile.childImageSharp ? this.props.module.image.localFile.childImageSharp.fluid.srcWebp : this.props.module.image.localFile.publicURL;
-        console.log(this.props.module.image.localFile);
+        let imageSrc = null !== this.props.module.image.localFile.childImageSharp ?
+        this.props.module.image.localFile.childImageSharp.fluid.srcWebp : this.props.module.image.localFile.publicURL;
         return <>
             <div class={'card hero-card my-3 mx-3'}>
                 <div class={'card-media'}>

@@ -58,6 +58,7 @@ exports.createPages = ({ graphql, actions }) => {
                         wysiwyg
                         image {
                             localFile {
+                                publicURL
                                 childImageSharp {
                                     fluid {
                                       srcWebp
@@ -102,6 +103,7 @@ exports.createPages = ({ graphql, actions }) => {
                           sourceUrl
                           localFile {
                             id
+                            publicURL
                             childImageSharp {
                                 fluid {
                                   srcWebp

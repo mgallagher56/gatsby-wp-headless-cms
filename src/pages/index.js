@@ -33,6 +33,7 @@ export const homepageQuery = graphql`
                                 wysiwyg
                                 image {
                                     localFile {
+                                        publicURL
                                         childImageSharp {
                                             fluid {
                                               srcWebp
