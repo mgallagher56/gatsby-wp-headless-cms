@@ -11,9 +11,6 @@ export default class Baseplate extends Component {
             <Layout>
                 <div className='baseplate'>
                     <div className='baseplate-main container-lg justify-content-center'>
-                    <header className='App-header'>
-                        <h1 className={ 'baseplateTitle' }>Hello Baseplate!</h1>
-                    </header>
                         <div className='typography sectionTitle'>
                             <h2>Typography</h2>
                             <h3>Font Styles</h3>

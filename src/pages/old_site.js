@@ -12,13 +12,12 @@ export default class oldSite extends Component {
         return (
             <Layout>
                 <div id='oldSite'>
-                    {/* <NavBar /> */} 
                     <div id='oldNav'>
                         <img class='burger' src='img/burger.svg'></img>
                         <ul class='menu'>
-                            <h1 class="logo">MGR</h1>
+                            <li><a href="/"><h1 class="logo">MGR</h1></a></li>
+                            <li class='nav-link about'><a href='/'>New Site</a></li>
                             <li class='nav-link '><a href='#portfolio'>Portfolio</a></li>
-                            <li class='nav-link about'><a href='#about'>About Me</a></li>
                             <li class='nav-link '><a target="_blank" href='img/Marc%20Gallagher-Reid%20-%20CV%20.pdf'>My CV</a></li>
                             <li class='nav-link '><a href='#contact'>Contact</a></li>
                             <li class='oldSocial linkedIn'><a href='https://www.linkedin.com/in/marcgallagherreid/'><img alt="linkedIn" src={linkedInImg}></img></a></li>
@@ -30,7 +29,7 @@ export default class oldSite extends Component {
                     <div class='burgerMenu'>
                         <ul class='burgerMenu'>
                             <li class='burgerItem'><a href='#portfolio'>Portfolio</a></li>
-                            <li class='burgerItem'><a href='#about'>About Me</a></li>
+                            <li class='burgerItem'><a href='/'>New Site</a></li>
                             <li class='burgerItem'><a target="_blank" href='../assets/images/Marc%20Gallagher-Reid%20-%20CV.pdf'>My CV</a></li>
                             <li class='burgerItem'><a href='#contact'>Contact</a></li>
                         </ul>

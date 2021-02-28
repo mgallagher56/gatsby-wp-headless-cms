@@ -42,38 +42,48 @@ module.exports = {
               // The option defaults to true
               checkSupportedExtensions: false,
             },
-          },       
-          {
-            resolve: `gatsby-source-wordpress-experimental`,
-            options: {
-                url: process.env.WPGRAPHQL_URL,
-                verbose: true,
-                develop: {
-                    hardCacheMediaFiles: true,
-                },
-                debug: {
-                    graphql: {
-                        writeQueriesToDisk: true,
-                    },
-                },
-                type: {
-                    Post: {
-                        limit:
-                            process.env.NODE_ENV === `development`
-                                ? // Lets just pull 50 posts in development to make it easy on ourselves.
-                                50
-                                : // and we don't actually need more than 5000 in production for this particular site
-                                5000,
-                    },
-                },
-                // auth: {
-                //     htaccess: {
-                //         username: process.env.HTTPBASICAUTH_USERNAME,
-                //         password: process.env.HTTPBASICAUTH_PASSWORD,
-                //     },
-                // },
-            },
         },
+        {
+            resolve: `gatsby-source-wordpress`,
+            options: {
+              /*
+               * The full URL of the WordPress site's GraphQL API.
+               * Example : 'https://www.example-site.com/graphql'
+               */
+               url: process.env.WPGRAPHQL_URL,
+            },
+          },    
+        // {
+        //     resolve: `gatsby-source-wordpress-experimental`,
+        //     options: {
+                // url: process.env.WPGRAPHQL_URL,
+        //         verbose: true,
+        //         develop: {
+        //             hardCacheMediaFiles: true,
+        //         },
+        //         debug: {
+        //             graphql: {
+        //                 writeQueriesToDisk: true,
+        //             },
+        //         },
+        //         type: {
+        //             Post: {
+        //                 limit:
+        //                     process.env.NODE_ENV === `development`
+        //                         ? // Lets just pull 50 posts in development to make it easy on ourselves.
+        //                         50
+        //                         : // and we don't actually need more than 5000 in production for this particular site
+        //                         5000,
+        //             },
+        //         },
+        //         auth: {
+        //             htaccess: {
+        //                 username: process.env.HTTPBASICAUTH_USERNAME,
+        //                 password: process.env.HTTPBASICAUTH_PASSWORD,
+        //             },
+        //         },
+        //     },
+        // },
         {
             resolve: `gatsby-wordpress-inline-images`,
             options:
