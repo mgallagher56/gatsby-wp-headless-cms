@@ -18,10 +18,12 @@ export default class HeroCard extends Component {
                     <img src={imageSrc} alt={''} />
                 </div> 
                 <div class={'card-content p-2'}>
-                    <h5>{this.props.module.title}</h5>
-                    <h6>{this.props.module.subtitle}</h6>
-                    <div dangerouslySetInnerHTML={{__html: this.props.module.content }}></div>
-                    <Button type={'small'} href={this.props.module.url} text={this.props.module.buttonText} />
+                    <a href={this.props.module.url}>
+                        <h5>{this.props.module.title}</h5>
+                        <h6>{this.props.module.subtitle}</h6>
+                        <div dangerouslySetInnerHTML={{__html: this.props.module.content }}></div>
+                        <Button type={'small'} href={this.props.module.url} text={this.props.module.buttonText} />
+                    </a>
                 </div>
             </div>
         </>

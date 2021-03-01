@@ -136,7 +136,7 @@ exports.createPages = ({ graphql, actions }) => {
                     }
                   }
                 }
-              }
+            }
         }
       }
       

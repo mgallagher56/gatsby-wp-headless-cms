@@ -1,16 +1,16 @@
 import React from "react";
-import Wysiwyg1Col from './modules/wysiwyg1-col';
-import Wysiwyg2Col from './modules/wysiwyg2-col';
-import Wysiwyg3Col from './modules/wysiwyg3-col';
-import Wysiwyg4Col from './modules/wysiwyg4-col';
-import WysiwygMedia from './modules/wysiwyg-media';
-import CardContainer from './modules/cardContainer';
-import Hero from './modules/hero';
+import Wysiwyg1Col from './acfModules/wysiwyg1-col';
+import Wysiwyg2Col from './acfModules/wysiwyg2-col';
+import Wysiwyg3Col from './acfModules/wysiwyg3-col';
+import Wysiwyg4Col from './acfModules/wysiwyg4-col';
+import WysiwygMedia from './acfModules/wysiwyg-media';
+import CardContainer from './acfModules/cardContainer';
+import Hero from './acfModules/hero';
 import HeroCard from "./cards/heroCard";
 import LongCard from "./cards/longCard";
 
 const Components = {
-        wysiwyg1col    : Wysiwyg1Col ,
+        wysiwyg1col    : Wysiwyg1Col,
         wysiwyg2col    : Wysiwyg2Col,
         wysiwyg3col    : Wysiwyg3Col,
         wysiwyg4col    : Wysiwyg4Col,
