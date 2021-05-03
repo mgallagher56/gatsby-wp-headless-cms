@@ -60,10 +60,8 @@ exports.createPages = ({ graphql, actions }) => {
                             localFile {
                                 publicURL
                                 childImageSharp {
-                                    fluid {
-                                      srcWebp
-                                    }
-                                  }
+                                    gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {blackOnWhite: true})
+                                }
                             }
                           }
                       }
@@ -87,9 +85,7 @@ exports.createPages = ({ graphql, actions }) => {
                             localFile {
                                 publicURL
                                 childImageSharp {
-                                    fluid {
-                                      srcWebp
-                                    }
+                                    gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {blackOnWhite: true})
                                 }
                             }
                           }
@@ -105,10 +101,9 @@ exports.createPages = ({ graphql, actions }) => {
                             id
                             publicURL
                             childImageSharp {
-                                fluid {
-                                  srcWebp
-                                }
-                              }                          }
+                                gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {blackOnWhite: true})
+                            }                        
+                            }
                         }
                       }
                       ... on WpPage_Pagebuilder_Layouts_Wysiwyg3Col {

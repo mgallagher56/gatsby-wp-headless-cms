@@ -1,3 +1,4 @@
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import React, { Component } from 'react';
 import Button from '../../components/Button';
 
@@ -10,12 +11,14 @@ export default class HeroCard extends Component {
     }
 
     render() {
-        let imageSrc = null !== this.props.module.image.localFile.childImageSharp ?
-        this.props.module.image.localFile.childImageSharp.fluid.srcWebp : this.props.module.image.localFile.publicURL;
+        let image = getImage(this.props.module.image.localFile);
+        let altTag = 'undefined' !== typeof(this.props.module.image.altText) ? 
+        this.props.module.image.altText : '';
+
         return <>
             <div class={'card hero-card my-3 mx-3'}>
                 <div class={'card-media'}>
-                    <img src={imageSrc} alt={''} />
+                    <GatsbyImage image={image} alt={altTag} />
                 </div> 
                 <div class={'card-content p-2'}>
                     <a href={this.props.module.url}>

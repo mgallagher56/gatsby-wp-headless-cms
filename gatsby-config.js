@@ -20,6 +20,8 @@ module.exports = {
         'gatsby-plugin-react-helmet',
         `gatsby-plugin-sass`,
         `gatsby-plugin-transition-link`,
+        `gatsby-plugin-image`,
+        `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
         // {
         //     resolve: 'gatsby-plugin-manifest',
@@ -98,7 +100,7 @@ module.exports = {
             resolve: "gatsby-plugin-react-svg",
             options: {
                 rule: {
-                    include: /\.inline\.svg$/, // See below to configure properly
+                    include: /\.inline\.svg$/,
                 },
             },
         },

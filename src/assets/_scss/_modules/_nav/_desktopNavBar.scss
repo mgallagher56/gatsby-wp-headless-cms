@@ -8,10 +8,16 @@
 }
 
 @include media-breakpoint-up(md) {
-    .nav-desktop { 
+    header {
+        margin-bottom: 150px;
+    }
+
+    .nav-desktop {
         position: fixed;
         z-index: 100;
         top: 0;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .navbar-nav {

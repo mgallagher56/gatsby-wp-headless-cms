@@ -7392,10 +7392,14 @@ a.text-dark:hover, a.text-dark:focus {
     display: none; }
 
 @media (min-width: 768px) {
+  header {
+    margin-bottom: 150px; }
   .nav-desktop {
     position: fixed;
     z-index: 100;
-    top: 0; }
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); }
   .navbar-nav {
     height: 100px;
     align-items: center; }
