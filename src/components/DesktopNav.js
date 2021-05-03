@@ -26,20 +26,20 @@ const DesktopNav = () => {
                 if (node.node.url ==='/home/') {
                     let url = '/';
                     return <>
-                        <li>
+                        <li className={'mr-3'}>
                             <AniLink 
                                 paintDrip 
                                 duration={1} 
                                 color='mediumspringgreen' 
                                 to={url}
-                                className='nav-link'>
+                                className='nav-link nav-logo'>
                                 <img src={logo} alt='Logo'></img>
                                 </AniLink>
                         </li>
                     </>
                 } else  {
                     return <li><AniLink paintDrip duration={1} color='mediumspringgreen' to={node.node.url}
-                    className='nav-link'> {node.node.label} </AniLink></li>
+                    className='nav-link nav-animation'> {node.node.label} </AniLink></li>
                 }
             })}
         </>

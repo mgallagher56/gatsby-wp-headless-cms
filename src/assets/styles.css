@@ -7104,21 +7104,22 @@ a.text-dark:hover, a.text-dark:focus {
       color: white;
       position: relative;
       padding: 16px 24px; }
-      .navbar-nav a:after {
+      .navbar-nav a.nav-animation:after {
         content: '';
         opacity: 0;
         display: block;
         transition: height 1s ease-in-out, width 1s ease-in-out;
         bottom: 0;
         left: 0;
-        position: absolute; }
-      .navbar-nav a:hover {
+        position: absolute;
+        border-radius: 10px; }
+      .navbar-nav a.nav-animation:hover {
         text-decoration: none; }
-      .navbar-nav a:hover:after {
-        animation: fill 1s forwards;
-        opacity: 1;
-        background: #E34F7E;
-        z-index: -1; } }
+        .navbar-nav a.nav-animation:hover:after {
+          animation: fill 1s forwards;
+          opacity: 1;
+          background: #E34F7E;
+          z-index: -1; } }
 
 /* Keyframes */
 @keyframes fill {
