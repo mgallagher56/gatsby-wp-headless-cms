@@ -8,8 +8,7 @@ export default class Hero extends Component {
         let altTag = 'undefined' !== typeof(this.props.module.image.altText) ? 
         this.props.module.image.altText : '';
 
-        return <section class={'hero-module mb-5 mt-md-5'}> 
-            <div class={'container'}>
+        return <section className={'hero-module mb-5 mt-md-5'}> 
                 <div className={'row d-flex flex-column flex-md-row'}>
                     <div className={'hero-media d-flex col-12 col-md-7 overflow-hidden'}>
                         <GatsbyImage 
@@ -18,10 +17,9 @@ export default class Hero extends Component {
                             alt={altTag}
                         />
                     </div>
-                    <div className={'hero-content d-flex flex-column col-12 col-md-5'} 
+                    <div className={'hero-content d-flex flex-column text-center justify-content-center align-items-center col-12 col-md-5'} 
                     dangerouslySetInnerHTML={{__html: this.props.module.wysiwyg}} />
                 </div>
-            </div>
         </section>
     }
 }

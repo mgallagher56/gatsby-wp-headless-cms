@@ -60,7 +60,7 @@ exports.createPages = ({ graphql, actions }) => {
                             localFile {
                                 publicURL
                                 childImageSharp {
-                                    gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {blackOnWhite: true})
+                                    gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {color: "#2ADFB2"})
                                 }
                             }
                           }
@@ -85,7 +85,7 @@ exports.createPages = ({ graphql, actions }) => {
                             localFile {
                                 publicURL
                                 childImageSharp {
-                                    gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {blackOnWhite: true})
+                                    gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {color: "#2ADFB2"})
                                 }
                             }
                           }
@@ -101,7 +101,7 @@ exports.createPages = ({ graphql, actions }) => {
                             id
                             publicURL
                             childImageSharp {
-                                gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {blackOnWhite: true})
+                                gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {color: "#2ADFB2"})
                             }                        
                             }
                         }

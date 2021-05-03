@@ -44,7 +44,7 @@ export const pageQuery = graphql`
                                     localFile {
                                         publicURL
                                         childImageSharp {
-                                            gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {blackOnWhite: true})
+                                            gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {color: "#2ADFB2"})
                                         }
                                     }
                                 }
@@ -69,7 +69,7 @@ export const pageQuery = graphql`
                                         localFile {
                                             publicURL
                                             childImageSharp {
-                                                gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {blackOnWhite: true})
+                                                gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {color: "#2ADFB2"})
                                             }                                    
                                         }
                                     }   
@@ -85,7 +85,7 @@ export const pageQuery = graphql`
                                         id
                                         publicURL
                                         childImageSharp {
-                                            gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {blackOnWhite: true})
+                                            gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {color: "#2ADFB2"})
                                         }
                                     }
                                 }

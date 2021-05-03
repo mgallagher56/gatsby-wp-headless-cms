@@ -1,6 +1,9 @@
 .hero-module {
+    
     .hero-media,
     .hero-content {
+        width: 100vw;
+        height: 100vh;
         flex: 1;
     }
 
