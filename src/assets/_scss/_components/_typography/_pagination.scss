@@ -9,8 +9,8 @@
 
             &:hover {
                 &:not(.active) {
-                    background-color: map-get($colors, orange-portfolio-dark);
-                    color: map-get( $colors, grey-portfolio-dark );
+                    background-color: map-get($colors, pink-portfolio-dark);
+                    color: map-get( $colors, black-portfolio-dark );
                 }
             }
         }
@@ -33,7 +33,7 @@
                 width: 10px;
 
                 &:hover {
-                    border-color: map-get($colors, orange-portfolio-dark);
+                    border-color: map-get($colors, pink-portfolio-dark);
                 }
             }
         }

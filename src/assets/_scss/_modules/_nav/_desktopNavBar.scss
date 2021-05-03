@@ -8,14 +8,19 @@
 }
 
 @include media-breakpoint-up(md) {
+    .nav-desktop { 
+        position: fixed;
+        z-index: 100;
+        top: 0;
+    }
+
     .navbar-nav {
         height: 100px;
         align-items: center;
         
         &:before {
             content: '';
-            background: map-get($colors, pink-portfolio-dark);
-            box-shadow: 0 4px 10px RGBA( 256, 256, 256, 0.8);
+            background: map-get($colors, black-portfolio);
             height: 100px;
             width: 200vw;
             left: -50vw;

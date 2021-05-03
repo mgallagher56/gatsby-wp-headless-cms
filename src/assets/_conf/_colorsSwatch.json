@@ -15,16 +15,16 @@
         "name" : "Portfolio Blue Light",
         "type" : "secondary"
     },
-    "grey-portfolio" : {
-        "name" : "Portfolio Grey",
+    "black-portfolio" : {
+        "name" : "Portfolio Black",
         "type" : "primary"
     },
-    "grey-portfolio-dark" : {
-        "name" : "Portfolio Dark Grey",
+    "black-portfolio-dark" : {
+        "name" : "Portfolio Dark Black",
         "type" : "secondary"
     },
-    "grey-portfolio-light" : {
-        "name" : "Portfolio Light Grey",
+    "black-portfolio-light" : {
+        "name" : "Portfolio Light Black",
         "type" : "secondary"
     },
     "mint-portfolio" : {
@@ -39,28 +39,16 @@
         "name" : "Portfolio Mint Light",
         "type" : "secondary"
     },
-    "orange-portfolio" : {
-        "name" : "Portfolio orange",
-        "type" : "primary"
-    },
-    "orange-portfolio-dark" : {
-        "name" : "Portfolio orange Dark",
-        "type" : "secondary"
-    },
-    "orange-portfolio-light" : {
-        "name" : "Portfolio orange Light",
-        "type" : "secondary"
-    },
     "pink-portfolio" : {
-        "name" : "Portfolio pink",
+        "name" : "Portfolio Pink",
         "type" : "primary"
     },
     "pink-portfolio-dark" : {
-        "name" : "Portfolio pink Dark",
+        "name" : "Portfolio Pink Dark",
         "type" : "secondary"
     },
     "pink-portfolio-light" : {
-        "name" : "Portfolio pink Light",
+        "name" : "Portfolio Pink Light",
         "type" : "secondary"
     },
     "white" : {
@@ -68,19 +56,7 @@
         "type" : "tertiary"
     },
     "white-portfolio" : {
-        "name" : "White",
+        "name" : "Portfolio White",
         "type" : "primary"
-    },
-    "yellow-portfolio" : {
-        "name" : "Portfolio yellow",
-        "type" : "primary"
-    },
-    "yellow-portfolio-dark" : {
-        "name" : "Portfolio yellow Dark",
-        "type" : "secondary"
-    },
-    "yellow-portfolio-light" : {
-        "name" : "Portfolio yellow Light",
-        "type" : "secondary"
     }
 }

@@ -1,7 +1,7 @@
 
 import React from "react"
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
-import logo from '../assets/images/gatsby-icon.png';
+import logo from '../assets/images/logo.png';
 import { useStaticQuery, graphql } from "gatsby"
 
 const DesktopNav = () => {
@@ -47,7 +47,7 @@ const DesktopNav = () => {
 
 
     return (
-        <nav className={'container'}>
+        <nav className={'container nav-desktop'}>
             <ul className='navbar-nav mr-auto navbar-desktop d-none d-md-flex flex-row justify-content-around'>
                 { navOutput( navData )}
             </ul>

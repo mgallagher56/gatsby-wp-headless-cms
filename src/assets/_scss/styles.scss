@@ -11,6 +11,6 @@
 
 
 body {
-    background: map-get($colors, navy-portfolio);
-    color: map-get($colors, white-portfolio);
+    background: map-get($colors, black-portfolio-dark);
+    color: map-get($colors, white-portfolio); 
 }
