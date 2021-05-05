@@ -3,10 +3,6 @@ import GliderComponent from 'react-glider-carousel';
 import ModuleParser from '../ModuleParser';
 
 export default class CardContainer extends Component {
-    constructor( props ) {
-        super( props );
-    }
-    
     render() {
         let cards = this.props.module.cards;
         let cardType = this.props.module.cardType;

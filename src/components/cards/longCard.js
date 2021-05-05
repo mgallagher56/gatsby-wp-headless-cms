@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import card_eg from '../../assets/images/gatsby-icon.png'
 
 export default class LongCard extends Component {
 

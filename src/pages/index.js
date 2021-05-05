@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import { graphql } from "gatsby"
 import ModuleParser from "../components/ModuleParser"
 
-const Page = ({ data }) => {
+const Index = ({ data }) => {
   const pageData = data.allWpPage.edges[0].node;
   const modules = pageData.pageBuilder.layouts;
 
@@ -16,9 +16,9 @@ const Page = ({ data }) => {
   )
 }
 
-export default Page
+export default Index
 
-export const homepageQuery = graphql`
+export const query = graphql`
     query {
         allWpPage(filter: { slug: { eq: "home" } }) {
             edges {
@@ -35,7 +35,7 @@ export const homepageQuery = graphql`
                                     localFile {
                                         publicURL
                                         childImageSharp {
-                                            gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {color: "#2ADFB2"})
+                                            gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {color: "#00FF7D"})
                                         }
                                     }
                                 }
@@ -60,7 +60,7 @@ export const homepageQuery = graphql`
                                         localFile {
                                             publicURL
                                             childImageSharp {
-                                                gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {color: "#2ADFB2"})
+                                                gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {color: "#00FF7D"})
                                             }                                        
                                         }
                                     }
@@ -76,7 +76,7 @@ export const homepageQuery = graphql`
                                         publicURL
                                         id
                                         childImageSharp {
-                                            gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {color: "#2ADFB2"})
+                                            gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {color: "#00FF7D"})
                                         }                                    
                                     }
                                 }

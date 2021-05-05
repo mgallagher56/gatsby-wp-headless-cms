@@ -21,7 +21,7 @@ const Components = {
         longcard       : LongCard
 };
 
-export default ( module, moduleName ) => {
+const ComponentBuilder = ( module, moduleName ) => {
     if ( moduleName !== '' ) {
         // component does exist
         if (typeof Components[moduleName] !== "undefined") {
@@ -41,3 +41,5 @@ export default ( module, moduleName ) => {
         );
     }
 }
+
+export default ComponentBuilder

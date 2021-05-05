@@ -1,35 +1,35 @@
 import React  from "react"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { graphql } from "gatsby"
 import ModuleParser from '../components/ModuleParser'
 
-const Page = ({ data }) => {
+const PageTemplate = ({ data }) => {
   const pageData = data.allWpPage.edges[0].node;
   const modules = pageData.pageBuilder.layouts;
 
   if ( null !== modules) {
     return (
         <Layout>
-        <SEO title={pageData.title} />
+        <Seo title={pageData.title} />
         <ModuleParser moduleData={modules} />
         </Layout>
     )
     } else {
         return ( 
             <Layout>
-            <SEO title={pageData.title} />
+            <Seo title={pageData.title} />
             <h2>No modules found</h2>
             </Layout>
         )
     }
 }
 
-export default Page
+export default PageTemplate
 
-export const pageQuery = graphql`
-    query($slug: String!) {
-        allWpPage(filter: { slug: { eq: $slug } }) {
+export const query = graphql`
+    {
+        allWpPage {
             edges {
                 node {
                     title
@@ -44,7 +44,7 @@ export const pageQuery = graphql`
                                     localFile {
                                         publicURL
                                         childImageSharp {
-                                            gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {color: "#2ADFB2"})
+                                            gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {color: "#00FF7D"})
                                         }
                                     }
                                 }
@@ -69,7 +69,7 @@ export const pageQuery = graphql`
                                         localFile {
                                             publicURL
                                             childImageSharp {
-                                                gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {color: "#2ADFB2"})
+                                                gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {color: "#00FF7D"})
                                             }                                    
                                         }
                                     }   
@@ -85,7 +85,7 @@ export const pageQuery = graphql`
                                         id
                                         publicURL
                                         childImageSharp {
-                                            gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {color: "#2ADFB2"})
+                                            gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {color: "#00FF7D"})
                                         }
                                     }
                                 }

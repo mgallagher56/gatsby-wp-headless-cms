@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import ComponentBuilder from './ComponentBuilder'
 
 class ModuleParser extends Component {
-    constructor(props){
-        super(props);
-    }
 
     static defaultProps = {
         moduleData: [],
@@ -15,8 +12,8 @@ class ModuleParser extends Component {
         return <>
             {
                 this.props.moduleData.map( ( module ) => {
-                    let moduleName = typeof module.__typename === 'undefined' ?
-                    this.props.moduleName : module.__typename.substr( 'WpPage_Pagebuilder_Layouts_'.length).toLowerCase();
+                    let moduleName = module.fieldGroupName.includes('Layouts') ?
+                    module.fieldGroupName.substr( 'Page_Pagebuilder_Layouts_'.length).toLowerCase() : this.props.moduleName;
                     return ComponentBuilder( module, moduleName );
                 })
             }

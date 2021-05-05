@@ -41,7 +41,54 @@ module.exports = {
                 trackingId: "G-5L1QF3DK9J",
             },
         },
-        "gatsby-plugin-sitemap",
+        {
+            resolve: "gatsby-plugin-sitemap",
+            options: {
+                query: `
+              {
+                allSitePage {
+                  nodes {
+                    path
+                  }
+                }
+                allWpContentNode(filter: {nodeType: {in: ["Post", "Page"]}}) {
+                  nodes {
+                    ... on WpPost {
+                      uri
+                      modifiedGmt
+                    }
+                    ... on WpPage {
+                      uri
+                      modifiedGmt
+                    }
+                  }
+                }
+              }
+            `,
+                resolveSiteUrl: () => siteUrl,
+                resolvePages: ({
+                    allSitePage: { nodes: allPages },
+                    allWpContentNode: { nodes: allWpNodes },
+                }) => {
+                    const wpNodeMap = allWpNodes.reduce((acc, node) => {
+                        const { uri } = node
+                        acc[uri] = node
+
+                        return acc
+                    }, {})
+
+                    return allPages.map(page => {
+                        return { ...page, ...wpNodeMap[page.path] }
+                    })
+                },
+                serialize: ({ path, modifiedGmt }) => {
+                    return {
+                        url: path,
+                        lastmod: modifiedGmt,
+                    }
+                },
+            },
+        },
         {
             resolve: "gatsby-plugin-manifest",
             options: {
@@ -61,7 +108,7 @@ module.exports = {
                 url: process.env.WPGRAPHQL_URL,
             },
         },
-        
+
         {
             resolve: "gatsby-plugin-react-svg",
             options: {
