@@ -5,7 +5,7 @@ import { graphql } from "gatsby"
 import ModuleParser from '../components/ModuleParser'
 
 const PostTemplate = ({ data }) => {
-    const post = data.allWpPage.edges[0].node;
+    const post = data.allWpPost.edges[0].node;
     const modules = post.pageBuilder.layouts;
 
     if (null !== modules) {
