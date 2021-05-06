@@ -16,6 +16,7 @@ module.exports = {
         url: "https://mgr-dev.com", // No trailing slash allowed!
         author: "Marc Gallagher-Reid",
     },
+    flags: { PRESERVE_WEBPACK_CACHE: true },
     plugins: [
         'gatsby-plugin-react-helmet',
         {
