@@ -13,29 +13,29 @@ export default class oldSite extends Component {
             <Layout>
                 <div id='oldSite'>
                     <div id='oldNav'>
-                        <img class='burger' src='img/burger.svg'></img>
-                        <ul class='menu'>
+                        <img className={'burger'} src='img/burger.svg'></img>
+                        <ul className={'menu'}>
                             <li><a href="/"><h1 class="logo">MGR</h1></a></li>
-                            <li class='nav-link about'><a href='/'>New Site</a></li>
-                            <li class='nav-link '><a href='#portfolio'>Portfolio</a></li>
-                            <li class='nav-link '><a target="_blank" href='img/Marc%20Gallagher-Reid%20-%20CV%20.pdf'>My CV</a></li>
-                            <li class='nav-link '><a href='#contact'>Contact</a></li>
-                            <li class='oldSocial linkedIn'><a href='https://www.linkedin.com/in/marcgallagherreid/'><img alt="linkedIn" src={linkedInImg}></img></a></li>
-                            <li class='oldSocial gitHub'><a href='https://github.com/mgallagher56'><img alt="gitHub" src={githubImg}></img></a></li>
+                            <li className={'nav-link about'}><a href='/'>New Site</a></li>
+                            <li className={'nav-link'}><a href='#portfolio'>Portfolio</a></li>
+                            <li className={'nav-link'}><a target="_blank" href='img/Marc%20Gallagher-Reid%20-%20CV%20.pdf'>My CV</a></li>
+                            <li className={'nav-link'}><a href='#contact'>Contact</a></li>
+                            <li className={'oldSocial linkedIn'}><a href='https://www.linkedin.com/in/marcgallagherreid/'><img alt="linkedIn" src={linkedInImg}></img></a></li>
+                            <li className={'oldSocial gitHub'}><a href='https://github.com/mgallagher56'><img alt="gitHub" src={githubImg}></img></a></li>
                         </ul>
                         <h1 class="logoSmall">MGR</h1><h1 class="logoSmall">MGR</h1>
                     </div>
 
-                    <div class='burgerMenu'>
-                        <ul class='burgerMenu'>
-                            <li class='burgerItem'><a href='#portfolio'>Portfolio</a></li>
-                            <li class='burgerItem'><a href='/'>New Site</a></li>
-                            <li class='burgerItem'><a target="_blank" href='../assets/images/Marc%20Gallagher-Reid%20-%20CV.pdf'>My CV</a></li>
-                            <li class='burgerItem'><a href='#contact'>Contact</a></li>
+                    <div className={'burgerMenu'}>
+                        <ul className={'burgerMenu'}>
+                            <li className={'burgerItem'}><a href='#portfolio'>Portfolio</a></li>
+                            <li className={'burgerItem'}><a href='/'>New Site</a></li>
+                            <li className={'burgerItem'}><a target="_blank" href='../assets/images/Marc%20Gallagher-Reid%20-%20CV.pdf'>My CV</a></li>
+                            <li className={'burgerItem'}><a href='#contact'>Contact</a></li>
                         </ul>
                     </div>
 
-                    <div class='header'>
+                    <div className={'header'}>
                         <div class="innerHeader"> 
                             <h1 class="headerText headerText1 typed" id="typed">
                             <Typed
@@ -77,159 +77,159 @@ export default class oldSite extends Component {
 
                     <a name='portfolio'></a>
 
-                    <div class='portfolio'>
+                    <div className={'portfolio'}>
                         <h1 class="title">Portfolio</h1>
 
-                        <div class='overlay'>
-                            <div class='portfolioBox project1'>
+                        <div className={'overlay'}>
+                            <div className={'portfolioBox project1'}>
                                 <h1>My Portfolio</h1>
                                 <a href='#'>
-                                    <button class='projectButton' type='button'>View</button>
+                                    <button className={'projectButton'} type='button'>View</button>
                                 </a>
                                 <a href='http://bit.ly/mgrDev'>
-                                    <button class='projectButton' type='button'>GitHub</button>
+                                    <button className={'projectButton'} type='button'>GitHub</button>
                                 </a>
                             </div>
                         </div>
 
 
-                        <div class='overlay'>
-                            <div class='portfolioBox project2'>
+                        <div className={'overlay'}>
+                            <div className={'portfolioBox project2'}>
                                 <h1>PHP Collection App</h1>
                                 <a href='http://bit.ly/mgrCollection'>
-                                    <button class='projectButton' type='button'>View</button>
+                                    <button className={'projectButton'} type='button'>View</button>
                                 </a>
                                 <a href='http://bit.ly/mgrCollectonGitHub'>
-                                    <button class='projectButton' type='button'>GitHub</button>
+                                    <button className={'projectButton'} type='button'>GitHub</button>
                                 </a>
                             </div>
                         </div>
 
-                        <div class='overlay'>
-                            <div class='portfolioBox project3'>
+                        <div className={'overlay'}>
+                            <div className={'portfolioBox project3'}>
                                 <h1>JS Pairs Game</h1>
                                 <a href='http://bit.ly/mgrPairsGame'>
-                                    <button class='projectButton' type='button'>View</button>
+                                    <button className={'projectButton'} type='button'>View</button>
                                 </a>
                                 <a href='http://bit.ly/mgrPairsGameGitHub'>
-                                    <button class='projectButton' type='button'>GitHub</button>
+                                    <button className={'projectButton'} type='button'>GitHub</button>
                                 </a>
                             </div>
                         </div>
 
-                        <div class='overlay'>
-                            <div class='portfolioBox project4'>
+                        <div className={'overlay'}>
+                            <div className={'portfolioBox project4'}>
                                 <h1>Solar System</h1>
                                 <a href='http://bit.ly/mgrSolarSystem'>
-                                    <button class='projectButton' type='button'>View</button>
+                                    <button className={'projectButton'} type='button'>View</button>
                                 </a>
                                 <a href='http://bit.ly/mgrSolarSystemGitHub'>
-                                    <button class='projectButton' type='button'>GitHub</button>
+                                    <button className={'projectButton'} type='button'>GitHub</button>
                                 </a>
                             </div>
                         </div>
 
-                        <div class='overlay'>
-                            <div class='portfolioBox project5'>
+                        <div className={'overlay'}>
+                            <div className={'portfolioBox project5'}>
                                 <h1>JS API Fetch</h1>
                                 <a href='http://bit.ly/mgrFetchApp'>
-                                    <button class='projectButton' type='button'>View</button>
+                                    <button className={'projectButton'} type='button'>View</button>
                                 </a>
                                 <a href='http://bit.ly/mgrGitHubFetchRepo'>
-                                    <button class='projectButton' type='button'>GitHub</button>
+                                    <button className={'projectButton'} type='button'>GitHub</button>
                                 </a>
                             </div>
                         </div>
 
-                        <div class='overlay'>
-                            <div class='portfolioBox project6'>
+                        <div className={'overlay'}>
+                            <div className={'portfolioBox project6'}>
                                 <h1>JS Finance Calc</h1>
                                 <a href='http://bit.ly/mgrFinanceCalc'>
-                                    <button class='projectButton' type='button'>View</button>
+                                    <button className={'projectButton'} type='button'>View</button>
                                 </a>
                                 <a href='http://bit.ly/mgrFinanceCalcGitHub'>
-                                    <button class='projectButton' type='button'>GitHub</button>
+                                    <button className={'projectButton'} type='button'>GitHub</button>
                                 </a>
                             </div>
                         </div>
 
-                        <div class='overlay'>
-                            <div class='portfolioBox project7'>
+                        <div className={'overlay'}>
+                            <div className={'portfolioBox project7'}>
                                 <h1>OOP Recipe App</h1>
                                 <a href='http://bit.ly/mgrGrub'>
-                                    <button class='projectButton' type='button'>View</button>
+                                    <button className={'projectButton'} type='button'>View</button>
                                 </a>
                                 <a href='http://bit.ly/mgrGrubGitHub'>
-                                    <button class='projectButton' type='button'>GitHub</button>
+                                    <button className={'projectButton'} type='button'>GitHub</button>
                                 </a>
                             </div>
                         </div>
 
-                        <div class='overlay'>
-                            <div class='portfolioBox project8'>
+                        <div className={'overlay'}>
+                            <div className={'portfolioBox project8'}>
                                 <h1>PHP/JQUERY Ski</h1>
                                 <a href='http://bit.ly/mgrSkiSite'>
-                                    <button class='projectButton' type='button'>View</button>
+                                    <button className={'projectButton'} type='button'>View</button>
                                 </a>
                                 <a href='http://bit.ly/mgrSkiRepo'>
-                                    <button class='projectButton' type='button'>GitHub</button>
+                                    <button className={'projectButton'} type='button'>GitHub</button>
                                 </a>
                             </div>
                         </div>
 
-                        <div class='overlay'>
-                            <div class='portfolioBox project9'>
+                        <div className={'overlay'}>
+                            <div className={'portfolioBox project9'}>
                                 <h1>MVC PHP ToDo App</h1>
                                 <a target="_blank" href='https://youtu.be/VPtLjSFwok8'>
-                                    <button class='projectButton' type='button'>View</button>
+                                    <button className={'projectButton'} type='button'>View</button>
                                 </a>
                                 <a href='http://bit.ly/mgrToDoGithub'>
-                                    <button class='projectButton' type='button'>GitHub</button>
+                                    <button className={'projectButton'} type='button'>GitHub</button>
                                 </a>
                             </div>
                         </div>
 
-                        <div class='overlay'>
-                            <div class='portfolioBox project10'>
+                        <div className={'overlay'}>
+                            <div className={'portfolioBox project10'}>
                                 <h1>Project 10</h1>
                                 <a href='#'>
-                                    <button class='projectButton' type='button'>View</button>
+                                    <button className={'projectButton'} type='button'>View</button>
                                 </a>
                                 <a href='#'>
-                                    <button class='projectButton' type='button'>GitHub</button>
+                                    <button className={'projectButton'} type='button'>GitHub</button>
                                 </a>
                             </div>
                         </div>
 
-                        <div class='overlay'>
-                            <div class='portfolioBox project11'>
+                        <div className={'overlay'}>
+                            <div className={'portfolioBox project11'}>
                                 <h1>Project11</h1>
                                 <a href='#'>
-                                    <button class='projectButton' type='button'>View</button>
+                                    <button className={'projectButton'} type='button'>View</button>
                                 </a>
                                 <a href='#'>
-                                    <button class='projectButton' type='button'>GitHub</button>
+                                    <button className={'projectButton'} type='button'>GitHub</button>
                                 </a>
                             </div>
                         </div>
 
-                        <div class='overlay'>
-                            <div class='portfolioBox project12'>
+                        <div className={'overlay'}>
+                            <div className={'portfolioBox project12'}>
                                 <h1>Project12</h1>
                                 <a href='#'>
-                                    <button class='projectButton' type='button'>View</button>
+                                    <button className={'projectButton'} type='button'>View</button>
                                 </a>
                                 <a href='#'>
-                                    <button class='projectButton' type='button'>GitHub</button>
+                                    <button className={'projectButton'} type='button'>GitHub</button>
                                 </a>
                             </div>
                         </div>
                     </div>
 
-                    <section class='aboutMe'>
+                    <section className={'aboutMe'}>
                         <a name='about'></a>  
                         <h1>About Me</h1>
-                        <div class='profileImg'></div>
+                        <div className={'profileImg'}></div>
                         <p>Hello World. I'm a recent graduate from Mayden Academy in Bath, after taking part in a 16 week course
                         (August-December 2019) to become a Full Stack Developer. I'm passionate about Agile software development, and
                         I'm proficient in HTML, CSS, PHP and JavaScript, including MVC design pattern with the Slim framework, NodeJS with Express, and React.</p>
@@ -241,21 +241,21 @@ export default class oldSite extends Component {
 
                     <section class="contact">
                         <a name='contact'></a>
-                        <h1 class='footer'>Contact</h1>
+                        <h1 className={'footer'}>Contact</h1>
                         <ul>
                             <li class="socialFooter">
                                 <a href='mailto:mgrdevuk@gmail.com?subject=Mail%20from%20MG%20Portfolio%20Site'>
-                                    <button class='email' type='button'>Email Me</button>
+                                    <button className={'email'} type='button'>Email Me</button>
                                 </a>
                             </li>
 
-                            <li class='socialFooter'>
+                            <li className={'socialFooter'}>
                                 <a href='https://github.com/mgallagher56'>
                                     <img class="socialImg" src={githubImg}></img>
                                 </a>
                             </li>
 
-                            <li class='socialFooter'>
+                            <li className={'socialFooter'}>
                                 <a href='https://www.linkedin.com/in/marcgallagherreid/'>
                                     <img class="socialImg linkedIn" src={linkedInImg}></img>
                                 </a>

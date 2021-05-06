@@ -27,12 +27,12 @@ export default class NavBar extends Component {
             this.navAnimation.play();
             document.body.style.overflowY = 'hidden';
             document.getElementById('navbar-mobile').style.top = window.scrollY + 'px';
-            this.bubbleAnimation('play')
+            // this.bubbleAnimation('play')
 
         } else {
             this.navAnimation.reverse(1);
             document.body.style.overflowY = 'visible';
-            this.bubbleAnimation('pause')
+            // this.bubbleAnimation('pause')
         }
     }
 

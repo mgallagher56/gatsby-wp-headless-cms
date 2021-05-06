@@ -14,13 +14,13 @@ export default class WysiwygMedia extends Component {
         let image = null !== this.props.module.image ? getImage(this.props.module.image.localFile) : '';
         let altTag = null !== this.props.module.image ? this.props.module.image.altText : '';
 
-        return <section class={'wysiwygMedia ' + this.state.margin}>
+        return <section className={'wysiwygMedia ' + this.state.margin}>
             <div className={'container'}>
-                <div class={'row'}>
+                <div className={'row'}>
                     <div className={'wysiwyg-media-content col-12 mb-3 mb-md-0 col-md-6'}
                         dangerouslySetInnerHTML={{ __html: this.props.module.wysiwygContent }} />
                     <div className={'wysiwyg-media col-12 col-md-6'}>
-                        <GatsbyImage class={'media_image w-100'} image={image} alt={altTag} />
+                        <GatsbyImage className={'media_image w-100'} image={image} alt={altTag} />
                     </div>
                 </div>
             </div>
