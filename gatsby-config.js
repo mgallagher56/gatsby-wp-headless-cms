@@ -19,22 +19,10 @@ module.exports = {
     flags: { PRESERVE_WEBPACK_CACHE: true },
     plugins: [
         'gatsby-plugin-react-helmet',
-        {
-            resolve: `gatsby-plugin-sass`,
-            options: {
-                cssLoaderOptions: {
-                    esModule: false,
-                    modules: {
-                        namedExport: false,
-                    },
-                },
-            },
-        },
         `gatsby-plugin-transition-link`,
         `gatsby-plugin-image`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
-        "gatsby-plugin-sass",
         {
             resolve: "gatsby-plugin-gatsby-cloud",
             options: {
