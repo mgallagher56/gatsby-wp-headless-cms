@@ -32,14 +32,14 @@ const DesktopNav = () => {
                                 duration={1} 
                                 color='mediumspringgreen' 
                                 to={url}
-                                className='nav-link nav-logo'>
+                                className=' nav-logo'>
                                 <img src={logo} alt='Logo'></img>
                                 </AniLink>
                         </li>
                     </>
                 } else  {
                     return <li><AniLink paintDrip duration={1} color='mediumspringgreen' to={node.node.url}
-                    className='nav-link nav-animation'> {node.node.label} </AniLink></li>
+                    className='nav-animation'> {node.node.label} </AniLink></li>
                 }
             })}
         </>

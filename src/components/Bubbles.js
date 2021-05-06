@@ -9,26 +9,12 @@ import bubbleYellow from '../assets/images/bubble-yellow.png'
 export default class Bubbles extends Component {
     constructor( props ) {
         super( props );
-        this.state = {
-            randNumber: Math.floor( Math.random() * 20 ) + 10,
-            multiplier: []
-        }
-    }
-
-    componentDidMount() {
-        function range(size, startAt = 1) {
-            return [...Array(size).keys()].map(i => i + startAt);
-        }
-
-        this.setState( ({
-            multiplier: range(this.state.randNumber)
-        }) );
     }
 
     render() {
         return (
             <div>
-            {this.state.multiplier.map(
+            {[...Array(this.props.multiplier).keys()].map(i => i + 1).map(
                 () => ( <div>
                         <img src={ bubbleImg } className={ 'bubble' } alt={ 'bubble' } />
                         <img src={ bubbleBlue } className={ 'bubble' } alt={ 'bubble' }/>

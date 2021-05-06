@@ -11,9 +11,8 @@ export default class WysiwygMedia extends Component {
     }
 
     render() {
-        let image = getImage(this.props.module.image.localFile);
-        let altTag = 'undefined' !== typeof(this.props.module.image.altText) ? 
-        this.props.module.image.altText : '';
+        let image = null !== this.props.module.image ? getImage(this.props.module.image.localFile) : '';
+        let altTag = null !== this.props.module.image ? this.props.module.image.altText : '';
 
         return <section class={'wysiwygMedia ' + this.state.margin}>
             <div className={'container'}>

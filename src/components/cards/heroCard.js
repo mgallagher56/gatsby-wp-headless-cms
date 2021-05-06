@@ -11,9 +11,8 @@ export default class HeroCard extends Component {
     }
 
     render() {
-        let image = getImage(this.props.module.image.localFile);
-        let altTag = 'undefined' !== typeof(this.props.module.image.altText) ? 
-        this.props.module.image.altText : '';
+        let image = null !== this.props.module.image ? getImage(this.props.module.image.localFile) : '';
+        let altTag = null !== this.props.module.image ? this.props.module.image.altText : '';
 
         return <>
             <div class={'card hero-card my-3 mx-3'}>

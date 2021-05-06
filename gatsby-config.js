@@ -65,7 +65,7 @@ module.exports = {
                 }
               }
             `,
-                resolveSiteUrl: () => siteUrl,
+                resolveSiteUrl: () => process.env.URL,
                 resolvePages: ({
                     allSitePage: { nodes: allPages },
                     allWpContentNode: { nodes: allWpNodes },
