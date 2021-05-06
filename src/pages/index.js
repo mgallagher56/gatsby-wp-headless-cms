@@ -24,16 +24,14 @@ export const query = graphql`
             edges {
                 node {
                     title
-                    slug
-                    uri
                     pageBuilder {
                             layouts {
                             ... on WpPage_Pagebuilder_Layouts_Hero {
                                 fieldGroupName
                                 wysiwyg
                                 image {
+                                    altText
                                     localFile {
-                                        publicURL
                                         childImageSharp {
                                             gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {color: "#00FF7D"}, sizes: "1200px")
                                         }
@@ -57,8 +55,8 @@ export const query = graphql`
                                     title
                                     url
                                     image {
+                                        altText
                                         localFile {
-                                            publicURL
                                             childImageSharp {
                                                 gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {color: "#00FF7D"}, sizes: "200px")
                                             }                                        
@@ -71,10 +69,7 @@ export const query = graphql`
                                 wysiwygContent
                                 image {
                                     altText
-                                    sourceUrl
                                     localFile {
-                                        publicURL
-                                        id
                                         childImageSharp {
                                             gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {color: "#00FF7D"}, sizes: "600px")
                                         }                                    

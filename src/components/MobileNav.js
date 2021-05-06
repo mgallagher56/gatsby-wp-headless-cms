@@ -1,7 +1,7 @@
 import React from "react"
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import { useStaticQuery, graphql } from "gatsby"
-import Bubbles from "./Bubbles";
+// import Bubbles from "./Bubbles";
 
 const MobileNavItems = (props) => {
     const navData = useStaticQuery(graphql`
@@ -61,7 +61,7 @@ const MobileNavItems = (props) => {
                     </svg>
                 </a>
                 <ul id={'navbar-mobile'} ref={props.nav} className={'navbar-mobile flex-row flex-wrap w-100 h-100 position-absolute'}>
-                    <Bubbles multiplier={10} />
+                    {/* <Bubbles multiplier={10} /> */}
                     {navOutput(navData)}
                 </ul>
             </nav>

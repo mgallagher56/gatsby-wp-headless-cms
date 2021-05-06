@@ -89,46 +89,46 @@ export default class NavBar extends Component {
             return Math.floor(Math.random() * max) + min
         }
 
-        this.bubbleAnimation = (control) => {
-            let timelineArray = [];
-            setTimeout(() => {
-                let bubbles = document.querySelectorAll('.bubble');
-                Array.from(bubbles).map((bubble) => {
-                     timelineArray.push(new TimelineMax({ repeat: 0, delay: .5 }).fromTo(bubble,
-                        {
-                            x: rand(100, 0) + 'vw',
-                            y: '130vh',
-                            scale: '0.' + rand(9, 1),
-                            zIndex: 100
-                        },
-                        {
-                            x: rand(120, 100) + 'vw',
-                            y: rand(75, -20) + 'vh',
-                            scale: rand(3, 1) + '.' + rand(9, 0),
-                            duration: rand(12, 7),
-                            delay: rand(3, 0),
-                            ease: Linear.easeNone,
-                            stagger: 0.4,
-                            display: 'none',
-                            zIndex: 100
-                        }, 'bubbles'
-                    ))
-                    return timelineArray;
-                })
-                switch (control) {
-                    case 'pause':
-                        timelineArray.map((timeline) => {
-                            return timeline.pause();
-                        })
-                        break;
-                    case 'play':
-                        timelineArray.map((timeline) => {
-                            return timeline.play();
-                        })
-                        break;
-                }
-            }, 300)
-        }
+        // this.bubbleAnimation = (control) => {
+        //     let timelineArray = [];
+        //     setTimeout(() => {
+        //         let bubbles = document.querySelectorAll('.bubble');
+        //         Array.from(bubbles).map((bubble) => {
+        //              timelineArray.push(new TimelineMax({ repeat: 0, delay: .5 }).fromTo(bubble,
+        //                 {
+        //                     x: rand(100, 0) + 'vw',
+        //                     y: '130vh',
+        //                     scale: '0.' + rand(9, 1),
+        //                     zIndex: 100
+        //                 },
+        //                 {
+        //                     x: rand(120, 100) + 'vw',
+        //                     y: rand(75, -20) + 'vh',
+        //                     scale: rand(3, 1) + '.' + rand(9, 0),
+        //                     duration: rand(12, 7),
+        //                     delay: rand(3, 0),
+        //                     ease: Linear.easeNone,
+        //                     stagger: 0.4,
+        //                     display: 'none',
+        //                     zIndex: 100
+        //                 }, 'bubbles'
+        //             ))
+        //             return timelineArray;
+        //         })
+        //         switch (control) {
+        //             case 'pause':
+        //                 timelineArray.map((timeline) => {
+        //                     return timeline.pause();
+        //                 })
+        //                 break;
+        //             case 'play':
+        //                 timelineArray.map((timeline) => {
+        //                     return timeline.play();
+        //                 })
+        //                 break;
+        //         }
+        //     }, 300)
+        // }
     }
 
     render() {
