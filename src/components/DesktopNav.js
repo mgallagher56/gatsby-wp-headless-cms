@@ -20,26 +20,36 @@ const DesktopNav = () => {
       
     `)
 
-    let navOutput = ( data ) => {
+    let navOutput = (data) => {
         return <>
-            { data.allWpMenuItem.edges.map( ( node ) => {
-                if (node.node.url ==='/home/') {
+            { data.allWpMenuItem.edges.map((node, index) => {
+                if (node.node.url === '/home/') {
                     let url = '/';
-                    return <>
+                    return <React.Fragment key={index.toString()}>
                         <li className={'mr-3'}>
-                            <AniLink 
-                                paintDrip 
-                                duration={1} 
-                                color='mediumspringgreen' 
+                            <AniLink
+                                paintDrip
+                                duration={1}
+                                color='mediumspringgreen'
                                 to={url}
                                 className=' nav-logo'>
                                 <img src={logo} alt={'Logo'} width={'200px'}></img>
-                                </AniLink>
+                            </AniLink>
                         </li>
-                    </>
-                } else  {
-                    return <li><AniLink paintDrip duration={1} color='mediumspringgreen' to={node.node.url}
-                    className='nav-animation'> {node.node.label} </AniLink></li>
+                    </React.Fragment>
+                } else {
+                    return <React.Fragment key={index.toString()}>
+                        <li >
+                            <AniLink
+                                paintDrip
+                                duration={1}
+                                color='mediumspringgreen'
+                                to={node.node.url}
+                                className='nav-animation'>
+                                {node.node.label}
+                            </AniLink>
+                        </li>
+                    </React.Fragment>
                 }
             })}
         </>
@@ -49,10 +59,10 @@ const DesktopNav = () => {
     return (
         <nav className={'container nav-desktop'}>
             <ul className='navbar-nav mr-auto navbar-desktop d-none d-md-flex flex-row justify-content-around'>
-                { navOutput( navData )}
+                {navOutput(navData)}
             </ul>
         </nav>
     )
-  }
+}
 
-  export default DesktopNav
+export default DesktopNav

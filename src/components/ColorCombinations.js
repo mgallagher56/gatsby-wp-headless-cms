@@ -20,8 +20,8 @@ class ColorCombinations extends Component {
     render() {
         // returns a btn for each given state
         let outputBtnStates = ( buttonTypes ) => {
-            return buttonTypes.map( ( type ) => {
-                return <div className={ 'col' }>
+            return buttonTypes.map( ( type, index ) => {
+                return <div className={ 'col' } key={index.toString()}>
                     <Button addClasses={'btn-small btn-' + type.toLowerCase() } />
                 </div>;
             } );
@@ -29,8 +29,8 @@ class ColorCombinations extends Component {
 
         // returns a row for each button state (e.g. hover) with a column for each button type (e.g. outlined)
         let buttonOutput = ( buttonStates, buttonTypes ) => {
-            return buttonStates.map( ( state ) => {
-                return <div className={ 'row my-3' }>
+            return buttonStates.map( ( state, index ) => {
+                return <div className={ 'row my-3' } key={index.toString()}>
                     <div className={ 'col text-center' }>
                         <h4>{ state }</h4>
                     </div>

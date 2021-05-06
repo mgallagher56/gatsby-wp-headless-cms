@@ -1,6 +1,7 @@
 import React from "react"
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import { useStaticQuery, graphql } from "gatsby"
+import { keyframes } from "@emotion/react";
 // import Bubbles from "./Bubbles";
 
 const MobileNavItems = (props) => {
@@ -21,10 +22,10 @@ const MobileNavItems = (props) => {
 
     let navOutput = (data) => {
         return <>
-            { data.allWpMenuItem.edges.map((node) => {
+            { data.allWpMenuItem.edges.map((node, index) => {
                 if (node.node.url === '/home/') {
                     let url = '/';
-                    return <>
+                    return <React.Fragment key={index.toString()}>
                         <li className={`menu-item ${node.node.label.toLowerCase()}`}>
                             <AniLink fade duration={1}
                                 color='mediumspringgreen' to={url}
@@ -33,9 +34,9 @@ const MobileNavItems = (props) => {
                                 <p>{node.node.label}</p>
                             </AniLink>
                         </li>
-                    </>
+                    </React.Fragment>
                 } else {
-                    return <>
+                    return <React.Fragment key={index.toString()}>
                         <li className={`menu-item ${node.node.label.toLowerCase()}`}>
                             <AniLink fade duration={1}
                                 color='mediumspringgreen' to={node.node.url}
@@ -44,7 +45,7 @@ const MobileNavItems = (props) => {
                                 <p>{node.node.label}</p>
                             </AniLink>
                         </li>
-                    </>
+                    </React.Fragment>
                 }
             })}
         </>
@@ -61,8 +62,8 @@ const MobileNavItems = (props) => {
                     </svg>
                 </button>
                 <ul id={'navbar-mobile'} ref={props.nav} className={'navbar-mobile flex-row flex-wrap w-100 h-100 position-absolute'}>
-                    {/* <Bubbles multiplier={10} /> */}
                     {navOutput(navData)}
+                    {/* <Bubbles multiplier={10} /> */}
                 </ul>
             </nav>
         </>

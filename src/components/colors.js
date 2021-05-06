@@ -58,7 +58,7 @@ class BaseplateColors extends Component {
                 } );
 
                 //return markup to output
-                return <div className='row my-3 mx-1'>
+                return <div className='row my-3 mx-1' key={key.toString()}>
                     <div className='col d-flex align-items-center justify-content-center'>
                         <p> { colorArray[1]['name'] }</p>
                     </div>
@@ -71,8 +71,8 @@ class BaseplateColors extends Component {
         let colorOutput = () => {
             return <>
                 {
-                    Object.keys( colorObj ).map( ( objectKey ) => {
-                        return <div className={ 'col-12 col-md-6 col-lg-4 ' + objectKey + 'Color' }>
+                    Object.keys( colorObj ).map( ( objectKey, index ) => {
+                        return <div key={index.toString()} className={ 'col-12 col-md-6 col-lg-4 ' + objectKey + 'Color' }>
                             <h4>{ objectKey.charAt( 0 ).toUpperCase() + objectKey.slice( 1 ) }</h4>
                             { colourOutput( colorObj[objectKey], this.state.classColors ) }
                         </div>;

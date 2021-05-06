@@ -11,14 +11,16 @@ class ModuleParser extends Component {
     render() {
         return <>
             {
-                this.props.moduleData.map( ( module ) => {
+                this.props.moduleData.map((module, index) => {
                     let moduleName = module.fieldGroupName.includes('Layouts') ?
-                    module.fieldGroupName.substr( 'Page_Pagebuilder_Layouts_'.length).toLowerCase() : this.props.moduleName;
-                    return ComponentBuilder( module, moduleName );
+                        module.fieldGroupName.substr('Page_Pagebuilder_Layouts_'.length).toLowerCase() : this.props.moduleName;
+                    return <React.Fragment key={index.toString()}>
+                        ComponentBuilder( module, moduleName )
+                    </React.Fragment>
                 })
             }
         </>
     }
 }
-    
+
 export default ModuleParser;
