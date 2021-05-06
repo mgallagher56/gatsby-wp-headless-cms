@@ -35,7 +35,16 @@ module.exports = {
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
         "gatsby-plugin-sass",
-        "gatsby-plugin-gatsby-cloud",
+        {
+            resolve: "gatsby-plugin-gatsby-cloud",
+            options: {
+                allPageHeaders: [
+                    "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload",
+                    "Cache-Control: max-age=31536000",
+                    "Permissions-Policy: geolocation=(), midi=(), notifications=(), push=(), sync-xhr=(), microphone=(), camera=(), magnetometer=(), gyroscope=(), speaker=(self), vibrate=(), fullscreen=(self), payment=()"
+                ],
+            }
+        },
         {
             resolve: "gatsby-plugin-google-analytics",
             options: {
