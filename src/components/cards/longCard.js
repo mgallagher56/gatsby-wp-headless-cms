@@ -15,7 +15,7 @@ export default class LongCard extends Component {
         
         return <div class={'card long-card row col-12 p-0 mb-3 mx-auto'}>
             <div class={'card-media col-6 col-md-7 h-100 p-0'}>
-                <GatsbyImage image={image} alt={altTag} />
+                <GatsbyImage image={image} alt={altTag} className={'h-100 w-100'} />
             </div>
             <div class={'card-content col-6 col-md-5 p-2'}>
                 <h3>{this.props.module.title}</h3>

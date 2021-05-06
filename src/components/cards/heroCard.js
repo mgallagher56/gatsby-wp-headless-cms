@@ -17,7 +17,7 @@ export default class HeroCard extends Component {
         return <>
             <div class={'card hero-card my-3 mx-3'}>
                 <div class={'card-media'}>
-                    <GatsbyImage image={image} alt={altTag} />
+                    <GatsbyImage image={image} alt={altTag} className={'h-100 w-100'} />
                 </div> 
                 <div class={'card-content p-2'}>
                     <a href={this.props.module.url}>
