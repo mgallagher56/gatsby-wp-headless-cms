@@ -1,15 +1,18 @@
 .hero-module {
-    
-    .hero-media,
-    .hero-content {
-        width: 100vw;
-        height: 100vh;
-        flex: 1;
-    }
+    height: 100vh;
 
-    .hero-media {
-        img {
-            width: 100%;
+    .hero_image {
+        width: 100%;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .hero-module {
+
+        .hero-media,
+        .hero-content {
+            height: 100vh;
         }
     }
+
 }
