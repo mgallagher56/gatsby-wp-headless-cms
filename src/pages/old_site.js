@@ -39,34 +39,9 @@ export default class oldSite extends Component {
 
                     <div className={'header'}>
                         <div className={"innerHeader"}>
-                            <h1 className={"headerText headerText1 typed"}id="typed">
-                                <Typed
-                                    strings={['',
-                                        'Marc Gallagher-Reid\n']}
-                                    startDelay={500}
-                                    loop={false}
-                                    typeSpeed={70}
-                                />
-                            </h1>
-                            <h2 className={"headerText headerText2"}id="typed">
-                                <Typed
-                                    strings={['',
-                                        'Full Stack Developer\n']}
-                                    startDelay={3000}
-                                    loop={false}
-                                    typeSpeed={70}
-                                />
-                            </h2>
-
-                            <h2 className={"headerText headerText3"}id="typed">
-                                <Typed
-                                    strings={['',
-                                        'Mayden Academy Graduate\n']}
-                                    startDelay={6000}
-                                    loop={false}
-                                    typeSpeed={70}
-                                />
-                            </h2>
+                            <h1 className={"headerText headerText1"}>Marc Gallagher-Rei</h1>
+                            <h2 className={"headerText headerText2"}>Full Stack Developer</h2>
+                            <h2 className={"headerText headerText3"}>Mayden Academy Graduat</h2>
 
                             <div className={"video"}>
                                 <video autoPlay loop muted>
@@ -79,9 +54,9 @@ export default class oldSite extends Component {
 
 
                     <div className={'portfolio'}>
-                    <a href={window.location.href} name='portfolio'>
-                        <h1 className={"title"}>Portfolio</h1>
-                    </a>
+                        <a href={window.location.href} name='portfolio'>
+                            <h1 className={"title"}>Portfolio</h1>
+                        </a>
 
                         <div className={'overlay'}>
                             <div className={'portfolioBox project1'}>
@@ -256,13 +231,13 @@ export default class oldSite extends Component {
 
                             <li className={'socialFooter'}>
                                 <a href={'https://github.com/mgallagher56'}>
-                                    <img className={"socialImg"}src={githubImg} alt={''}></img>
+                                    <img className={"socialImg"} src={githubImg} alt={''}></img>
                                 </a>
                             </li>
 
                             <li className={'socialFooter'}>
                                 <a href={'https://www.linkedin.com/in/marcgallagherreid/'}>
-                                    <img className={"socialImg linkedIn"}src={linkedInImg} alt={''}></img>
+                                    <img className={"socialImg linkedIn"} src={linkedInImg} alt={''}></img>
                                 </a>
                             </li>
                         </ul>
