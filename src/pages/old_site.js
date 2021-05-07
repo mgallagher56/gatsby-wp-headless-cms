@@ -38,9 +38,9 @@ export default class oldSite extends Component {
 
                     <div className={'header'}>
                         <div className={"innerHeader"}>
-                            <h1 className={"headerText headerText1"}>Marc Gallagher-Rei</h1>
+                            <h1 className={"headerText headerText1"}>Marc Gallagher-Reid</h1>
                             <h2 className={"headerText headerText2"}>Full Stack Developer</h2>
-                            <h2 className={"headerText headerText3"}>Mayden Academy Graduat</h2>
+                            <h3 className={"headerText headerText3"}>Mayden Academy Graduat</h3>
 
                             <div className={"video"}>
                                 <video autoPlay loop muted>
