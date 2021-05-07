@@ -67,4 +67,4 @@ yarn-error.log
 .wordpress-cache
 .env
 
-./src/assets/_raw_images
+./src/assets/_raw_images/*.*
