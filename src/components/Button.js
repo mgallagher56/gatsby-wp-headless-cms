@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { getWindow } from 'ssr-window';
+const window = getWindow();
 
 class Button extends Component {
     static defaultProps = {

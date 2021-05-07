@@ -3,7 +3,9 @@ import './../assets/styles.css';
 import BaseplateColors from '../components/colors';
 import ButtonVariationsOutput from '../components/ButtonVariationsOutput';
 import ColorCombinations from '../components/ColorCombinations';
-import Layout from "../components/layout"
+import Layout from "../components/layout";
+import { getWindow } from 'ssr-window';
+const window = getWindow();
 
 export default class Baseplate extends Component {
     render() {
