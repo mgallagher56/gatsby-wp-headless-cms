@@ -128,9 +128,6 @@
   #oldSite .innerHeader h3 {
     font-size: 2rem;
   }
-  #oldSite .typed-cursor {
-    display: none;
-  }
   #oldSite .screen {
     display: none;
   }
@@ -418,9 +415,7 @@
       position: unset;
       float: unset;
     }
-    #oldSite #typed {
-      width: 95%;
-    }
+
     #oldSite .innerHeader .headerText {
       top: 5%;
     }
