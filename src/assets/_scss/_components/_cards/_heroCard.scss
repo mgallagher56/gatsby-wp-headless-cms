@@ -1,5 +1,8 @@
 .hero-card {
-    color: map-get( $colors, black-portfolio-dark );
+    a {
+        color: map-get($colors, black-portfolio);
+        text-decoration: none;
+    }
 
     .card-media {
         height: 100%;

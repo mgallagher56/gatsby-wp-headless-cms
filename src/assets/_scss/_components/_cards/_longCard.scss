@@ -1,6 +1,10 @@
 .long-card {
+    a {
+        color: map-get($colors, black-portfolio);
+        text-decoration: none;
+    }
+
     max-height: 250px;
-    color: map-get( $colors, black-portfolio-dark );
     overflow: hidden;
 
     .card-media {
