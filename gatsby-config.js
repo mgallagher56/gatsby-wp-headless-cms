@@ -49,7 +49,7 @@ module.exports = {
                     path
                   }
                 }
-                allWpContentNode(filter: {nodeType: {in: ['Post', 'Page']}}) {
+                allWpContentNode(filter: {nodeType: {in: ["Post", "Page"]}}) {
                   nodes {
                     ... on WpPost {
                       uri
