@@ -33,7 +33,7 @@ const DesktopNav = () => {
                                 color='mediumspringgreen'
                                 to={url}
                                 className=' nav-logo'>
-                                <img src={logo} alt={'Logo'} width={188} height={74}></img>
+                                <img src={logo} alt={'Logo'} width={100} height={39}></img>
                             </AniLink>
                         </li>
                     </React.Fragment>
