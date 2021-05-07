@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../assets/oldSite.css';
 import Layout from "../components/layout";
-import Typed from 'react-typed';
 import video from '../assets/images/video.mp4'
 import githubImg from '../assets/images/GitHub.png';
 import linkedInImg from '../assets/images/linkedin.png';

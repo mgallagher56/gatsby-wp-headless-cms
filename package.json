@@ -51,7 +51,6 @@
         "react-glider-carousel": "^0.1.2",
         "react-helmet": "^6.1.0",
         "react-scripts": "^3.4.3",
-        "react-typed": "^1.2.0",
         "ssr-window": "^3.0.0",
         "yarn": "^1.22.10"
     },
