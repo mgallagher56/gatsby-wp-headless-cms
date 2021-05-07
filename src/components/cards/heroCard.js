@@ -21,8 +21,8 @@ export default class HeroCard extends Component {
                 </div> 
                 <div className={'card-content p-2'}>
                     <a href={this.props.module.url}>
-                        <h5>{this.props.module.title}</h5>
-                        <h6>{this.props.module.subtitle}</h6>
+                        <h3>{this.props.module.title}</h3>
+                        <p className={'p-large'}>{this.props.module.subtitle}</p>
                         <div dangerouslySetInnerHTML={{__html: this.props.module.content }}></div>
                         <Button type={'small'} href={this.props.module.url} text={this.props.module.buttonText} />
                     </a>

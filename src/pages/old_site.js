@@ -46,7 +46,7 @@ export default class oldSite extends Component {
                                     typeSpeed={70}
                                 />
                             </h1>
-                            <h1 className={"headerText headerText2"}id="typed">
+                            <h2 className={"headerText headerText2"}id="typed">
                                 <Typed
                                     strings={['',
                                         'Full Stack Developer\n']}
@@ -54,9 +54,9 @@ export default class oldSite extends Component {
                                     loop={false}
                                     typeSpeed={70}
                                 />
-                            </h1>
+                            </h2>
 
-                            <h1 className={"headerText headerText3"}id="typed">
+                            <h2 className={"headerText headerText3"}id="typed">
                                 <Typed
                                     strings={['',
                                         'Mayden Academy Graduate\n']}
@@ -64,7 +64,7 @@ export default class oldSite extends Component {
                                     loop={false}
                                     typeSpeed={70}
                                 />
-                            </h1>
+                            </h2>
 
                             <div className={"video"}>
                                 <video autoPlay loop muted>
