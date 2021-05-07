@@ -53,7 +53,7 @@ const MobileNavItems = (props) => {
     return (
         <>
             <nav className={`nav-mobile d-flex d-md-none position-absolute justify-content-center w-100 ${props.menuToggle ? 'open' : ''}`}>
-                <button name={'mobile nav toggle'} id={'nav-toggle'} className={'collapsible-nav d-md-none d-flex flex-column justify-content-center'} onClick={props.handleClick}>
+                <button aria-label='mobile nav toggle' id={'nav-toggle'} className={'collapsible-nav d-md-none d-flex flex-column justify-content-center'} onClick={props.handleClick}>
                     <svg width="55" height="45" viewBox="0 0 100 100">
                         <path className={"menu-icon line1"} d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
                         <path className={"menu-icon line2"} d="M 20,50 H 80" />
