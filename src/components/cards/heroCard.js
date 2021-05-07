@@ -15,7 +15,7 @@ export default class HeroCard extends Component {
         let altTag = null !== this.props.module.image ? this.props.module.image.altText : '';
 
         return <>
-            <div className={'card hero-card my-3 mx-3'}>
+            <div className={'card hero-card my-3 mx-3 col-8 col-md-4 col-lg-3'}>
                 <div className={'card-media'}>
                     <GatsbyImage image={image} alt={altTag} className={'h-100 w-100'} />
                 </div> 

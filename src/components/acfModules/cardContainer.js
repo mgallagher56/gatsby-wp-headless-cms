@@ -21,8 +21,8 @@ export default class CardContainer extends Component {
             if ('longcard' !== cardType) {
                 return (
                     <section className={'container'}>
-                        <div className={'row'}>
-                            <GliderComponent
+                        <div className={'row justify-content-center'}>
+                            {/* <GliderComponent
                                 // hasArrows={true}
                                 hasDots={true}
                                 draggable={true}
@@ -37,9 +37,9 @@ export default class CardContainer extends Component {
                                     rewind: true,
                                     draggable: true,
                                     duration: 1
-                                }}>
+                                }}> */}
                                 <ModuleParser moduleData={cards} moduleName={cardType} />
-                            </GliderComponent>
+                            {/* </GliderComponent> */}
                         </div>
                     </section>
                 )

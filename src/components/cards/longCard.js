@@ -1,5 +1,6 @@
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import React, { Component } from 'react';
+import Button from '../Button';
 
 export default class LongCard extends Component {
 
