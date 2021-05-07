@@ -91,7 +91,7 @@ module.exports = {
             resolve: "gatsby-plugin-manifest",
             options: {
                 name: `MGR Dev - Portfolio`,
-                theme_color: `#00e06c;`,
+                theme_color: `#00e06c`,
                 background_color: '#202231',
                 icon: "src/assets/images/icon.png",
                 icon_options: {

@@ -13,8 +13,8 @@ export default class CardContainer extends Component {
         let len = this.gliderDots.length;
         let i;
         for (i = 0; i < len; i++) {
-            console.log(this.gliderDots[i].attributes);
             this.gliderDots[i].setAttribute('role', 'tab');
+            console.log(this.gliderDots[i].attributes);
         }
 
         if (null !== this.props.module.cards) {
