@@ -1,6 +1,6 @@
 import React  from "react"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { graphql } from "gatsby"
 import ModuleParser from "../components/ModuleParser"
 
@@ -10,7 +10,7 @@ const Index = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title={pageData.title} />
+      <Seo title={pageData.title} />
       <ModuleParser moduleData={modules} />
     </Layout>
   )

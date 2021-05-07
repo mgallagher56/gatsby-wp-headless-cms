@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Button extends Component {
     static defaultProps = {
         type: 'large',
-        href: '#',
+        href: window.location.href,
         defaultClasses: 'btn ',
         addClasses: '',
         text: 'Button'

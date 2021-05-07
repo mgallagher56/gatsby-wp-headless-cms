@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import DesktopNav from './DesktopNav';
-import { TimelineMax, Linear } from 'gsap';
+import { TimelineMax } from 'gsap';
 import MobileNavItems from './MobileNav';
 
 export default class NavBar extends Component {
@@ -85,9 +85,9 @@ export default class NavBar extends Component {
                 }, 'blur'
             );
 
-        let rand = (max, min) => {
-            return Math.floor(Math.random() * max) + min
-        }
+        // let rand = (max, min) => {
+        //     return Math.floor(Math.random() * max) + min
+        // }
 
         // this.bubbleAnimation = (control) => {
         //     let timelineArray = [];

@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import Typed from 'react-typed';
 import video from '../assets/images/video.mp4'
 import githubImg from '../assets/images/GitHub.png';
-import linkedInImg from  '../assets/images/linkedin.png';
+import linkedInImg from '../assets/images/linkedin.png';
 
 export default class oldSite extends Component {
 
@@ -13,61 +13,61 @@ export default class oldSite extends Component {
             <Layout>
                 <div id='oldSite'>
                     <div id='oldNav'>
-                        <img className={'burger'} src='img/burger.svg'></img>
+                        <img className={'burger'} src='img/burger.svg' alt={''}></img>
                         <ul className={'menu'}>
-                            <li><a href="/"><h1 class="logo">MGR</h1></a></li>
-                            <li className={'nav-link about'}><a href='/'>New Site</a></li>
-                            <li className={'nav-link'}><a href='#portfolio'>Portfolio</a></li>
-                            <li className={'nav-link'}><a target="_blank" href='img/Marc%20Gallagher-Reid%20-%20CV%20.pdf'>My CV</a></li>
-                            <li className={'nav-link'}><a href='#contact'>Contact</a></li>
-                            <li className={'oldSocial linkedIn'}><a href='https://www.linkedin.com/in/marcgallagherreid/'><img alt="linkedIn" src={linkedInImg}></img></a></li>
-                            <li className={'oldSocial gitHub'}><a href='https://github.com/mgallagher56'><img alt="gitHub" src={githubImg}></img></a></li>
+                            <li><a href={'/'}><h1 className={"logo"}>MGR</h1></a></li>
+                            <li className={'nav-link about'}><a href={'/'}>New Site</a></li>
+                            <li className={'nav-link'}><a href={'#portfolio'}>Portfolio</a></li>
+                            <li className={'nav-link'}><a target="_blank" rel="noreferrer" href={'img/Marc%20Gallagher-Reid%20-%20CV%20.pdf'}>My CV</a></li>
+                            <li className={'nav-link'}><a href={'#contact'}>Contact</a></li>
+                            <li className={'oldSocial linkedIn'}><a href={'https://www.linkedin.com/in/marcgallagherreid/'}><img alt="linkedIn" src={linkedInImg}></img></a></li>
+                            <li className={'oldSocial gitHub'}><a href={'https://github.com/mgallagher56'}><img alt="gitHub" src={githubImg}></img></a></li>
                         </ul>
-                        <h1 class="logoSmall">MGR</h1><h1 class="logoSmall">MGR</h1>
+                        <h1 className={"logoSmall"}>MGR</h1><h1 className={"logoSmall"}>MGR</h1>
                     </div>
 
                     <div className={'burgerMenu'}>
                         <ul className={'burgerMenu'}>
-                            <li className={'burgerItem'}><a href='#portfolio'>Portfolio</a></li>
-                            <li className={'burgerItem'}><a href='/'>New Site</a></li>
-                            <li className={'burgerItem'}><a target="_blank" href='../assets/images/Marc%20Gallagher-Reid%20-%20CV.pdf'>My CV</a></li>
-                            <li className={'burgerItem'}><a href='#contact'>Contact</a></li>
+                            <li className={'burgerItem'}><a href={'#portfolio'}>Portfolio</a></li>
+                            <li className={'burgerItem'}><a href={window.location.href}>New Site</a></li>
+                            <li className={'burgerItem'}><a target="_blank" rel="noreferrer" href={'../assets/images/Marc%20Gallagher-Reid%20-%20CV.pdf'}>My CV</a></li>
+                            <li className={'burgerItem'}><a href={'#contact'}>Contact</a></li>
                         </ul>
                     </div>
 
                     <div className={'header'}>
-                        <div class="innerHeader"> 
-                            <h1 class="headerText headerText1 typed" id="typed">
-                            <Typed
-                                strings={['',
-                                'Marc Gallagher-Reid\n']}
-                                startDelay={500}
-                                loop={false}
-                                typeSpeed={70}
-                            />
+                        <div className={"innerHeader"}>
+                            <h1 className={"headerText headerText1 typed"}id="typed">
+                                <Typed
+                                    strings={['',
+                                        'Marc Gallagher-Reid\n']}
+                                    startDelay={500}
+                                    loop={false}
+                                    typeSpeed={70}
+                                />
                             </h1>
-                            <h1 class="headerText headerText2" id="typed">
-                            <Typed
-                                strings={['',
-                                'Full Stack Developer\n']}
-                                startDelay={3000}
-                                loop={false}
-                                typeSpeed={70}
-                            />
-                            </h1>
-
-                            <h1 class="headerText headerText3" id="typed">
-                            <Typed
-                                strings={[ '',
-                                'Mayden Academy Graduate\n']}
-                                startDelay={6000}
-                                loop={false}
-                                typeSpeed={70}
-                            />
+                            <h1 className={"headerText headerText2"}id="typed">
+                                <Typed
+                                    strings={['',
+                                        'Full Stack Developer\n']}
+                                    startDelay={3000}
+                                    loop={false}
+                                    typeSpeed={70}
+                                />
                             </h1>
 
-                            <div class="video">
-                                <video autoplay loop muted>
+                            <h1 className={"headerText headerText3"}id="typed">
+                                <Typed
+                                    strings={['',
+                                        'Mayden Academy Graduate\n']}
+                                    startDelay={6000}
+                                    loop={false}
+                                    typeSpeed={70}
+                                />
+                            </h1>
+
+                            <div className={"video"}>
+                                <video autoPlay loop muted>
                                     <source src={video} type="video/mp4"></source>
                                     Your browser does not support the video tag.
                                 </video>
@@ -75,18 +75,19 @@ export default class oldSite extends Component {
                         </div>
                     </div>
 
-                    <a name='portfolio'></a>
 
                     <div className={'portfolio'}>
-                        <h1 class="title">Portfolio</h1>
+                    <a href={window.location.href} name='portfolio'>
+                        <h1 className={"title"}>Portfolio</h1>
+                    </a>
 
                         <div className={'overlay'}>
                             <div className={'portfolioBox project1'}>
                                 <h1>My Portfolio</h1>
-                                <a href='#'>
+                                <a href={window.location.href}>
                                     <button className={'projectButton'} type='button'>View</button>
                                 </a>
-                                <a href='http://bit.ly/mgrDev'>
+                                <a href={'http://bit.ly/mgrDev'}>
                                     <button className={'projectButton'} type='button'>GitHub</button>
                                 </a>
                             </div>
@@ -96,10 +97,10 @@ export default class oldSite extends Component {
                         <div className={'overlay'}>
                             <div className={'portfolioBox project2'}>
                                 <h1>PHP Collection App</h1>
-                                <a href='http://bit.ly/mgrCollection'>
+                                <a href={'http://bit.ly/mgrCollection'}>
                                     <button className={'projectButton'} type='button'>View</button>
                                 </a>
-                                <a href='http://bit.ly/mgrCollectonGitHub'>
+                                <a href={'http://bit.ly/mgrCollectonGitHub'}>
                                     <button className={'projectButton'} type='button'>GitHub</button>
                                 </a>
                             </div>
@@ -108,10 +109,10 @@ export default class oldSite extends Component {
                         <div className={'overlay'}>
                             <div className={'portfolioBox project3'}>
                                 <h1>JS Pairs Game</h1>
-                                <a href='http://bit.ly/mgrPairsGame'>
+                                <a href={'http://bit.ly/mgrPairsGame'}>
                                     <button className={'projectButton'} type='button'>View</button>
                                 </a>
-                                <a href='http://bit.ly/mgrPairsGameGitHub'>
+                                <a href={'http://bit.ly/mgrPairsGameGitHub'}>
                                     <button className={'projectButton'} type='button'>GitHub</button>
                                 </a>
                             </div>
@@ -120,10 +121,10 @@ export default class oldSite extends Component {
                         <div className={'overlay'}>
                             <div className={'portfolioBox project4'}>
                                 <h1>Solar System</h1>
-                                <a href='http://bit.ly/mgrSolarSystem'>
+                                <a href={'http://bit.ly/mgrSolarSystem'}>
                                     <button className={'projectButton'} type='button'>View</button>
                                 </a>
-                                <a href='http://bit.ly/mgrSolarSystemGitHub'>
+                                <a href={'http://bit.ly/mgrSolarSystemGitHub'}>
                                     <button className={'projectButton'} type='button'>GitHub</button>
                                 </a>
                             </div>
@@ -132,10 +133,10 @@ export default class oldSite extends Component {
                         <div className={'overlay'}>
                             <div className={'portfolioBox project5'}>
                                 <h1>JS API Fetch</h1>
-                                <a href='http://bit.ly/mgrFetchApp'>
+                                <a href={'http://bit.ly/mgrFetchApp'}>
                                     <button className={'projectButton'} type='button'>View</button>
                                 </a>
-                                <a href='http://bit.ly/mgrGitHubFetchRepo'>
+                                <a href={'http://bit.ly/mgrGitHubFetchRepo'}>
                                     <button className={'projectButton'} type='button'>GitHub</button>
                                 </a>
                             </div>
@@ -144,10 +145,10 @@ export default class oldSite extends Component {
                         <div className={'overlay'}>
                             <div className={'portfolioBox project6'}>
                                 <h1>JS Finance Calc</h1>
-                                <a href='http://bit.ly/mgrFinanceCalc'>
+                                <a href={'http://bit.ly/mgrFinanceCalc'}>
                                     <button className={'projectButton'} type='button'>View</button>
                                 </a>
-                                <a href='http://bit.ly/mgrFinanceCalcGitHub'>
+                                <a href={'http://bit.ly/mgrFinanceCalcGitHub'}>
                                     <button className={'projectButton'} type='button'>GitHub</button>
                                 </a>
                             </div>
@@ -156,10 +157,10 @@ export default class oldSite extends Component {
                         <div className={'overlay'}>
                             <div className={'portfolioBox project7'}>
                                 <h1>OOP Recipe App</h1>
-                                <a href='http://bit.ly/mgrGrub'>
+                                <a href={'http://bit.ly/mgrGrub'}>
                                     <button className={'projectButton'} type='button'>View</button>
                                 </a>
-                                <a href='http://bit.ly/mgrGrubGitHub'>
+                                <a href={'http://bit.ly/mgrGrubGitHub'}>
                                     <button className={'projectButton'} type='button'>GitHub</button>
                                 </a>
                             </div>
@@ -168,10 +169,10 @@ export default class oldSite extends Component {
                         <div className={'overlay'}>
                             <div className={'portfolioBox project8'}>
                                 <h1>PHP/JQUERY Ski</h1>
-                                <a href='http://bit.ly/mgrSkiSite'>
+                                <a href={'http://bit.ly/mgrSkiSite'}>
                                     <button className={'projectButton'} type='button'>View</button>
                                 </a>
-                                <a href='http://bit.ly/mgrSkiRepo'>
+                                <a href={'http://bit.ly/mgrSkiRepo'}>
                                     <button className={'projectButton'} type='button'>GitHub</button>
                                 </a>
                             </div>
@@ -180,10 +181,10 @@ export default class oldSite extends Component {
                         <div className={'overlay'}>
                             <div className={'portfolioBox project9'}>
                                 <h1>MVC PHP ToDo App</h1>
-                                <a target="_blank" href='https://youtu.be/VPtLjSFwok8'>
+                                <a target="_blank" rel="noreferrer" href={'https://youtu.be/VPtLjSFwok8'}>
                                     <button className={'projectButton'} type='button'>View</button>
                                 </a>
-                                <a href='http://bit.ly/mgrToDoGithub'>
+                                <a href={'http://bit.ly/mgrToDoGithub'}>
                                     <button className={'projectButton'} type='button'>GitHub</button>
                                 </a>
                             </div>
@@ -192,10 +193,10 @@ export default class oldSite extends Component {
                         <div className={'overlay'}>
                             <div className={'portfolioBox project10'}>
                                 <h1>Project 10</h1>
-                                <a href='#'>
+                                <a href={window.location.href}>
                                     <button className={'projectButton'} type='button'>View</button>
                                 </a>
-                                <a href='#'>
+                                <a href={window.location.href}>
                                     <button className={'projectButton'} type='button'>GitHub</button>
                                 </a>
                             </div>
@@ -204,10 +205,10 @@ export default class oldSite extends Component {
                         <div className={'overlay'}>
                             <div className={'portfolioBox project11'}>
                                 <h1>Project11</h1>
-                                <a href='#'>
+                                <a href={window.location.href}>
                                     <button className={'projectButton'} type='button'>View</button>
                                 </a>
-                                <a href='#'>
+                                <a href={window.location.href}>
                                     <button className={'projectButton'} type='button'>GitHub</button>
                                 </a>
                             </div>
@@ -216,10 +217,10 @@ export default class oldSite extends Component {
                         <div className={'overlay'}>
                             <div className={'portfolioBox project12'}>
                                 <h1>Project12</h1>
-                                <a href='#'>
+                                <a href={window.location.href}>
                                     <button className={'projectButton'} type='button'>View</button>
                                 </a>
-                                <a href='#'>
+                                <a href={window.location.href}>
                                     <button className={'projectButton'} type='button'>GitHub</button>
                                 </a>
                             </div>
@@ -227,8 +228,9 @@ export default class oldSite extends Component {
                     </div>
 
                     <section className={'aboutMe'}>
-                        <a name='about'></a>  
-                        <h1>About Me</h1>
+                        <a href={window.location.href} name='about'>
+                            <h1>About Me</h1>
+                        </a>
                         <div className={'profileImg'}></div>
                         <p>Hello World. I'm a recent graduate from Mayden Academy in Bath, after taking part in a 16 week course
                         (August-December 2019) to become a Full Stack Developer. I'm passionate about Agile software development, and
@@ -239,25 +241,26 @@ export default class oldSite extends Component {
                         the years, has led me to this point of developing a career in the software industry. </p>
                     </section>
 
-                    <section class="contact">
-                        <a name='contact'></a>
-                        <h1 className={'footer'}>Contact</h1>
+                    <section className={"contact"}>
+                        <a name='contact' href={window.location.href}>
+                            <h1 className={'footer'}>Contact</h1>
+                        </a>
                         <ul>
-                            <li class="socialFooter">
-                                <a href='mailto:mgrdevuk@gmail.com?subject=Mail%20from%20MG%20Portfolio%20Site'>
+                            <li className={"socialFooter"}>
+                                <a href={'mailto:mgrdevuk@gmail.com?subject=Mail%20from%20MG%20Portfolio%20Site'}>
                                     <button className={'email'} type='button'>Email Me</button>
                                 </a>
                             </li>
 
                             <li className={'socialFooter'}>
-                                <a href='https://github.com/mgallagher56'>
-                                    <img class="socialImg" src={githubImg}></img>
+                                <a href={'https://github.com/mgallagher56'}>
+                                    <img className={"socialImg"}src={githubImg} alt={''}></img>
                                 </a>
                             </li>
 
                             <li className={'socialFooter'}>
-                                <a href='https://www.linkedin.com/in/marcgallagherreid/'>
-                                    <img class="socialImg linkedIn" src={linkedInImg}></img>
+                                <a href={'https://www.linkedin.com/in/marcgallagherreid/'}>
+                                    <img className={"socialImg linkedIn"}src={linkedInImg} alt={''}></img>
                                 </a>
                             </li>
                         </ul>

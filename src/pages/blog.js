@@ -1,12 +1,12 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 export default function Home({ data }) {
   return (
     <Layout>
-      <SEO title="blog" />
+      <Seo title="blog" />
       <h1>Blog</h1>
       <h4>Posts</h4>
       {data.allWpPost.edges.map(({ node }) => (

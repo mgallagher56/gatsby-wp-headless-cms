@@ -3,14 +3,6 @@ import Button from './Button'
 import * as data from '../assets/_conf/_colorCombinations.json';
 
 class ColorCombinations extends Component {
-    constructor( props ) {
-        super( props );
-        this.props = {
-            colorMaps: '',
-            btnTypes: '',
-        };
-    }
-
     static defaultProps = {
         colorMaps: Object.entries( data ),
         btnStates: [ 'Idle', 'Outline', 'Text', 'Arrow', 'Icon', 'Circle', 'Square' ],
@@ -42,7 +34,7 @@ class ColorCombinations extends Component {
 
         let variationOutput = ( colorMaps ) => {
             return Object.entries( colorMaps[0][1] ).map( ( value, key ) => {
-                return <div className='col'>
+                return <div className='col' key={key.toString()} >
                     <h3>{ value[1]['set'] + ' ' + value[0] }</h3>
                     { buttonOutput( this.props.btnStates, this.props.btnTypes ) }
                 </div>;

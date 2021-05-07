@@ -1,7 +1,6 @@
 import React from "react"
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import { useStaticQuery, graphql } from "gatsby"
-import { keyframes } from "@emotion/react";
 // import Bubbles from "./Bubbles";
 
 const MobileNavItems = (props) => {

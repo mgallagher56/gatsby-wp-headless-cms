@@ -150,10 +150,10 @@ export default class Baseplate extends Component {
                                         <h4>Google</h4>
                                     </div>
                                     <div className={ 'col' }>
-                                        <a href={ '/' } className={ 'socialLogin googleLoginLight' }></a>
+                                        <a href={window.location.href} className={ 'socialLogin googleLoginLight' }>.</a>
                                     </div>
                                     <div className={ 'col' }>
-                                        <a href={ '/' } className={ 'socialLogin googleLoginDark' }></a>
+                                        <a href={window.location.href} className={ 'socialLogin googleLoginDark' }>.</a>
                                     </div>
                                 </div>
                                 <div className={ 'row' }>
@@ -161,10 +161,10 @@ export default class Baseplate extends Component {
                                         <h4>Twitter</h4>
                                     </div>
                                     <div className={ 'col' }>
-                                        <a href={ '/' } className={ 'socialLogin twitterLoginLight' }></a>
+                                        <a href={window.location.href} className={ 'socialLogin twitterLoginLight' }>.</a>
                                     </div>
                                     <div className={ 'col' }>
-                                        <a href={ '/' } className={ 'socialLogin twitterLoginLight' }></a>
+                                        <a href={window.location.href} className={ 'socialLogin twitterLoginLight' }>.</a>
                                     </div>
                                 </div>
                                 <div className={ 'row' }>
@@ -172,10 +172,10 @@ export default class Baseplate extends Component {
                                         <h4>Facebook</h4>
                                     </div>
                                     <div className={ 'col' }>
-                                        <a href={ '/' } className={ 'socialLogin facebookLoginLight' }></a>
+                                        <a href={window.location.href} className={ 'socialLogin facebookLoginLight' }>.</a>
                                     </div>
                                     <div className={ 'col' }>
-                                        <a href={ '/' } className={ 'socialLogin facebookLoginLight' }></a>
+                                        <a href={window.location.href} className={ 'socialLogin facebookLoginLight' }>.</a>
                                     </div>
                                 </div>
                             </div>
@@ -190,7 +190,7 @@ export default class Baseplate extends Component {
                                         <h4>Buttons</h4>
                                     </div>
                                     <div className={ 'col' }>
-                                        <a href={ '/' } className={ 'btn btn-small shadow' }></a>
+                                        <a href={window.location.href} className={ 'btn btn-small shadow' }>.</a>
                                     </div>
                                 </div>
                                 <div className='row'>
@@ -198,7 +198,7 @@ export default class Baseplate extends Component {
                                         <h4>FAB</h4>
                                     </div>
                                     <div className={ 'col' }>
-                                        <a href={ '/' } className={ 'btn btn-circle shadow' }></a>
+                                        <a href={window.location.href} className={ 'btn btn-circle shadow' }>.</a>
                                     </div>
                                 </div>
                                 <div className='row'>
@@ -206,7 +206,7 @@ export default class Baseplate extends Component {
                                         <h4>Card</h4>
                                     </div>
                                     <div className={ 'col' }>
-                                        <a href={ '/' } className={ 'btn shadow' }></a>
+                                        <a href={window.location.href} className={ 'btn shadow' }>.</a>
                                     </div>
                                 </div>
                             </div>
@@ -217,7 +217,7 @@ export default class Baseplate extends Component {
                                         <h4>Buttons</h4>
                                     </div>
                                     <div className={ 'col' }>
-                                        <a href={ '/' } className={ 'btn btn-small' }></a>
+                                        <a href={window.location.href} className={ 'btn btn-small' }>.</a>
                                     </div>
                                 </div>
                                 <div className='row'>
@@ -225,7 +225,7 @@ export default class Baseplate extends Component {
                                         <h4>Cards</h4>
                                     </div>
                                     <div className={ 'col' }>
-                                        <a href={ '/' } className={ 'btn ' }></a>
+                                        <a href={window.location.href} className={ 'btn ' }>.</a>
                                     </div>
                                 </div>
                             </div>
@@ -353,7 +353,7 @@ export default class Baseplate extends Component {
                                                         data-multiple-caption='{count} files selected' multiple />
                                                     <label htmlFor='file'><strong>Choose a file</strong><span
                                                     > or drag it here</span>.</label>
-                                                    <a className='btn btn-small' type='submit'>Upload</a>
+                                                    <a href={window.location.href} className='btn btn-small' type='submit'>Upload</a>
                                                 </div>
                                             </form>
                                         </div>
@@ -364,7 +364,7 @@ export default class Baseplate extends Component {
                                                         data-multiple-caption='{count} files selected' multiple />
                                                     <label htmlFor='file'><strong>Choose a file</strong><span
                                                     > or drag it here</span>.</label>
-                                                    <a className='btn btn-small' type='submit'>Upload</a>
+                                                    <a href={window.location.href} className='btn btn-small' type='submit'>Upload</a>
                                                 </div>
                                             </form>
                                         </div>
@@ -375,7 +375,7 @@ export default class Baseplate extends Component {
                                                         data-multiple-caption='{count} files selected' multiple />
                                                     <label htmlFor='file'><strong>Choose a file</strong><span
                                                     > or drag it here</span>.</label>
-                                                    <a className='btn btn-small' type='submit'>Upload</a>
+                                                    <a href={window.location.href} className='btn btn-small' type='submit'>Upload</a>
                                                 </div>
                                             </form>
                                         </div>
@@ -394,7 +394,7 @@ export default class Baseplate extends Component {
                                                         data-multiple-caption='{count} files selected' multiple />
                                                     <label htmlFor='file'><strong>Choose an image</strong><span
                                                     > or drag it here</span>.</label>
-                                                    <a className='btn btn-small' type='submit'>Upload</a>
+                                                    <a href={window.location.href} className='btn btn-small' type='submit'>Upload</a>
                                                 </div>
                                             </form>
                                         </div>
@@ -405,7 +405,7 @@ export default class Baseplate extends Component {
                                                         data-multiple-caption='{count} files selected' multiple />
                                                     <label htmlFor='file'><strong>Choose an image</strong><span
                                                     > or drag it here</span>.</label>
-                                                    <a className='btn btn-small' type='submit'>Upload</a>
+                                                    <a href={window.location.href} className='btn btn-small' type='submit'>Upload</a>
                                                 </div>
                                             </form>
                                         </div>
@@ -416,7 +416,7 @@ export default class Baseplate extends Component {
                                                         data-multiple-caption='{count} files selected' multiple />
                                                     <label htmlFor='file'><strong>Choose an image</strong><span
                                                     > or drag it here</span>.</label>
-                                                    <a className='btn btn-small' type='submit'>Upload</a>
+                                                    <a href={window.location.href} className='btn btn-small' type='submit'>Upload</a>
                                                 </div>
                                             </form>
                                         </div>
@@ -558,7 +558,7 @@ export default class Baseplate extends Component {
                                                         data-multiple-caption='{count} files selected' multiple />
                                                     <label htmlFor='file'><strong>Choose an image</strong><span
                                                     > or drag it here</span>.</label>
-                                                    <a className='btn btn-small' type='submit'>Upload</a>
+                                                    <a href={window.location.href} className='btn btn-small' type='submit'>Upload</a>
                                                 </div>
                                             </div>
                                         </form>
@@ -591,7 +591,7 @@ export default class Baseplate extends Component {
                                                         data-multiple-caption='{count} files selected' multiple />
                                                     <label htmlFor='file'><strong>Choose an image</strong><span
                                                     > or drag it here</span>.</label>
-                                                    <a className='btn btn-small' type='submit'>Upload</a>
+                                                    <a href={window.location.href} className='btn btn-small' type='submit'>Upload</a>
                                                 </div>
                                             </div>
                                         </form>
@@ -624,7 +624,7 @@ export default class Baseplate extends Component {
                                                         data-multiple-caption='{count} files selected' multiple />
                                                     <label htmlFor='file'><strong>Choose an image</strong><span
                                                     > or drag it here</span>.</label>
-                                                    <a className='btn btn-small' type='submit'>Upload</a>
+                                                    <a href={window.location.href} className='btn btn-small' type='submit'>Upload</a>
                                                 </div>
                                             </div>
                                         </form>
@@ -683,7 +683,7 @@ export default class Baseplate extends Component {
                                         <div>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                                 tempor incididunt ut labore et dolore magna aliqua.
-                                                <a href={ '/' }>Ut enim
+                                                <a href={window.location.href}>Ut enim
                                                     ad minim veniam,
                                                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                                     consequat.
@@ -700,7 +700,7 @@ export default class Baseplate extends Component {
                                         <div>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                                 tempor incididunt ut labore et dolore magna aliqua.
-                                                <a href={ '/' }>Ut enim
+                                                <a href={window.location.href}>Ut enim
                                                     ad minim veniam,
                                                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                                     consequat.
@@ -718,14 +718,14 @@ export default class Baseplate extends Component {
 
                                 <div className={'col'}>
                                     <div className="pagination dots">
-                                        <a className={'paginationNav'} href="#">&laquo;</a>
-                                        <a href="#"></a>
-                                        <a className="active" href="#"></a>
-                                        <a href="#"></a>
-                                        <a href="#"></a>
-                                        <a href="#"></a>
-                                        <a href="#"></a>
-                                        <a className={'paginationNav'} href="#">&raquo;</a>
+                                        <a className={'paginationNav'} href={window.location.href}>&laquo;</a>
+                                        <a href={window.location.href}>.</a>
+                                        <a className="active" href={window.location.href}>.</a>
+                                        <a href={window.location.href}>.</a>
+                                        <a href={window.location.href}>.</a>
+                                        <a href={window.location.href}>.</a>
+                                        <a href={window.location.href}>.</a>
+                                        <a className={'paginationNav'} href={window.location.href}>&raquo;</a>
 
                                     </div>
                                 </div>
@@ -736,14 +736,14 @@ export default class Baseplate extends Component {
                                 </div>
                                 <div className={'col'}>
                                     <div className="pagination numbered">
-                                        <a href="#">&laquo;</a>
-                                        <a href="#">1</a>
-                                        <a className="active" href="#">2</a>
-                                        <a href="#">3</a>
-                                        <a href="#">4</a>
-                                        <a href="#">5</a>
-                                        <a href="#">6</a>
-                                        <a href="#">&raquo;</a>
+                                        <a href={window.location.href}>&laquo;</a>
+                                        <a href={window.location.href}>1</a>
+                                        <a className="active" href={window.location.href}>2</a>
+                                        <a href={window.location.href}>3</a>
+                                        <a href={window.location.href}>4</a>
+                                        <a href={window.location.href}>5</a>
+                                        <a href={window.location.href}>6</a>
+                                        <a href={window.location.href}>&raquo;</a>
                                     </div>
                                 </div>
                             </div>
