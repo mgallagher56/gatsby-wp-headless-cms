@@ -38,9 +38,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     const BlogPosts = result.data.allWpPost.edges
     BlogPosts.forEach(post => {
         createPage({
-            path: `/${post.node.slug}`,
+            path: `/blog/${post.node.slug}`,
             component: BlogPostTemplate,
             context: {
+                slug: post.node.slug
             },
         })
         const Pages = result.data.allWpPage.edges
@@ -49,6 +50,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
                 path: `/${page.node.slug}`,
                 component: PageTemplate,
                 context: {
+                slug: page.node.slug
                 },
             })
         })
