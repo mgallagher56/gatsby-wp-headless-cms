@@ -35,7 +35,19 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         reporter.panicOnBuild(`Error while running GraphQL query.`)
         return
     }
-    const BlogPosts = result.data.allWpPost.edges
+    
+    const Pages = result.data.allWpPage.edges;
+    Pages.forEach(page => {
+        createPage({
+            path: `/${page.node.slug}`,
+            component: PageTemplate,
+            context: {
+                slug: page.node.slug
+            },
+        })
+    })
+
+    const BlogPosts = result.data.allWpPost.edges;
     BlogPosts.forEach(post => {
         createPage({
             path: `/blog/${post.node.slug}`,
@@ -43,16 +55,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             context: {
                 slug: post.node.slug
             },
-        })
-        const Pages = result.data.allWpPage.edges
-        Pages.forEach(page => {
-            createPage({
-                path: `/${page.node.slug}`,
-                component: PageTemplate,
-                context: {
-                slug: page.node.slug
-                },
-            })
         })
     })
 }

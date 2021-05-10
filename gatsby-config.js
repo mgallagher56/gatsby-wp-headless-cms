@@ -13,7 +13,7 @@ module.exports = {
         titleTemplate: `%s · Dev MVP`,
         description:
             `Dev Portfolio`,
-        url: `https://mgr-dev.com`, // No trailing slash allowed!
+        url: process.env.URL, // No trailing slash allowed!
         author: `Marc Gallagher-Reid`,
     },
     flags: { PRESERVE_WEBPACK_CACHE: true },
