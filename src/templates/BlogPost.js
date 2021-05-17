@@ -35,91 +35,91 @@ const PostTemplate = ({ data }) => {
 export default PostTemplate
 
 export const query = graphql`
-{
-    allWpPost(sort: {fields: date}) {
-      edges {
-        node {
-          title
-          date(formatString: "DD-MM-YYYY")
-          title
-          pageBuilder {
-            layouts {
-              ... on WpPost_Pagebuilder_Layouts_Hero {
-                fieldGroupName
-                wysiwyg
-                image {
-                  altText
-                  localFile {
-                    childImageSharp {
-                      gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {color: "#00FF7D"}, sizes: "1200px")
-                    }
-                  }
-                }
-              }
-              ... on WpPost_Pagebuilder_Layouts_Feed {
-                cardType
-                fieldGroupName
+    query ($slug: String!) {
+        allWpPost(sort: {fields: date}, filter: { slug: { eq: $slug } }) {
+            edges {
+                node {
                 title
-              }
-              ... on WpPost_Pagebuilder_Layouts_CardContainer {
-                fieldGroupName
-                cardType
+                date(formatString: "DD-MM-YYYY")
                 title
-                cards {
-                  buttonText
-                  content
-                  fieldGroupName
-                  subtitle
-                  title
-                  url
-                  image {
-                    altText
-                    localFile {
-                      childImageSharp {
-                        gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {color: "#00FF7D"}, sizes: "200px")
-                      }
+                pageBuilder {
+                    layouts {
+                    ... on WpPost_Pagebuilder_Layouts_Hero {
+                        fieldGroupName
+                        wysiwyg
+                        image {
+                        altText
+                        localFile {
+                            childImageSharp {
+                            gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {color: "#00FF7D"}, sizes: "1200px")
+                            }
+                        }
+                        }
                     }
-                  }
-                }
-              }
-              ... on WpPost_Pagebuilder_Layouts_WysiwygMedia {
-                fieldGroupName
-                wysiwygContent
-                image {
-                  altText
-                  localFile {
-                    childImageSharp {
-                      gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {color: "#00FF7D"}, sizes: "600px")
+                    ... on WpPost_Pagebuilder_Layouts_Feed {
+                        cardType
+                        fieldGroupName
+                        title
                     }
-                  }
+                    ... on WpPost_Pagebuilder_Layouts_CardContainer {
+                        fieldGroupName
+                        cardType
+                        title
+                        cards {
+                        buttonText
+                        content
+                        fieldGroupName
+                        subtitle
+                        title
+                        url
+                        image {
+                            altText
+                            localFile {
+                            childImageSharp {
+                                gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {color: "#00FF7D"}, sizes: "200px")
+                            }
+                            }
+                        }
+                        }
+                    }
+                    ... on WpPost_Pagebuilder_Layouts_WysiwygMedia {
+                        fieldGroupName
+                        wysiwygContent
+                        image {
+                        altText
+                        localFile {
+                            childImageSharp {
+                            gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {color: "#00FF7D"}, sizes: "600px")
+                            }
+                        }
+                        }
+                    }
+                    ... on WpPost_Pagebuilder_Layouts_Wysiwyg3Col {
+                        fieldGroupName
+                        wysiwygContent1
+                        wysiwygContent2
+                        wysiwygContent3
+                    }
+                    ... on WpPost_Pagebuilder_Layouts_Wysiwyg2Col {
+                        fieldGroupName
+                        wysiwygContent1
+                        wysiwygContent2
+                    }
+                    ... on WpPost_Pagebuilder_Layouts_Wysiwyg1Col {
+                        fieldGroupName
+                        wysiwyg
+                    }
+                    ... on WpPost_Pagebuilder_Layouts_Wysiwyg4Col {
+                        fieldGroupName
+                        wysiwygContent1
+                        wysiwygContent2
+                        wysiwygContent3
+                        wysiwygContent4
+                    }
+                    }
                 }
-              }
-              ... on WpPost_Pagebuilder_Layouts_Wysiwyg3Col {
-                fieldGroupName
-                wysiwygContent1
-                wysiwygContent2
-                wysiwygContent3
-              }
-              ... on WpPost_Pagebuilder_Layouts_Wysiwyg2Col {
-                fieldGroupName
-                wysiwygContent1
-                wysiwygContent2
-              }
-              ... on WpPost_Pagebuilder_Layouts_Wysiwyg1Col {
-                fieldGroupName
-                wysiwyg
-              }
-              ... on WpPost_Pagebuilder_Layouts_Wysiwyg4Col {
-                fieldGroupName
-                wysiwygContent1
-                wysiwygContent2
-                wysiwygContent3
-                wysiwygContent4
-              }
+                }
             }
-          }
         }
-      }
     }
-  }
 `

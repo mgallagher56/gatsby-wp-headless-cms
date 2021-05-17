@@ -28,8 +28,8 @@ const PageTemplate = ({ data }) => {
 export default PageTemplate
 
 export const query = graphql`
-    {
-        allWpPage {
+    query ($slug: String!) {
+        allWpPage(filter: { slug: { eq: $slug } })  {
             edges {
                 node {
                     title
