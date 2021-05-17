@@ -5,15 +5,24 @@ import { graphql } from "gatsby"
 import ModuleParser from "../components/ModuleParser"
 
 const Index = ({ data }) => {
-  const pageData = data.allWpPage.edges[0].node;
-  const modules = pageData.pageBuilder.layouts;
+    const pageData = data.allWpPage.edges[0].node;
+    const modules = pageData.pageBuilder.layouts;
 
-  return (
-    <Layout>
-      <Seo title={pageData.title} />
-      <ModuleParser moduleData={modules} />
-    </Layout>
-  )
+    if ( null !== modules) {
+        return (
+            <Layout>
+                <Seo title={pageData.title} />
+                <ModuleParser moduleData={modules} />
+            </Layout>
+        )
+    } else {
+        return ( 
+            <Layout>
+                <Seo title={pageData.title} />
+                <h2>No modules found</h2>
+            </Layout>
+        )
+    }
 }
 
 export default Index
