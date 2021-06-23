@@ -68,13 +68,13 @@
                 position: absolute;
                 border-radius: 10px;
             }
-            
+
             &.nav-animation {
                 &:hover {
                     text-decoration: none;
 
                     &:after {
-                        animation: fill 1s forwards;
+                        animation: fill .4s forwards;
                         opacity: 1;
                         background: map-get($colors, pink-portfolio-dark);
                         z-index: -1;

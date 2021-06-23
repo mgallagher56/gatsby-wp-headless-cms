@@ -110,18 +110,18 @@
                 }
             }
 
-            &.about {
+            &.blog {
                 a {
                     &:before {
-                        background-image: url("./images/005-information.svg");
+                        background-image: url("./images/008-blog.svg");
                     }
                 }
             }
 
-            &.cv {
+            &.contact {
                 a {
                     &:before {
-                        background-image: url("./images/004-inbox.svg");
+                        background-image: url("./images/005-information.svg");
                     }
                 }
             }
@@ -146,7 +146,7 @@
         .navbar-mobile {
             display: flex;
             opacity: 1;
-            
+
             &:before {
                 opacity: .4;
             }
