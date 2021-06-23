@@ -11,10 +11,11 @@ export default class CardContainer extends Component {
 
     componentDidMount() {
         new Glider(this.glider.current, {
-            slidesToShow: 5,
+            slidesToShow: 8,
             slidesToScroll: 1,
             draggable: true,
             dots: '.dots',
+            arrows: '.arrows'
         })
     }
 
@@ -22,9 +23,9 @@ export default class CardContainer extends Component {
         if (null !== this.cards) {
             if ('longcard' !== this.cardType) {
                 return (
-                    <section className={'card-container container'}>
+                    <section className={'card-container'}>
                         <div className={'row justify-content-center'}>
-                            <div ref={this.glider} className="glider glider-persp draggable" id="glider-persp">
+                            <div ref={this.glider} className="glider draggable">
                                 <ModuleParser moduleData={this.cards} moduleName={this.cardType} />
                             </div>
                             <div role="tablist" className="dots"></div>
