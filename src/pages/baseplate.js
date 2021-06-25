@@ -131,7 +131,7 @@ export default class Baseplate extends Component {
                                 </div>
 
                                 <div className='colorCombinations'>
-                                    <h2>Set Color Combinations</h2>
+                                    <h2>Color Combinations</h2>
                                     <ColorCombinations />
                                 </div>
 
