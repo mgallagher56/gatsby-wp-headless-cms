@@ -1,26 +1,20 @@
 {
-    "Primary-1" : {
-        "set" : "Color Set 1",
+    "Primary" : {
+        "set" : "Button Set 1",
         "background" : "black-portfolio",
         "button-set" : "1",
-        "overlay" : "light"
+        "overlay" : "Light"
     },
-    "Primary-2" : {
-        "set" : "Color Set 1",
+    "Secondary" : {
+        "set" : "Button Set 1",
         "background" : "black-portfolio-dark",
         "button-set" : "1",
-        "overlay" : "light"
+        "overlay" : "Light"
     },
-    "Primary-3" : {
-        "set" : "Color Set 1",
+    "Tertiary" : {
+        "set" : "Button Set 2",
         "background" : "black-portfolio-light",
-        "button-set" : "1",
-        "overlay" : "light"
-    },
-    "Primary-4" : {
-        "set" : "Color Set 1",
-        "background" : "black",
-        "button-set" : "1",
-        "overlay" : "light"
+        "button-set" : "2",
+        "overlay" : "Dark"
     }
 }
