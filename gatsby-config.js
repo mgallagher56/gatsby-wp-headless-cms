@@ -32,6 +32,7 @@ module.exports = {
                     `Cache-Control: public, max-age=31536000`,
                     `Permissions-Policy: geolocation=(), midi=(), notifications=(), push=(), sync-xhr=(), microphone=(), camera=(), magnetometer=(), gyroscope=(), speaker=(self), vibrate=(), fullscreen=(self), payment=()`
                 ],
+                mergeCachingHeaders: true
             }
         },
         {
