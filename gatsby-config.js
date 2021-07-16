@@ -29,7 +29,7 @@ module.exports = {
             options: {
                 allPageHeaders: [
                     `Strict-Transport-Security: max-age=31536000; includeSubDomains; preload`,
-                    `Cache-Control: public, max-age=31536000`,
+                    `cache-control: public, max-age=31536000, immutable`,
                     `Permissions-Policy: geolocation=(), midi=(), notifications=(), push=(), sync-xhr=(), microphone=(), camera=(), magnetometer=(), gyroscope=(), speaker=(self), vibrate=(), fullscreen=(self), payment=()`
                 ],
                 mergeCachingHeaders: true
