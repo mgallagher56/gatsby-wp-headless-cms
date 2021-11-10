@@ -57,7 +57,7 @@ export const query = graphql`
                         }
                     }
                     ... on WpPost_Pagebuilder_Layouts_Feed {
-                        cardType
+                        cardTypes
                         fieldGroupName
                         title
                     }

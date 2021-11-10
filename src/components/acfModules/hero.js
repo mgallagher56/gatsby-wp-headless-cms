@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 
 export default class Hero extends Component {
 
+
     render() {
         let image = null !== this.props.module.image ? getImage(this.props.module.image.localFile) : '';
         let altTag = null !== this.props.module.image ? this.props.module.image.altText : '';
