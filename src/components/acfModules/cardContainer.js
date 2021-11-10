@@ -6,7 +6,7 @@ export default class CardContainer extends Component {
         super(props);
         this.glider = React.createRef();
         this.cards = this.props.module.cards;
-        this.cardType = this.props.module.cardType;
+        this.cardType = this.props.module.cardType.length ? this.props.module.cardType : 'herocard';
     }
 
     componentDidMount() {
@@ -28,8 +28,8 @@ export default class CardContainer extends Component {
                             <div ref={this.glider} className="glider draggable">
                                 <ModuleParser moduleData={this.cards} moduleName={this.cardType} />
                             </div>
-                            <div role="tablist" className="dots"></div>
                         </div>
+                        <div role="tablist" className="dots"></div>
                     </section>
                 )
             } else {
@@ -42,9 +42,9 @@ export default class CardContainer extends Component {
             }
         } else {
             return (
-            <section className={'card-container container'}>
-                <h3>Add cards to card container in wordpress</h3>
-            </section>
+                <section className={'card-container container'}>
+                    <h3>Add cards to card container in wordpress</h3>
+                </section>
             )
         }
     }

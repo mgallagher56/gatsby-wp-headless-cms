@@ -16,7 +16,7 @@ const PageTemplate = ({ data }) => {
         </Layout>
     )
     } else {
-        return ( 
+        return (
             <Layout>
             <Seo title={pageData.title} />
             <h2>No modules found</h2>
@@ -48,7 +48,7 @@ export const query = graphql`
                                 }
                             }
                             ... on WpPage_Pagebuilder_Layouts_Feed {
-                                cardType
+                                cardTypes
                                 fieldGroupName
                                 title
                             }
@@ -69,9 +69,9 @@ export const query = graphql`
                                             publicURL
                                             childImageSharp {
                                                 gatsbyImageData(placeholder: TRACED_SVG, tracedSVGOptions: {color: "#00FF7D"})
-                                            }                                    
+                                            }
                                         }
-                                    }   
+                                    }
                                 }
                             }
                             ... on WpPage_Pagebuilder_Layouts_WysiwygMedia {
